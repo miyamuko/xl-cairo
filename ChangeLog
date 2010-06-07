@@ -1,0 +1,1016 @@
+2009-07-02  MIYAMUKO Katsuyuki
+
+	* xl-cairo 1.8.0 released!
+
+	* Bumped version number to 1.8.0
+
+2009-06-26  MIYAMUKO Katsuyuki
+
+	* 1.6 と 1.8 で追加された error-status に対応する例外クラスを定義
+
+	* (cairo-surface-get-fallback-resolution): fixed typo.
+
+	* 変数名の utf8 を str にした
+
+2009-06-25  MIYAMUKO Katsuyuki
+
+	* cairo-demoのhering.c と spiral.c を移植
+
+	* unpack-array-of-xxx は配列のチャンクへのチャンクではなく、
+	  配列のチャンクを引数とするようにした
+
+	* (chunkp): chunk かどうか判定
+	  (unpack-c-array): chunk もサポート
+
+	* 安定版の pixman 0.14.0 にした。0.15.14 は開発版。
+
+	* pixman を 0.15.14 に更新
+
+2009-06-24  MIYAMUKO Katsuyuki
+
+	* - cairo_scaled_font_text_to_glyphs, cairo_show_text_glyphs をとりあえず実装
+	  -- テストはまだちゃんとしていない
+	  - cairo-glyph-allocate, cairo-glyph-free などは削除
+	  - scaled-font.l で status をチェックするようにした
+
+	* - cairo::utf8-char* の auto-boxing で変換する UTF-8 を BOM なしにした。
+	  - cairo 1.8.8 は BOM を認識しないのでゴミが付く (1.6 は認識していた?)
+
+	* (cairo-ps-get-levels):
+	  - 動かなくなっていたのを修正
+	  - ps-level-t* の unpack 処理を enum.l に移動
+	  - 手修正部分を上書きしないように forbidden にした
+
+	* (unpack-array-of-svg-version-t): package prefix をつけた
+
+	* (unpack-array-of-svg-version-t): svg-version-t の配列の unpack 処理を enum.l に移動
+
+	* (cairo-svg-get-versions): 変数名をポインタのポインタと分かるように変更
+
+	* (unpack-array-of-double): double[] の変換を types/base.l で定義
+
+	* - (cairo-toy-font-face-create): cairo-font-face-status で戻り値をチェック
+	    family を UTF-8 にエンコードするようにした
+	  - (cairo-toy-font-face-get-family): 戻り値を UTF-8 から戻すようにした
+
+2009-06-23  MIYAMUKO Katsuyuki
+
+	* api の cairo 1.8.8 対応
+	  - まだ途中
+	  - text cluster は後回し
+	  - user font は当分はサポートしない
+
+	* libpixman を static link した cairo 1.8.8
+
+	* ffi 周りを cairo 1.8.8 に更新
+
+2008-04-14  MIYAMUKO Katsuyuki
+
+	* xycairo 1.6.0 released!
+
+	* - Bumped version number to 1.6.0
+	  - update documents
+
+	* removed scripts/update-copyright.rb
+
+	* update copyright
+
+	* cairo 1.6.4 に対応
+
+2008-01-21  MIYAMUKO Katsuyuki
+
+	* xycairo 0.0.8 released!
+
+	* cairo 1.4.14 に更新。
+
+2007-12-01  MIYAMUKO Katsuyuki
+
+	* xycairo 0.0.7 released!
+
+	* cairo 1.4.12 に更新。
+
+2007-09-30  MIYAMUKO Katsuyuki
+
+	* xycairo 0.0.6 released!
+
+	* (examples/ext-polygon.l): cairo.ext:cairo-regular-polygon のサンプル
+
+	* (cairo.ext:cairo-regular-polygon): 正多角形を書く API
+
+	* (cairo.ext:cairo-polygon): 多角形を書く API
+
+	* (cairo.ext:cairo-polyline): 多線形を書く API
+
+2007-09-29  MIYAMUKO Katsuyuki
+
+	* (examples/hearts.l): cairo-heart を使って再実装
+
+	* (examples/ext-heart.l): cairo.ext:cairo-heart のサンプル
+
+	* (cairo.ext:cairo-heart): ハートを書く関数
+
+	* (cairo.ext:cairo-polygon): 多角形を書く API
+
+	* (examples/ext-triangle.l): cairo-triangle の example
+
+	* (cairo.ext:cairo-triangle): 三角形を書く API
+
+	* (do-snippet): 背景色を白に設定するようにした。
+
+2007-09-17  MIYAMUKO Katsuyuki
+
+	* (define-autoboxing-for-char*-with-encoding): convert-encoding-from-internal に nil を
+	  指定するとキーボードから読み込んでしまうので、nil チェックを付けた。
+
+2007-06-30  MIYAMUKO Katsuyuki
+
+	* cairo 1.4.10 に更新。
+
+2007-06-23  MIYAMUKO Katsuyuki
+
+	* deg-to-rad を削除、 degree->radian を使うようにした。
+
+	* (cairo-map-path-onto): 引数に path 構造体を指定可能にした。
+
+	* (coerce-to-cairo-path-list): 引数を path list に変換する関数。
+
+	* (examples/ext-star.l): 文字の配置位置を調整
+
+	* (draw-star): out-radius => outer-radius.
+
+	* (do-snippets): 実行時間を画像の左下に表示するようにした。
+
+2007-06-20  MIYAMUKO Katsuyuki
+
+	* (cairo-map-path-onto): map-path-onto から rename, export
+	  (transform-path): 順番を変更
+
+	* (examples/text-on-path.l): パス上にテキストを配置するサンプル (rcairo の sample の移植)
+
+	* (map-path-onto): path-t 構造体の作成に対応したのでちゃんと実装。
+	  (map-path-onto0): internal error => argument error.
+	  (parameterize-path0): ditto.
+
+	* (cairo-append-path): support path list.
+	  (coerce-to-cairo-path-chunk): new function to create path-t c structure from path list.
+	  (cairo-path-list->chunk):  ditto.
+	  (make-path-data-chunk): ditto.
+	  (count-num-of-path-data): ditto.
+	  (path-data-num-of-points): raise argument error insteadf of internal error.
+
+	* (map-path-onto0): line-to, curve-to のときの同じ計算処理を共通化した。
+
+	* (parameterize-path0): result を消した。
+
+2007-06-17  MIYAMUKO Katsuyuki
+
+	* map-path-onto のテストを追加。
+
+	* (cairo-path-list-flat): copy-path-flat してリストで返す関数。
+
+	* (map-path-onto): rcairo から移植。path 構造体の作成処理が必要。
+
+	* (transform-path): rcairo の transform_path を移植。テスト済み。
+
+	* (parameterize-path): バグりまくってたのを修正。rcairo と結果が同じになった。
+
+	* (cairo-path-list0): 高速化のため lisp 構造体を作らないようにした。
+
+	* (cairo-path-list0): 計算しやすいように point を cons から list にした: (x . y) => (x y)
+
+	* (examples/ext-rounded-rectangle.l): cairo-rounded-rectangle のサンプル (再実装)。
+
+	* ext-rounded-rectangle.l => ext-rounded-rectangle-complex.l
+
+	* (cairo-rounded-rectangle-complex): cairo-rounded-rectangle から rename.
+	  (cairo-rounded-rectangle): cairo-rounded-rectangle は rcairo 互換にした。
+
+2007-06-16  MIYAMUKO Katsuyuki
+
+	* (dotp): (dotp '(1)) は nil にした。
+
+	* (parameterize-path): rcairo から移植 (未テスト)
+
+	* (distance): 2 点間のユークリッド距離を求める関数。
+
+	* (make-array-chunk-for): 指定された型の配列の chunk を作成する。
+
+	* - (cairo-set-dash): status をチェックするようにした。
+	  - (cairo-get-dash): dashes には double の配列を指定する。
+	    double 一個を指定していたのでメモリ破壊が起きていた。
+
+	* - (checking-status-using): 第 2 引数に変数名を取るようにした。
+	    第 2 引数がある: 指定された名前の変数の status をチェックして body の戻り値を返す。
+	    第 2 引数がない: body の戻り値を        status 〃
+
+	* (examples/ext-circle.l): cairo-circle の例。
+
+	* (cairo-circle): 真円を書く API
+
+	* (cairo-star): 2pi を使うようにした。
+
+	* (2pi): pi * 2 の定数。export はしない。
+
+	* (examples/ext-star.l): cairo.ext:cairo-star の例
+
+	* (cairo-star): 星を書く API
+	  - inner-radius を optional にしたい。
+	  - inner-radius 省略時は正五角形を書きたい。
+
+	* (cairo-rounded-rectangle): radian => degree->radian.
+
+	* degree->radian と radian->degree が入れ替わっていた。
+
+2007-06-12  MIYAMUKO Katsuyuki
+
+	* (examples/ext-rounded-rectangle): cairo.ext:cairo-rounded-rectangle の example
+
+	* (cairo-rounded-rectangle): 角丸の四角を描く
+
+	* (radian->degree, degree->radian): 弧度法と角度の変換関数
+
+2007-06-10  MIYAMUKO Katsuyuki
+
+	* xycairo 0.0.5 released!
+
+	* cairo 1.4.8 に更新。
+
+	* (examples/text-postscript.l): text.l の PostScript 版
+
+	* (examples/imagepattern-png-stream.l, text-japanese-pdf.l): PDF surface と PNG stream のサンプル。
+
+	* (clean-all-snippet-outputs): PDF とかも削除するようにした。
+
+2007-06-09  MIYAMUKO Katsuyuki
+
+	* (do-snippets): do-snippets0 を分離。
+
+	* (do-snippets): 生成するファイルの拡張子を指定可能にした。
+
+2007-06-08  MIYAMUKO Katsuyuki
+
+	* (cairo-image-surface-create-from-png-stream): xyzzy の場合 editor::read-into を使うようにした。
+
+	* (define-callback-function): defun-c-callable を実装した。
+	  実際の実装は xxx-impl で行う。
+
+	* (cairo-image-surface-create-from-png): stream をサポート
+
+	* (store-c-string): 指定された文字列を指定されたポインタに書き込む
+
+	* (cairo-surface-write-to-png): stream をサポート。
+
+	* pdf-surfaces と ps-surface をサポート。
+
+	* api/ 配下のソースは api/macros を require
+
+	* ヘッダテンプレートを変更。
+
+	* generator 内の変更漏れ cairo-ffi => cairo.ffi
+
+	* cairo-*-destroy はやっぱり export するようにした。
+
+	* ヘッダの書式を統一。
+
+2007-06-07  MIYAMUKO Katsuyuki
+
+	* (with-cairo-group): 実装を call-with-cairo-group に分離。
+	  ed:lisp-indent-hook を設定するようにした。
+
+	* (define-destroy-macro, define-arround-macro1): call-xxx を先に定義するようにした。
+
+	* (with-output-to-png): 実装を call-with-output-to-png に分離。
+
+	* (define-arround-macro1): with-xxx で引数の var を gensym した。
+
+	* (define-destroy-macro, define-arround-macro1): with-xxx の実装を call-with-xxx 関数内で実装。
+	  call-with-xxx も export
+	  http://random-state.net/log/3390120648.html
+
+	* (do-snippets): with-output-to-png マクロを使うようにした。
+
+	* (with-output-to-png): cairo-surface-write-to-png を呼び出すマクロ。
+
+	* (examples/lissajous-curves.l): リサージュ曲線を描くサンプル
+
+2007-06-05  MIYAMUKO Katsuyuki
+
+	* (examples/hearts.l): ハートをランダムに描くサンプル
+
+2007-06-04  MIYAMUKO Katsuyuki
+
+	* xycairo 0.0.4 リリース!
+
+	* 以下のマクロを eval-when で常に評価するようにした。
+	  - define-autoboxing-for
+	  - define-destroy-macro
+	  - define-arround-macro1
+
+	* drive-info を使って空き容量をグラフ表示するサンプル。
+
+2007-06-03  MIYAMUKO Katsuyuki
+
+	* with-cairo-group を export.
+
+	* (with-cairo-save): cairo-restore はエラーが出ても実行するようにした。
+
+	* (define-arround-macro1): protect 引数を追加。t なら after は必ず実行する。
+
+	* - (cairo-pattern-get-color-stop-count): export するのをやめた。
+	    cairo-pattern-get-color-stop-rgba-list を使ってください。
+	  - (cairo-pattern-get-color-stop-rgba): ditto.
+
+	* - (with-cairo-group): push/pop を行うマクロ。
+	  - (cairo-push-group): optional な content 引数を取るようにした。
+	    (cairo-push-group-with-content との統合)
+	  - (cairo-pop-group): optional な to-source 引数を取るようにした。
+	    (cairo-pop-group-to-source との統合)
+	  - (cairo-push-group-with-content): export しないようにした。
+	  - (cairo-pop-group-to-source): ditto.
+
+	* 以下の関数を追加。
+	  - (cairo-scaled-font-extents-list): extents を list で返す関数。
+	  - (cairo-scaled-font-text-extents-list): ditto
+	  - (cairo-scaled-font-glyph-extents-list): ditto
+
+	* define-with-macro => define-destroy-macro.
+
+	* (define-arround-macro1): 引数をひとつ取る with 系マクロを定義するマクロ。
+	  (with-cairo-save): save/restore をするマクロ
+	  (with-cairo-fill): 最後に cairo-fill するマクロ
+	  (with-cairo-fill-preserve): ditto
+	  (with-cairo-stroke): ditto
+	  (with-cairo-stroke-preserve): ditto
+
+	* (with-gensyms): On Lisp から拝借。
+
+	* (with-cairo-save): save/restore をするためのマクロ。
+
+	* 以下の関数を export するのをやめた。
+	  - cairo-*-destroy
+	  - cairo-*-reference
+	  - cairo-*-get-reference
+	  - cairo-*-status
+
+	* create/destory の with 系マクロを定義。
+
+	* ext/macro/with.l を削除。
+	  with 系マクロは :cairo 内で定義するようにした。
+
+	* cairo-clip-rectangle-list が動かなくなってた。
+	  cairo.ffi:rectangle-t* の autoboxing 設定をコンパイル時にも行うようにした。
+
+	* 以下の関数を追加。
+	  - cairo-clip-extents-list
+	  - cairo-fill-extents-list
+	  - cairo-stroke-extents-list
+	  - cairo-font-extents-list
+	  - cairo-text-extents-list
+	  - cairo-glyph-extents-list
+
+	* (define-c-struct-wrapper): xxx-to-alist を xxx-to-list を使って実装。
+
+	* (define-c-struct-wrapper): xxx-to-list を定義。
+
+	* - pie-chart.l をグラデーションするようにした。
+	  - データのそれぞれの色を指定できるようにした。
+
+2007-06-02  MIYAMUKO Katsuyuki
+
+	* ext/api/fonts/*.l 用のロードスクリプト追加。
+
+	* loader スクリプトでは eval-when をやめた。
+
+	* cairo パッケージの nicknames に cairo.api を設定
+
+	* cairo/xxx/cairo.l => cairo/xxx.l
+
+	* - package.l を分割。
+	  - conditions.l, version.l を api/ に移動。
+
+2007-05-27  MIYAMUKO Katsuyuki
+
+	* xycairo 0.0.3 リリース!
+
+	* - (with-cairo, with-cairo-surface): 最低限の with- 系マクロ
+	  - (cairo-win32-font-face-create): LOGFONTW 作成ユーティリティ
+
+2007-05-26  MIYAMUKO Katsuyuki
+
+	* (with-destroy-c-ptr): destroy した後に reference-count を見るべきではない。
+	  一度 reference-count で落ちた。
+
+	* パッケージ名の区切りを - から . にした。
+	  cairo-ffi => cairo.ffi
+	  cairo-util => cairo.util
+	  cairo-ext => cairo.ext
+
+2007-05-20  MIYAMUKO Katsuyuki
+
+	* (cairo-text-extents): 無限再帰していた。。
+	  (cairo-glyph-extents): ditto.
+
+	* (export-structure): 構造体の名前は export しないようにした。
+
+	* (create-logfontw, cairo-win32-font-face-create): cairo-ext に移動。
+	  cairo-win32-font-face-create　があれば create-logfont はいらないと思うので export するのをやめた。
+
+	* (examples/polygon.l): -90 度するようにした。
+
+	* - (cairo-scaled-font-extents-alist): extents を alist で返す関数を追加
+	  - (cairo-scaled-font-text-extents-alist): ditto
+	  - (cairo-scaled-font-glyph-extents-alist): ditto
+	  - (cairo-scaled-font-extents): 構造体ではなく多値で返すようにした。
+	  - (cairo-scaled-font-text-extents): ditto
+	  - (cairo-scaled-font-glyph-extents): ditto
+
+	* - (cairo-glyph-extents0): autoboxing で atom -> list 変換するようにした。
+	  - (cairo-font-extents): xxx-values を macro で定義するようにしたのでそれを使う。
+	  - (cairo-text-extents): ditto
+	  - (cairo-glyph-extents): ditto
+
+	* (define-autoboxing-for (cairo::array-of-glyph-t)): 引数が atom なら list にするようにした。
+
+	* (define-c-struct-wrapper): xxx-values を追加。構造体の値を多値で返す。
+
+	* (_loader.l): リロード処理を改善。
+	  delete-package してしまえばシンボルを一つ一つ消さなくてもいい
+
+	* (_loader.l): user 内の同じ名前のシンボルを勝手に unintern するようにした。
+	  なんで sym を直接渡すと駄目なのかは不明。
+
+2007-05-19  MIYAMUKO Katsuyuki
+
+	* - (cairo-font-extents): 構造体ではなく多値で返すようにした。
+	  - (cairo-text-extents): ditto
+	  - (cairo-glyph-extents): ditto
+	  - (cairo-font-extents-alist): 多値ではなく alist で返す関数。
+	  - (cairo-text-extents-alist): ditto
+	  - (cairo-glyph-extents-alist): ditto
+
+	* (cairo-glyph-extents): 引数が atom でも ok にした。
+
+	* (cairo-clip-extents-alist): 多値ではなく alist で返す関数を追加。
+	  (cairo-fill-extents-alist): ditto.
+	  (cairo-stroke-extents-alist): ditto.
+
+	* cairo-ext パッケージを追加。
+	  純粋な cairo API のバインディングではない独自拡張はこのパッケージ内に入れる。
+
+	* examples/show-glyphs-select-font.l を 800x800 にした。
+
+2007-05-18  MIYAMUKO Katsuyuki
+
+	* (cairo-path-list): 既存の cairo-path-list は cairo-path-list0 にして
+	  これは cairo::context を引数に取るようにした。
+
+	* (extents/lisp-2.0.l): DoCoMo 2.0 風画像生成サンプルの追加。
+
+	* (do-snippets): normalize 引数を追加。
+
+	* (do-snippets): 引数で width, height を指定できるようにした。
+
+	* (examples/polygon.l): 多角形の描画サンプル。
+
+	* M-PI => pi
+
+2007-05-16  MIYAMUKO Katsuyuki
+
+	* (examples/pie-chart.l): 円グラフのサンプル追加。
+
+2007-05-15  MIYAMUKO Katsuyuki
+
+	* README 更新
+
+2007-05-13  MIYAMUKO Katsuyuki
+
+	* cairo 0.0.2 リリース!
+
+	* - dll 置き場を site-lisp/cairo/lib にした
+
+	* - commdlg が存在しないときのメッセージ修正。
+
+	* - (run-all-snippets): エラーが出ても無視するようにした。
+
+	* - (create-logfontw):
+	    - (length str) だと文字数になってしまうので
+	      c string のバイト数を取るには si:chunk-size を使うべき。
+	    - コードページを 932 にしてみた。
+	    - エラー処理をしっかりした。
+
+	* - GetLastError 追加。
+
+	* - MultiByteToWideChar で使うエラーコードを定義。
+
+	* - create-logfontw の example
+
+	* - フォントを選択して show-glyphs するサンプルコードを追加。
+
+2007-05-12  MIYAMUKO Katsuyuki
+
+	* - (create-logfontw): new function.
+
+	* - LOGFONTW 関連の定数追加。
+	  - MultibyteToWidechar 追加。
+
+	* - (define-library): バイトコンパイルするとエラーになるので func-converter が nil の場合、
+	    func-converter を使わないようにマクロ展開することにした。
+
+	* - 戻り値が double or float の時は out 引数で戻り値を受け取る関数も追加するようにした。
+
+	* - 生成するソースを指定できるようにした (--ffi, --api オプションを追加)。
+
+	* - cairo-show-glyphs に workaround を追加した。
+
+	* - (cairo-show-glyphs): cairo_show_glyphs に複数の glyph-t を渡すとうまく描画されない
+	    ことがあるので、1 つづつ渡すことにした。
+
+	* - dll を cairo/lib に移動した。
+
+	* - (with-destroy-c-ptr): reference count が 0 以外の場合のみ実際に destroy を呼ぶようにした。
+
+2007-05-11  MIYAMUKO Katsuyuki
+
+	* - (cairo-dll-entry-modules): new constant.
+	  - (cairo-reload-dll): use abobe constant.
+	  - (cairo-unload-dll): should remove module name from *modules*.
+
+	* - (snippet-filename): examples/ のスクリプトを eval-buffer で実行した場合に
+	    startup.lc を png ファイルで上書きしていたバグを修正。
+	  - (snippet-directory (snippet-filename)) => snippet-directory
+
+2007-05-07  MIYAMUKO Katsuyuki
+
+	* cairo 0.0.1 リリース!
+
+	* - バイトコンパイルの順を下からやるようにした。意味なし？
+	  - 一部のファイルが含まれていなかったのを修正。
+
+	* - (define-c-private-struct-wrapper): defstruct と define-autoboxing-for を eval-when で囲った。
+	  - (define-c-struct-wrapper): ditto.
+	  - (define-c-struct-wrapper): defstruct によって定義される make-xxx がまだ見えないみたいなので、
+	    xxx-new-chunk-with-check 内で make-xxx を参照するのをやめて、
+	    defstruct のメンバの初期値に make-xxx を指定するようにした。
+
+	* - write-func-t は svg でも使うので support/types.l に移動。
+
+	* add MANIFEST.yml
+
+	* add NEWS.rd
+
+	* update document.
+
+	* - cairo の COPYING, COPYING-LGPL-2.1を追加。
+
+	* - defsetf のテスト追加。
+
+	* add readme for examples.
+
+	* - add examples
+
+	* - defsetf を追加。
+
+	* - マクロ展開後の結果にクロージャがあると、コンパイルしたファイルをロードできない。
+
+	* add tests.
+
+	* - xyzzy は戻り値が float や double だとクラッシュするので、アウト引数をとる関数を追加して回避。
+
+	* - (cairo-status-to-string): 引数が数値の場合はそのまま %cairo-status-to-string に指定する。
+	    バージョンがあがって知らないエラーが伏せた場合対策。
+	  - (raise-error-if-cairo-status-is-not-success): エラーコードに対応する例外を投げるようにした。
+
+	* - error status 毎に例外を定義。
+
+	* - out 引数などを実装。
+	  - (cairo-rectangle-list-destroy, cairo-copy-clip-rectangle-list): 内部で使うだけなので export しない。
+	  - (cairo-clip-rectangle-list): 上記 2 つをあわせた関数。
+
+	* 構造体の中の status-t まで変換されると困るので returning のときだけ例外を投げるようにした。
+	  - (returning): returning-hook プロパティがあればそれを使う。
+	  - raise-error-if-cairo-status-is-not-success は returning-hook で。
+
+	* - rectangle, rectangle-list を定義。
+
+	* - (symbol-join-to): package を指定可能な symbol-join.
+
+	* - cairo::array-of-double 特殊型のハンドラを追加。
+
+	* - (define-c-struct-wrapper): pointer 型の c->lisp プロパティを設定。
+
+	* - out 引数に対応。
+	  - cairo-win32-scaled-font-get-metrics-factor はクラッシュするのでとりあえずコメントアウト。
+
+	* - とりあえず HFONT は無変換で通す。
+
+	* - scaled-font.l を実装した。
+
+	* - (cairo-path-list): cairo_path_data_t をトラバースして list で返す。
+
+	* - out 引数を実装。
+
+	* - path-t の wrapper 定義。
+
+	* - (define-c-struct-wrapper): make-xxx-from-ptr を追加。
+	    ポインタからチャンクを確保してラッパーを作成する。
+
+	* - メンバは指定しなくてもよいので削除。
+
+	* - (define-c-struct-wrapper): rst 引数は不要なので削除。
+
+	* - (cairo-show-glyphs): array-of-glyph-t 特殊型を使って再実装。
+	  - (cairo-glyph-extents): ditto.
+
+	* - (number-of): 配列チャンクの要素数を返す。
+
+	* - cairo::array-of-glyph-t という特殊な型を追加。
+
+	* - (xxx-sync-xxx): 同期するときに c->lisp, lisp->c 変換をするようにした。
+
+	* - (define-c-struct-with-ptr): 構造体のメンバ名に対して c-struct-type というプロパティを設定。
+	    c::expand-type だと展開済みの型しか取れないのでオリジナルの型を保存しておく。
+
+	* - (c-struct-slot-descriptions): type として構造体を返していたのを type 名にした。
+
+	* - (define-autoboxing-for): :no-need-to-autoboxing をキーワードから関数にした。
+	    うっかり apply しても大丈夫なようにするため。
+
+	* - (with-c-out-values): unpack した戻り値を c->lisp 変換するようにした。
+	  - (define-c-struct-wrapper): xxx-t を chunk に xxx-t* をポインタに変換する。
+
+	* - c:double を lisp に変換するときに double-float はうざいので single-float にする
+
+	* - (cairo-path-destroy): call with-destroy-c-ptr.
+
+2007-05-06  MIYAMUKO Katsuyuki
+
+	* - 一通り実装。
+	  - cairo-pattern-get-color-stop-rgba-list を追加。
+
+	* - (cairo-pattern-get-radial-circles): out 引数に対応。
+	  - (cairo-pattern-get-linear-points): ditto.
+
+	* - (cairo-pattern-destroy): call with-destroy-c-ptr.
+
+	* - (ensure-c-ptr-is-not-destroyed): null のチェックは destroyed のチェックの後で。
+
+	* - (cairo-pattern-create-rga): 戻り値を cairo-pattern-status でチェック。
+	  - (cairo-pattern-create-rgba): ditto.
+	  - (cairo-pattern-create-for-surface): ditto.
+	  - (cairo-pattern-create-linea)r: ditto.
+	  - (cairo-pattern-create-radial): ditto.
+
+	* - defsetf を追加。
+
+	* - out 変数などいろいろ実装。
+
+	* - (cairo-get-matrix): matrix-sync-c->lisp で同期。
+
+	* - (define-c-struct-wrapper): lisp の構造体にも C 構造体のメンバを作成。
+	    xxx-sync-lisp->c, xxx-sync-c->lisp で同期する。
+
+	* - (define-autoboxing-for-char*-with-encoding): 一応 define-c-type した。
+
+	* - (pack-c-array): チャンクのリストから配列に変換。
+
+	* - (define-c-struct-wrapper): xxx-foo に setf できるようにした。
+
+	* - (cairo-svg-get-versions): unpack-c-array の変更に追従。
+
+	* - (unpack-c-array): キーワード引数をやめた。
+
+	* - (define-autoboxing-for-char*-with-encoding): autoboxing for encoded char*.
+
+	* - (cairo-get-matrix): 内部で matrix を allocate.
+	  - (cairo-user-to-device): out 変数に対応。
+	  - (cairo-user-to-device-distance): ditto.
+	  - (cairo-device-to-user): ditto.
+	  - (cairo-device-to-user-distance): ditto.
+
+	* - (cairo-surface-get-device-offset): with-c-out-values を使うようにした。
+
+	* - (cairo-svg-get-versions): make-int-chunk を使うようにした。
+
+	* - (cairo-matrix-transform-distance): with-c-out-values マクロを使うようにした。
+	  - (cairo-matrix-transform-point): ditto.
+
+	* - (with-c-out-values): c の out 変数を扱うマクロ。
+
+	* - LOGFONTW* の boxing 定義を追加
+	  - コメントを削除。
+
+	* - define chunk maker for c:int and c:double.
+
+	* - (define-chunk-maker-for): define-pack/unpack-for から rename.
+	    生成する関数を pack-xxx から make-xxx-chunk にした。
+
+	* - (define-chunk-maker): api/macros.l で定義しているので削除。
+	  - (check-chunk-type): chunk の型チェックマクロ。
+	  - (define-pack/unpack-for): 指定した型の packer/unpacker を作成。
+
+	* - (define-chunk-maker): struct の define-chunk-maker を削除。api/macros の中で定義している。
+
+	* - LOGFONTW の定義を types/base.l から types/win32.l に移動。
+
+	* - (cairo-reload-dll): require だと一度読むと読まれないので load-library で。
+
+	* - (cairo-font-face-destroy): with-destroy-c-ptr で囲む。
+
+	* - (cairo-image-surface-create-for-data): should check return value with cairo-surface-status.
+
+	* - forbid auto generate.
+
+2007-05-05  MIYAMUKO Katsuyuki
+
+	* - (nullable, null-or-returning): null を返してもいいコンテキストを作成。
+	  - (make-xxx-from-ptr): null を返してもいいなら nil を返す。それ以外ならエラー。
+
+	* - (cairo-win32-surface-create): cairo-surface-status で戻り値をチェック。
+	  - (cairo-win32-surface-create-with-dib): null を返した場合 nil を返す。
+	  - (cairo-win32-surface-create-with-ddb): null を返した場合 nil を返す。
+	  - (cairo-win32-surface-get-dc): null を返した場合 nil を返す。
+	  - (cairo-win32-surface-get-image): null を返した場合 nil を返す。
+
+	* - (cairo-surface-get-font-options): font option を内部で allocate するようにした。
+	  - (cairo-surface-get-device-offset): 戻り値を多値で返すようにした。
+
+	* - (setf (cairo-font-options-get-hint-metrics opt) :on) という呼び出しをできるようにした。
+
+	* - (cairo-font-options-create): cairo-font-options-status でチェック。
+	  - (cairo-font-options-destroy): call with-destroy-c-ptr。意味はないけど。。
+
+	* - (cairo-surface-destroy): with-destroy-c-ptr を呼ぶようにした。
+
+	* - (cairo-surface-create-similar): cairo-surface-status で戻り値をチェック。
+
+	* - (define-c-enum-with-ptr): c enum の定数はキーワードじゃなくて即値にした。
+	    cairo_content_t とかで (logior CAIRO_CONTENT_COLOR CAIRO_CONTENT_ALPHA) とできるように。
+
+	* - (cairo-ffi:u_char*): :no-need-to-autoboxing をセット。
+
+	* - (cairo-image-surface-create): cairo-surface-status で戻り値をチェック。
+	  - (cairo-image-surface-create-from-png): ditto.
+	  - (cairo-svg-surface-create): ditto.
+
+	* - (checking-status-using): 戻り値を指定された関数でチェックするマクロ。
+
+	* - (cairo-matrix-transform-distance, cairo-matrix-transform-point): out 引数に対応。
+	    演算結果は多値で返す。
+
+	* - (make-chunk-for): 初期値を指定できるようにした。
+
+	* - (cairo-matrix-multiply): result を内部で allocate するようにした。
+
+	* - (cairo-matrix-init-xxx): 関数の内部で allocate するようにした。
+
+	* - (define-c-struct-wrapper): make-xxx の export をやめた。
+	    - matrix とかは init_xxx に渡す必要があるので make-xxx しても意味がない。
+	    - 今の make-xxx にはメンバの初期値を設定できない。
+
+	* - (define-c-struct-wrapper):
+	    - c-struct に委譲するアクセッサの定義。
+	    - xxx-to-alist メソッドの追加。
+	    - make-xxx を export.
+
+	* - c:define-c-struct を上書き？してたので名前に with-ptr を付けた。
+
+	* - (define-c-private-struct-wrapper, define-c-struct-wrapper):
+	  lisp->c するときに型チェックするようにした。
+
+	* - cairo-ffi から import した c enum の定数を cairo パッケージからも export する。
+
+	* - CAIRO_XXX という c enum の定数値を定義。
+
+	* - (lisp_enum_const): 定数値 -> キーワードへの変換は cairodoc2lisp.rb でやるようにした。
+
+2007-05-04  MIYAMUKO Katsuyuki
+
+	* - (with-destroy-c-ptr): reference count が 0 のときのみ ptr を 0 にするようにした。
+	  - (c-private-struct-reference-count): プロパティにセットされた関数を呼ぶ。
+	  - (define-c-private-struct-wrapper): reference coutn 関数をプロパティにセットするようにした。
+
+	* - (make-structure, structure-name, structure-constructor, structure-constructors, structure-slot-descriptions):
+	    new utility function.
+
+	* - (cairo-svg-get-versions): 自動生成では対応できないので手で実装。
+
+	* - (c-union-size): ffi/util.l の sizeof を使うようにした。
+
+	* - (nullp): export
+	  - (sizeof, make-chunk-for, unpack-chunk-for, unpack-pointer, unpack-c-array):
+	    sqlite3 からコピーしてきたユーティリティ。
+	    なんとなく macro じゃなくて function にした。
+
+	* - (with-destroy-c-ptr): new macro. 指定された c-private-struct-wrapper 引数の
+	    ptr と destroyed を更新する。
+
+	* - require を整理
+	  - c-private-struct-wrapper に destroyed メンバを追加。
+	    lisp->c ですでに destroyed ならエラーにするようにした。
+
+	* - require ffi/util for unpack-c-string, no need to require util/symbol.
+
+	* - @auto-generate タグを付けて上書きするかどうか制御する。
+	    @auto-generate が  full or merge のときは上書きする。
+	    それ以外のときは .new suffix を付けて生成する。
+
+	* - (raise-xxx): raise に渡された引数は format するようにした。
+	    => (raise-xxx "foo ~A" 1)
+	    ただし、(raise-xxx "foo" :member value) ができなくなるので要修正。
+
+	* - api/types/typedef, enum, struct, union を require
+
+	* wrapper 型をだいたい定義。union とか xxx-list-t はまだ。
+
+	* cairo.l を削除。
+
+	* - (define-c-enum): symbol-join を使うようにした。
+
+	* - enum content-t の 16 進数をサポートするのを忘れてたので対応。
+
+	* - enum content-t の 16 進数をサポートするのを忘れてたので対応。
+
+	* - user_data と stream 系 API をとりあえず削除。
+
+	* - LOGFONTW の定義を fonts/win32.l@67 からコピー。
+
+	* - user_data と stream 関連の API を削除。まだサポートしない。
+
+	* 自動生成したファイルを登録。
+
+	* - Transformmer::Xyzzy::Foreign => Transformmer::Xyzzy::NameUtil
+
+2007-05-03  MIYAMUKO Katsuyuki
+
+	* - ffi/support/types を require するようにした。
+	  - winapi prefix を付けた。
+
+	* - (generate_typedef): export するように c:*define-c-type を使うようにした。
+
+	* - bool-t を削除。types/typedef で定義している。
+
+	* - 引数名のハイフンを - に変換。
+
+	* - version.l で api/support/version-information を使うようにした。
+
+	* - api/ 配下のソースで export を生成するようにした。
+
+	* - ;;;; handmade section から (provide までを保存するようにした。
+
+	* - (define-autoboxing-for): c->lisp, lisp->c が省略された場合、
+	    コードを生成しないようにした。
+
+	* - 対応する ffi のソースを require.
+	  - api/types を require.
+
+	* - types => api/types.
+
+	* - remoe error.l, 自動生成+手修正することにした。
+
+	* - types を api 配下に移動。
+
+	* (define-autoboxing-for): new macro.
+	  (c->lisp-converter): rename from c->lisp.
+	  (lisp->c-converter): rename from lisp->c.
+
+	* - foreign-type が c-pointer のものには c-pointer-type プロパティもセットするようにした。
+
+	* - define-c-struct-with-pointer => define-c-struct.
+
+	* - (define-c-struct-with-pointer): rename to define-c-struct.
+	  - (define-c-struct, define-c-enum, define-c-pointer-type, define-c-union):
+	    cairo-ffi::foreign-type プロパティをセットするようにした。
+
+	* - (define-c-union): BYTE => c:char
+
+	* - (name, type): ban method を使ったため API の生成で変なことになっていたのを修正。
+
+	* - (with-c-arguments): remove-if-not の引数の順が間違ってた。
+
+	* - (returning, with-c-arguments): new macro.
+
+	* - 定義する型をすべて export するようにした。
+	    (c:define => (c:*define.
+
+	* - ERB の処理結果から文字列ならファイルを生成しないようにした。
+	  - api/ 配下の生成で引数がない場合に対応。
+	  - api/ 配下の生成で cairo-ffi: prefix を付けた。
+
+	* (Function#callback_entry?): new function.
+
+2007-05-02  MIYAMUKO Katsuyuki
+
+	* (cairo-version-encode): new function.
+
+	* ffi の生成がバグったので修正。
+
+	* api/* の生成に暫定的に対応(まだ動かない)。
+
+	* (Book#refe): 関数名から定義を引くメソッド。
+	  (Book#build_reference_index): インデックスを作成。
+
+	* types/ 配下の loader 登録。
+
+	* - api/types.l => types/base.l
+	  - symbol-join を使うようにした。
+
+	* mv api/types => types/base.l
+
+	* (define-chunk-maker): define-c-struct が make-xxx を作成するのでそれを利用。
+
+	* error 関連の API
+
+	* - (cairo-base-error): new macro, export や raise-xxx は定義しないマクロ。
+	  - (cairo-invalid-argument-error, cairo-type-error, cairo-file-error):
+	     new base condition.
+	  - (cairo-base-error): :format-string, :format-arguments は simple-error
+	    を継承したときのみ使える。基底を error にしたので削除。
+
+	* libcairo-2.dll を cairo 1.4.6 に更新。
+
+2007-05-01  MIYAMUKO Katsuyuki
+
+	* conditions.l を追加。
+	  例外階層はまだなにも決まってない。
+
+	* cairo の version 取得。
+
+	* c pointer の wrapper マクロを追加。
+
+	* util.l を追加。
+
+	* define-c-union を追加。
+	  union のメンバ名の関数で対応する構造体を返すアクセッサを定義する必要
+	  があるけどしていない。
+
+	* cairo_create でクラッシュするのは cairo 1.4.4 のバグ。
+	  1.4.6 がそろそろリリースされる予定。
+
+2007-04-30  MIYAMUKO Katsuyuki
+
+	* enum の定数名を enum 名から前方一致で消すようにした。
+
+	* (define-c-pointer-type2): 2 段階のポインタを定義するマクロ。
+	  (define-c-enum): enum のポインタ型を定義。
+
+	* 自動生成したファイルを登録。
+
+	* union.l を登録。これはまだ自動生成できていないし、これでいいのかも分からない。
+
+	* - (define-callback-function, define-c-private-struct): new macro.
+	  - (define-library): lisp => c name へと変換するようにした。
+	  - (cairo-lisp-to-c-function): new function.
+	  - 基本型の定義。
+
+	* 自動生成することにしたので、古いファイルを削除。
+
+	* struct, enum, typedef, callback の自動生成に対応。
+
+	* foreign 関数に foreign-type プロパティをセット。
+
+	* (define-c-pointer-type, define-c-pointer-types): add new macros.
+
+	* add define-c-struct-with-pointer
+
+2007-04-29  MIYAMUKO Katsuyuki
+
+	* (require "...") 形式でメッセージを表示するようにした。
+
+	* support/types は不要。
+
+	* cairodoc.rb をコマンドとして利用できるようにした。
+
+	* outdir, macroname のデフォルト値変更。
+	  ruby cairodoc2lisp.rb -b \home\miyamuko\workspace\lab\cairo\src\cairo-1.4.4\doc\public
+
+	* add generator (cairo-doc to xyzzy lisp).
+
+	* mv types.l => ffi/types.l
+
+	* - defpackage.l => package.l
+	  - ccairo => cairo-ffi.
+
+	* ffi の定義を ffi/ 配下に移動。
+
+	* cairo, libpng, zlib のライセンスを登録。
+
+	* ドキュメントテンプレートとdllを追加。
+
+	* 開発再開。
+
+2006-01-25  MIYAMUKO Katsuyuki
+
+	* (unpack-c-string): make-chunk の OFFSET にポインタを指定できるので
+	  strcpy を使う必要はない (qdbm.l より)。
+
+2006-01-20  MIYAMUKO Katsuyuki
+
+	* (LOGFONTW): no need to export. *define-c-struct => define-c-struct.
+	  (LOGFONTW*): define c type.
+	  (cairo-win32-font-face-create-for-logfontw): use LOGFONTW*.
+
+2006-01-18  MIYAMUKO Katsuyuki
+
+	* 最低限動作するレベル。
+
+	* start xyzzy-cairo binding project.

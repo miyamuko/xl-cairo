@@ -1,0 +1,20 @@
+(load "_runner.l")
+(do-snippets ()
+  (cairo-set-line-width cr 0.16)
+  (cairo-move-to cr 0.3 0.33)
+  (cairo-rel-line-to cr 0.2 -0.2)
+  (cairo-rel-line-to cr 0.2 0.2)
+  (cairo-set-line-join cr CAIRO_LINE_JOIN_MITER) ;; default
+  (cairo-stroke cr)
+
+  (cairo-move-to cr 0.3 0.63)
+  (cairo-rel-line-to cr 0.2 -0.2)
+  (cairo-rel-line-to cr 0.2 0.2)
+  (cairo-set-line-join cr CAIRO_LINE_JOIN_BEVEL)
+  (cairo-stroke cr)
+
+  (cairo-move-to cr 0.3 0.93)
+  (cairo-rel-line-to cr 0.2 -0.2)
+  (cairo-rel-line-to cr 0.2 0.2)
+  (cairo-set-line-join cr CAIRO_LINE_JOIN_ROUND)
+  (cairo-stroke cr))

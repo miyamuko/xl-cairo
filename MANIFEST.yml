@@ -1,0 +1,29 @@
+package: cairo
+version: 1.8.0
+
+sources:
+  include:
+    - site-lisp/cairo/**/*.l
+    - site-lisp/cairo/util/**/*.l
+    - site-lisp/cairo/ffi/**/*.l
+    - site-lisp/cairo/api/**/*.l
+    - site-lisp/cairo/ext/**/*.l
+  exclude:
+    - site-lisp/cairo/**/tests/*.l
+    - site-lisp/cairo/**/examples/*.l
+
+document:
+  - site-lisp/cairo/docs/README.rd
+
+files:
+  include:
+    - site-lisp/**/*.l
+    - site-lisp/**/*.lc
+    - site-lisp/**/lib/*.dll
+    - site-lisp/cairo/examples/**/*.*
+    - site-lisp/cairo/docs/**/*.*
+    - site-lisp/cairo/docs/**/*
+    - site-lisp/cairo/src/**/*.*
+  exclude:
+    - site-lisp/cairo-scratch.l
+    - site-lisp/cairo/**/tests/*.*

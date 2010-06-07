@@ -1,0 +1,15 @@
+(load "_runner.l")
+(do-snippets ()
+  (with-cairo-fill (cr)
+    (cairo-arc cr 0.5 0.5 0.3 0 (* 2 pi))
+    (cairo-clip cr)
+
+    (cairo-new-path cr) ;; current path is not consumed by cairo_clip()
+    (cairo-rectangle cr 0 0 1 1))
+  (with-cairo-stroke (cr)
+    (cairo-set-source-rgb cr 0 1 0)
+    (cairo-move-to cr 0 0)
+    (cairo-line-to cr 1 1)
+    (cairo-move-to cr 1 0)
+    (cairo-line-to cr 0 1)))
+

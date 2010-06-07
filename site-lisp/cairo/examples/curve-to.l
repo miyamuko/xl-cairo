@@ -1,0 +1,16 @@
+(load "_runner.l")
+(do-snippets ()
+  (let ((x 0.1) (y 0.5)
+        (x1 0.4) (y1 0.9)
+        (x2 0.6) (y2 0.1)
+        (x3 0.9) (y3 0.5))
+    (cairo-move-to cr  x y)
+    (cairo-curve-to cr x1 y1 x2 y2 x3 y3)
+
+    (cairo-stroke cr)
+
+    (cairo-set-source-rgba cr 1 0.2 0.2 0.6)
+    (cairo-set-line-width cr 0.03)
+    (cairo-move-to cr x y)   (cairo-line-to cr x1 y1)
+    (cairo-move-to cr x2 y2) (cairo-line-to cr x3 y3)
+    (cairo-stroke cr)))

@@ -1,0 +1,46 @@
+(load "_runner.l")
+
+(defun data-to-angle (lst)
+  (let ((sum (reduce #'+ lst :initial-value 0.0)))
+    (mapcar #'(lambda (e)
+                (* (* (/ e sum) 360)
+                   (/ pi 180.0)))
+            (reverse
+             (reduce #'(lambda (acc e)
+                         (cons (+ e (or (car acc) 0)) acc))
+                     lst
+                     :initial-value nil)))))
+
+(do-snippets ()
+  (let ((xc 0.5)
+        (yc 0.5)
+        (radius 0.4)
+        (diff (* 90 (/ pi 180.0)))
+        (data '((5 . (1 0 0))
+                (3 . (0 1 0))
+                (2 . (0 0 1))
+                (1 . (1 1 0))
+                (0.6 . (0 1 1))
+                (0.4 . (1 0 1)))))
+    (cairo-set-line-width cr (/ 1 width))
+    (let ((last 0))
+      (dolist (pair (mapcar #'cons
+                         (data-to-angle (mapcar #'car data))
+                         (mapcar #'cdr data)))
+        (let ((angle (car pair))
+              (color (cdr pair)))
+          ;; 扇型のパス
+          (with-cairo-fill-preserve (cr)
+            (cairo-arc cr xc yc radius (- last diff) (- angle diff))
+            (cairo-line-to cr xc yc)
+            (cairo-close-path cr)
+            ;; グラデーションしながら扇型を書く
+            (with-cairo-pattern (pat (apply 'cairo-pattern-create-linear (cairo-stroke-extents-list cr)))
+              (cairo-pattern-add-color-stop-rgb pat 0 1 1 1)
+              (apply 'cairo-pattern-add-color-stop-rgb pat 1 color)
+              (cairo-set-source cr pat)))
+          ;; 枠を書く
+          (with-cairo-stroke (cr)
+            (cairo-set-source-rgb cr 0 0 0))
+          (setf last angle))))
+    ))

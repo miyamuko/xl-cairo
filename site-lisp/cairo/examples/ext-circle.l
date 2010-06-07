@@ -1,0 +1,10 @@
+(load "_runner.l")
+
+(do-snippets ()
+  (with-cairo-fill (cr)
+    (cairo-set-source-rgb cr 1 1 1)
+    (cairo-rectangle cr 0.1 0.2 0.8 0.6))
+  (with-cairo-fill (cr)
+    (cairo-set-source-rgb cr 1 0 0)
+    (cairo-circle cr 0.5 0.5 0.15))
+  )

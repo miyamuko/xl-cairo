@@ -1,0 +1,57 @@
+% ignore_function = [/user_data/, /stream/]
+% functions = ref.functions.map{|e| e.definition }.reject{|e|
+%   e.callback_entry? or ignore_function.any?{|re| re =~ e.name }
+% }
+% unless functions.empty?
+;;;; -*- mode: lisp; package: cairo -*-
+;;;;
+;;;; File: cairo/api/<%= outname %>.l
+;;;;
+;;;; License:
+;;;;
+;;;;   Copyright (c) 2007-2009 MIYAMUKO Katsuyuki.
+;;;;
+;;;;   xycairo is released under an MIT license.
+;;;;   See cairo/docs/MIT-LICENSE for full license.
+;;;;
+;;;; @auto-generate: <%= autogen_flag %>
+;;;;
+
+(eval-when (:compile-toplevel :load-toplevel :execute)
+  (require "cairo/ffi/<%= outname %>")
+  (require "cairo/ffi/support/types")
+  (require "cairo/api/package")
+  (require "cairo/api/types")
+  (require "cairo/api/macros")
+  )
+
+
+(in-package :cairo)
+
+% unless functions.empty?
+%   functions.each_with_index do |func,i|
+%     if i.zero?
+(export '(<%= api_gen.api_func_name(func.name) %>
+%     else
+          <%= api_gen.api_func_name(func.name) %>
+%     end
+%   end
+          ))
+% end
+
+% for func in functions
+
+<%= api_gen.generate_function(*func) %>
+% end
+% unless handmade.nil?
+
+
+<%= handmade %>
+
+% end
+
+
+(provide "cairo/api/<%= outname %>")
+
+;;;; End
+% end

@@ -1,0 +1,108 @@
+diff -r -u cairo-1.6.4.org/src/cairo-win32-font.c cairo-1.6.4/src/cairo-win32-font.c
+--- cairo-1.6.4.org/src/cairo-win32-font.c	2008-04-05 07:45:23.000000000 +0900
++++ cairo-1.6.4/src/cairo-win32-font.c	2008-04-13 15:45:43.484375000 +0900
+@@ -2011,6 +2011,12 @@
+     return 1. / ((cairo_win32_scaled_font_t *)scaled_font)->logical_scale;
+ }
+ 
++void
++cairo_win32_scaled_font_get_metrics_factor2 (cairo_scaled_font_t *scaled_font, double *out)
++{
++    *out = cairo_win32_scaled_font_get_metrics_factor (scaled_font);
++}
++
+ /**
+  * cairo_win32_scaled_font_get_logical_to_device:
+  * @scaled_font: a scaled font from the Win32 font backend
+Only in cairo-1.6.4/src: cairo-win32-font.c.orig
+diff -r -u cairo-1.6.4.org/src/cairo-win32.h cairo-1.6.4/src/cairo-win32.h
+--- cairo-1.6.4.org/src/cairo-win32.h	2008-04-04 01:25:37.000000000 +0900
++++ cairo-1.6.4/src/cairo-win32.h	2008-04-13 15:45:43.515625000 +0900
+@@ -88,6 +88,9 @@
+ cairo_win32_scaled_font_get_metrics_factor (cairo_scaled_font_t *scaled_font);
+ 
+ cairo_public void
++cairo_win32_scaled_font_get_metrics_factor2 (cairo_scaled_font_t *scaled_font, double *out);
++
++cairo_public void
+ cairo_win32_scaled_font_get_logical_to_device (cairo_scaled_font_t *scaled_font,
+ 					       cairo_matrix_t *logical_to_device);
+ 
+Only in cairo-1.6.4/src: cairo-win32.h.orig
+diff -r -u cairo-1.6.4.org/src/cairo.c cairo-1.6.4/src/cairo.c
+--- cairo-1.6.4.org/src/cairo.c	2008-04-12 06:07:25.000000000 +0900
++++ cairo-1.6.4/src/cairo.c	2008-04-13 15:45:43.578125000 +0900
+@@ -3281,6 +3281,12 @@
+ }
+ slim_hidden_def (cairo_get_tolerance);
+ 
++void
++cairo_get_tolerance2 (cairo_t *cr, double *out)
++{
++    *out = cairo_get_tolerance (cr);
++}
++
+ /**
+  * cairo_get_antialias:
+  * @cr: a cairo context
+@@ -3411,6 +3417,12 @@
+     return _cairo_gstate_get_line_width (cr->gstate);
+ }
+ 
++void
++cairo_get_line_width2 (cairo_t *cr, double *out)
++{
++    *out = cairo_get_line_width (cr);
++}
++
+ /**
+  * cairo_get_line_cap:
+  * @cr: a cairo context
+@@ -3462,6 +3474,12 @@
+     return _cairo_gstate_get_miter_limit (cr->gstate);
+ }
+ 
++void
++cairo_get_miter_limit2 (cairo_t *cr, double *out)
++{
++    *out = cairo_get_miter_limit (cr);
++}
++
+ /**
+  * cairo_get_matrix:
+  * @cr: a cairo context
+Only in cairo-1.6.4/src: cairo.c.orig
+diff -r -u cairo-1.6.4.org/src/cairo.h cairo-1.6.4/src/cairo.h
+--- cairo-1.6.4.org/src/cairo.h	2008-04-08 07:30:31.000000000 +0900
++++ cairo-1.6.4/src/cairo.h	2008-04-13 15:45:43.609375000 +0900
+@@ -1281,6 +1281,9 @@
+ cairo_public double
+ cairo_get_tolerance (cairo_t *cr);
+ 
++cairo_public void
++cairo_get_tolerance2 (cairo_t *cr, double *out);
++
+ cairo_public cairo_antialias_t
+ cairo_get_antialias (cairo_t *cr);
+ 
+@@ -1296,6 +1299,9 @@
+ cairo_public double
+ cairo_get_line_width (cairo_t *cr);
+ 
++cairo_public void
++cairo_get_line_width2 (cairo_t *cr, double *out);
++
+ cairo_public cairo_line_cap_t
+ cairo_get_line_cap (cairo_t *cr);
+ 
+@@ -1305,6 +1311,9 @@
+ cairo_public double
+ cairo_get_miter_limit (cairo_t *cr);
+ 
++cairo_public void
++cairo_get_miter_limit2 (cairo_t *cr, double *out);
++
+ cairo_public int
+ cairo_get_dash_count (cairo_t *cr);
+ 
+Only in cairo-1.6.4/src: cairo.h.orig

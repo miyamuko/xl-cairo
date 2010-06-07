@@ -1,0 +1,56 @@
+;; http://livingcode.org/2008/12 �̈ڐA
+
+(load "_runner.l")
+
+(defparameter *width*     500)
+(defparameter *height*    250)
+(defparameter *min-alpha* 50)
+(defparameter *max-alpha* 100)
+
+(defun hex2tuple (hex-color)
+  (mapcar #'(lambda (i)
+              (or (parse-integer (subseq hex-color i (+ i 2))
+                                 :radix 16 :junk-allowed t)
+                  0))
+          '(1 3 5 7)))
+
+(defun ints2floats (tuple-color)
+  (mapcar #'(lambda (c) (/ c 255.0)) tuple-color))
+
+(defun inc-point (p dp)
+  (list (mod (+ (nth 0 p) (nth 0 dp)) *width*)
+        (mod (+ (nth 1 p) (nth 1 dp)) *height*)))
+
+(defun inc-triangle(tt dt)
+  (mapcar #'(lambda (i)
+              (inc-point (nth i tt) (nth i dt)))
+          '(0 1 2)))
+
+(defun inc-color (c dc)
+  (let ((new-c (mapcar #'(lambda (i)
+                           (mod (+ (nth i c) (nth i dc)) 256))
+                       '(0 1 2)))
+        (new-a (mod (+ (nth 3 c) (nth 3 dc)) *max-alpha*)))
+    (when (< new-a *min-alpha*)
+      (incf new-a *min-alpha*))
+    (append new-c (list new-a))))
+
+(defun cairo-poly (cr pts clr)
+  (apply #'cairo-set-source-rgba cr (ints2floats clr))
+  (apply #'cairo-move-to cr (car (last pts)))
+  (dolist (pt pts)
+    (apply #'cairo-line-to cr pt))
+  (cairo-close-path cr)
+  (cairo-fill cr))
+
+(do-snippets (:width *width* :height *height* :normalize nil)
+  (let ((start-c (hex2tuple "#0xE6A20644"))
+        (start-t '((127 132) (341 171) (434 125)))
+        (dt '((107 23) (47 73) (13 97)))
+        (dc '(61 113 109 41)))
+    (let ((triangle start-t)
+          (color start-c))
+      (dotimes (i 50)
+        (setf triangle (inc-triangle triangle dt))
+        (setf color (inc-color color dc))
+        (cairo-poly cr triangle color)))))

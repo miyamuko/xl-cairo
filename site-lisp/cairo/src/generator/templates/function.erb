@@ -1,0 +1,37 @@
+;;;; -*- mode: lisp; package: cairo.ffi -*-
+;;;;
+;;;; File: cairo/ffi/<%= outname %>.l
+;;;;
+;;;; License:
+;;;;
+;;;;   Copyright (c) 2007-2009 MIYAMUKO Katsuyuki.
+;;;;
+;;;;   xycairo is released under an MIT license.
+;;;;   See cairo/docs/MIT-LICENSE for full license.
+;;;;
+;;;; @auto-generate: <%= autogen_flag %>
+;;;;
+
+(eval-when (:compile-toplevel :load-toplevel :execute)
+  (require "cairo/ffi/package")
+  (require "cairo/ffi/macros")
+  (require "cairo/ffi/base")
+  (require "cairo/ffi/types")
+% if outname != "support/types"
+  (require "cairo/ffi/support/types")
+% end
+  )
+
+
+(in-package :cairo.ffi)
+
+% ref.functions.each do |sec|
+;; <%= sec.uri %>
+<%= ffi_gen.generate_function(*sec.definition) %>
+
+% end
+
+
+(provide "cairo/ffi/<%= outname %>")
+
+;;;; End
