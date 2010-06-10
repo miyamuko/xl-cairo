@@ -1,13 +1,13 @@
-= xl-cairo - cairo ‚ð—˜—p‚µ‚½ 2D ƒOƒ‰ƒtƒBƒbƒNƒ‰ƒCƒuƒ‰ƒŠ
+= xl-cairo - cairo ã‚’åˆ©ç”¨ã—ãŸ 2D ã‚°ãƒ©ãƒ•ã‚£ãƒƒã‚¯ãƒ©ã‚¤ãƒ–ãƒ©ãƒª
 
-  * Author: ‚Ý‚â‚Þ‚± ‚©‚Â‚ä‚« ((<URL:mailto:miyamuko@gmail.com>))
+  * Author: ã¿ã‚„ã‚€ã“ ã‹ã¤ã‚†ã ((<URL:mailto:miyamuko@gmail.com>))
   * Home URL: ((<URL:http://miyamuko.s56.xrea.com/xyzzy/cairo/intro.htm>))
   * Version: 1.8.0
 
 
 == NAME
 
-xl-cairo - cairo ‚ð—˜—p‚µ‚½ 2D ƒOƒ‰ƒtƒBƒbƒNƒ‰ƒCƒuƒ‰ƒŠ
+xl-cairo - cairo ã‚’åˆ©ç”¨ã—ãŸ 2D ã‚°ãƒ©ãƒ•ã‚£ãƒƒã‚¯ãƒ©ã‚¤ãƒ–ãƒ©ãƒª
 
 
 == SYNOPSIS
@@ -36,15 +36,15 @@ xl-cairo - cairo ‚ð—˜—p‚µ‚½ 2D ƒOƒ‰ƒtƒBƒbƒNƒ‰ƒCƒuƒ‰ƒŠ
 
 == DESCRIPTION
 
-xl-cairo ‚Í 2D ƒOƒ‰ƒtƒBƒbƒNƒ‰ƒCƒuƒ‰ƒŠ‚Å‚ ‚é
+xl-cairo ã¯ 2D ã‚°ãƒ©ãƒ•ã‚£ãƒƒã‚¯ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã‚ã‚‹
 ((<"cairo"|URL:http://cairographics.org/>))
-‚ð xyzzy ‚©‚ç—˜—p‚·‚é‚½‚ß‚Ìƒ‰ƒCƒuƒ‰ƒŠ‚Å‚·B
+ã‚’ xyzzy ã‹ã‚‰åˆ©ç”¨ã™ã‚‹ãŸã‚ã®ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚
 
-cairo ‚ÍƒfƒoƒCƒX‚ÉˆË‘¶‚µ‚È‚¢ƒxƒNƒgƒ‹ƒx[ƒX‚Ì API ‚ð’ñ‹Ÿ‚µ‚Ä‚¢‚Ü‚·B
-xl-cairo ‚Å‚Í‚»‚Ì‚¤‚¿ˆÈ‰º‚ÌƒoƒbƒNƒGƒ“ƒh‚ðƒTƒ|[ƒg‚µ‚Ä‚¢‚Ü‚·B
+cairo ã¯ãƒ‡ãƒã‚¤ã‚¹ã«ä¾å­˜ã—ãªã„ãƒ™ã‚¯ãƒˆãƒ«ãƒ™ãƒ¼ã‚¹ã® API ã‚’æä¾›ã—ã¦ã„ã¾ã™ã€‚
+xl-cairo ã§ã¯ãã®ã†ã¡ä»¥ä¸‹ã®ãƒãƒƒã‚¯ã‚¨ãƒ³ãƒ‰ã‚’ã‚µãƒãƒ¼ãƒˆã—ã¦ã„ã¾ã™ã€‚
 
-  * Windows ‚ÌƒfƒoƒCƒXƒRƒ“ƒeƒLƒXƒg
-  * ƒ[ƒJƒ‹‚ÈƒCƒ[ƒWƒoƒbƒtƒ@
+  * Windows ã®ãƒ‡ãƒã‚¤ã‚¹ã‚³ãƒ³ãƒ†ã‚­ã‚¹ãƒˆ
+  * ãƒ­ãƒ¼ã‚«ãƒ«ãªã‚¤ãƒ¡ãƒ¼ã‚¸ãƒãƒƒãƒ•ã‚¡
   * PNG
   * SVG
   * PDF
@@ -53,35 +53,35 @@ xl-cairo ‚Å‚Í‚»‚Ì‚¤‚¿ˆÈ‰º‚ÌƒoƒbƒNƒGƒ“ƒh‚ðƒTƒ|[ƒg‚µ‚Ä‚¢‚Ü‚·B
 
 == INSTALL
 
-((<NetInstaller|URL:http://www7a.biglobe.ne.jp/~hat/xyzzy/ni.html>)) ‚ÅƒCƒ“ƒXƒg[ƒ‹‚µ‚½ê‡‚Í 3 ˆÈ~‚ðA
-NetInstaller + ni-autoload ‚ðŽg‚Á‚Ä‚¢‚él‚Í 4 ˆÈ~‚Å OK ‚Å‚·B
+((<NetInstaller|URL:http://www7a.biglobe.ne.jp/~hat/xyzzy/ni.html>)) ã§ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã—ãŸå ´åˆã¯ 3 ä»¥é™ã‚’ã€
+NetInstaller + ni-autoload ã‚’ä½¿ã£ã¦ã„ã‚‹äººã¯ 4 ä»¥é™ã§ OK ã§ã™ã€‚
 
-(1) ƒA[ƒJƒCƒu‚ðƒ_ƒEƒ“ƒ[ƒh‚µ‚Ü‚·B
+(1) ã‚¢ãƒ¼ã‚«ã‚¤ãƒ–ã‚’ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ã—ã¾ã™ã€‚
 
     ((<URL:http://miyamuko.s56.xrea.com/xyzzy/archives/cairo.zip>))
 
-(2) ƒA[ƒJƒCƒu‚ð“WŠJ‚µ‚ÄA$XYZZY/site-lisp ”z‰º‚Éƒtƒ@ƒCƒ‹‚ðƒRƒs[‚µ‚Ü‚·B
+(2) ã‚¢ãƒ¼ã‚«ã‚¤ãƒ–ã‚’å±•é–‹ã—ã¦ã€$XYZZY/site-lisp é…ä¸‹ã«ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ã‚³ãƒ”ãƒ¼ã—ã¾ã™ã€‚
 
-(3) xl-cairo ‚Íƒ‰ƒCƒuƒ‰ƒŠ‚Å‚·B
-    ƒAƒvƒŠƒP[ƒVƒ‡ƒ“‚ÍˆÈ‰º‚ÌƒR[ƒh‚ð’Ç‰Á‚·‚é‚±‚Æ‚Å cairo ‚ð—˜—p‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·B
+(3) xl-cairo ã¯ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚
+    ã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·ãƒ§ãƒ³ã¯ä»¥ä¸‹ã®ã‚³ãƒ¼ãƒ‰ã‚’è¿½åŠ ã™ã‚‹ã“ã¨ã§ cairo ã‚’åˆ©ç”¨ã™ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚
 
       (in-package :you-application-package)
       (require "cairo")
       (use-package :cairo)
       (use-package :cairo.ext)
 
-    use-package ‚·‚é‚Æ‚¢‚­‚Â‚©‚ÌƒVƒ“ƒ{ƒ‹‚ªƒpƒbƒP[ƒWCüŽq‚È‚µ‚ÅŽQÆ‚Å‚«‚é‚æ‚¤‚É‚È‚è‚Ü‚·B
-    ‚ªAŒ‹\ˆê”Ê“I‚È–¼‘O‚àŽg‚Á‚Ä‚¢‚é‚Ì‚ÅA editor ‚â user ‚Å‚Í use-package ‚¹‚¸‚É
-    Ž©•ª‚ÌƒAƒvƒŠê—p‚ÌƒpƒbƒP[ƒW‚Å use-package ‚µ‚½•û‚ª‚¢‚¢‚Å‚µ‚å‚¤B
+    use-package ã™ã‚‹ã¨ã„ãã¤ã‹ã®ã‚·ãƒ³ãƒœãƒ«ãŒãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ä¿®é£¾å­ãªã—ã§å‚ç…§ã§ãã‚‹ã‚ˆã†ã«ãªã‚Šã¾ã™ã€‚
+    ãŒã€çµæ§‹ä¸€èˆ¬çš„ãªåå‰ã‚‚ä½¿ã£ã¦ã„ã‚‹ã®ã§ã€ editor ã‚„ user ã§ã¯ use-package ã›ãšã«
+    è‡ªåˆ†ã®ã‚¢ãƒ—ãƒªå°‚ç”¨ã®ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã§ use-package ã—ãŸæ–¹ãŒã„ã„ã§ã—ã‚‡ã†ã€‚
 
-    cairo.ext ‚É‚Íƒˆ‚È cairo ƒoƒCƒ“ƒfƒBƒ“ƒO‚Å‚Í‚È‚¢“ÆŽ©Šg’£‚ð’è‹`‚µ‚Ä‚¢‚Ü‚·B
+    cairo.ext ã«ã¯ç´”ç²‹ãª cairo ãƒã‚¤ãƒ³ãƒ‡ã‚£ãƒ³ã‚°ã§ã¯ãªã„ç‹¬è‡ªæ‹¡å¼µã‚’å®šç¾©ã—ã¦ã„ã¾ã™ã€‚
 
 
 == MODULE
 
 === PACKAGE
 
-cairo ‚ÍˆÈ‰º‚ÌƒpƒbƒP[ƒW‚ð—˜—p‚µ‚Ä‚¢‚Ü‚·B
+cairo ã¯ä»¥ä¸‹ã®ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã‚’åˆ©ç”¨ã—ã¦ã„ã¾ã™ã€‚
 
   * cairo (nickname cairo.api)
   * cairo.ext
@@ -91,66 +91,66 @@ cairo ‚ÍˆÈ‰º‚ÌƒpƒbƒP[ƒW‚ð—˜—p‚µ‚Ä‚¢‚Ü‚·B
 
 === EXPORT
 
-‚ ‚Æ‚Å‚©‚­B
+ã‚ã¨ã§ã‹ãã€‚
 
 === VARIABLE
 
-‚ ‚Æ‚Å‚©‚­B
+ã‚ã¨ã§ã‹ãã€‚
 
 === COMMAND
 
-‚ ‚Æ‚Å‚©‚­B
+ã‚ã¨ã§ã‹ãã€‚
 
 === FUNCTION
 
 ((<"Cairo: A Vector Graphics Library"|URL:http://www.cairographics.org/manual/>))
-‚Æ
-((<"Rubyist Magazine - cairo: 2 ŽŸŒ³‰æ‘œ•`‰æƒ‰ƒCƒuƒ‰ƒŠ"|URL:http://jp.rubyist.net/magazine/?0019-cairo>))
-‚Æ
-((<"rcairo ‚ÌƒhƒLƒ…ƒƒ“ƒg"|URL:http://cairo.rubyforge.org/doc/ja/>))
-‚ðŽQÆ‚µ‚Ä‚­‚¾‚³‚¢B
+ã¨
+((<"Rubyist Magazine - cairo: 2 æ¬¡å…ƒç”»åƒæç”»ãƒ©ã‚¤ãƒ–ãƒ©ãƒª"|URL:http://jp.rubyist.net/magazine/?0019-cairo>))
+ã¨
+((<"rcairo ã®ãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆ"|URL:http://cairo.rubyforge.org/doc/ja/>))
+ã‚’å‚ç…§ã—ã¦ãã ã•ã„ã€‚
 
-‚·‚¢‚Ü‚¹‚ñB
+ã™ã„ã¾ã›ã‚“ã€‚
 
 
 == TODO
 
 * This object is owned by cairo. To keep a reference to it, you must call cairo_font_face_reference. 
-* cairo-font-options ‚Å alist ‚Å set/get
-* destory ‚Å assert ‚Å—Ž‚¿‚é‚Ì‚ð cairo ƒŒƒxƒ‹‚Å‚Ç‚¤‚É‚©‚·‚éB
-* cairo-image-surface-create-for-data ‚ÌƒeƒXƒg
-* ƒ}ƒNƒ
+* cairo-font-options ã§ alist ã§ set/get
+* destory ã§ assert ã§è½ã¡ã‚‹ã®ã‚’ cairo ãƒ¬ãƒ™ãƒ«ã§ã©ã†ã«ã‹ã™ã‚‹ã€‚
+* cairo-image-surface-create-for-data ã®ãƒ†ã‚¹ãƒˆ
+* ãƒžã‚¯ãƒ­
   * short name/auto bind
   * do-tuples (from On Lisp)
 * test, documents
 * stdcall
-* cairo-scaled-font-create ‚Ìˆø”
-* with-cairo-group ‚ÌƒeƒXƒg
-* with-cairo-fill, with-cairo-stroke ‚Å’†‚Å cairo-new-path ‚·‚×‚«‚©?
-  * rcairo ‚Í‚µ‚Ä‚¢‚é
-  * ˆø”‚Å§Œä‚Å‚«‚é‚æ‚¤‚É‚·‚é?
-* surface ‚ð cairo-get-target ‚µ‚½‚Æ‚«‚È‚Ç‚É:
-  * reference count ‚Í‘‚â‚·‚×‚«?
-  * “¯‚¶ lisp \‘¢‘Ì‚ð•Ô‚µ‚½‚Ù‚¤‚ª‚¢‚¢‚©? ˆê‰ž eq ‚Å”äŠr‚Å‚«‚é‚µ...
-* win32-surface-create ‚Ì“‡?
-* xxx-get-yyy, xxx-set-yyy ‚ð xxx-yyy ‚Ì‚Ý‚É‚·‚éB set ‚Í setf ‚ÅB
+* cairo-scaled-font-create ã®å¼•æ•°
+* with-cairo-group ã®ãƒ†ã‚¹ãƒˆ
+* with-cairo-fill, with-cairo-stroke ã§ä¸­ã§ cairo-new-path ã™ã¹ãã‹?
+  * rcairo ã¯ã—ã¦ã„ã‚‹
+  * å¼•æ•°ã§åˆ¶å¾¡ã§ãã‚‹ã‚ˆã†ã«ã™ã‚‹?
+* surface ã‚’ cairo-get-target ã—ãŸã¨ããªã©ã«:
+  * reference count ã¯å¢—ã‚„ã™ã¹ã?
+  * åŒã˜ lisp æ§‹é€ ä½“ã‚’è¿”ã—ãŸã»ã†ãŒã„ã„ã‹? ä¸€å¿œ eq ã§æ¯”è¼ƒã§ãã‚‹ã—...
+* win32-surface-create ã®çµ±åˆ?
+* xxx-get-yyy, xxx-set-yyy ã‚’ xxx-yyy ã®ã¿ã«ã™ã‚‹ã€‚ set ã¯ setf ã§ã€‚
 * cairo.ext
-  * rcairo Šg’£‚ÌŽæ‚èž‚Ý
+  * rcairo æ‹¡å¼µã®å–ã‚Šè¾¼ã¿
     * pseudo_blur
-    * ‚È‚Ç‚È‚Ç
-  * ‘¼
-    * ”gŒ`ƒWƒFƒlƒŒ[ƒ^ (path ‚Å)
-* cairo-show-text-glyphs, cairo-scaled-font-text-to-glyphs ‚ÌƒeƒXƒg
+    * ãªã©ãªã©
+  * ä»–
+    * æ³¢å½¢ã‚¸ã‚§ãƒãƒ¬ãƒ¼ã‚¿ (path ã§)
+* cairo-show-text-glyphs, cairo-scaled-font-text-to-glyphs ã®ãƒ†ã‚¹ãƒˆ
 
 
 == KNOWN BUGS
 
-* ƒhƒLƒ…ƒƒ“ƒg‚ª‚È‚¢
+* ãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆãŒãªã„
 
 
 == AUTHOR
 
-‚Ý‚â‚Þ‚± ‚©‚Â‚ä‚« (((<URL:mailto:miyamuko (at) gmail.com>)))
+ã¿ã‚„ã‚€ã“ ã‹ã¤ã‚†ã (((<URL:mailto:miyamuko (at) gmail.com>)))
 
 
 == SEE ALSO
@@ -164,16 +164,16 @@ cairo ‚ÍˆÈ‰º‚ÌƒpƒbƒP[ƒW‚ð—˜—p‚µ‚Ä‚¢‚Ü‚·B
   : Cairo samples
         ((<URL:http://cairographics.org/samples/>))
 
-  : rcairo reference manual (“ú–{Œê)
+  : rcairo reference manual (æ—¥æœ¬èªž)
         ((<URL:http://cairo.rubyforge.org/doc/ja/>))
 
-  : Rubyist Magazine - cairo: 2 ŽŸŒ³‰æ‘œ•`‰æƒ‰ƒCƒuƒ‰ƒŠ
+  : Rubyist Magazine - cairo: 2 æ¬¡å…ƒç”»åƒæç”»ãƒ©ã‚¤ãƒ–ãƒ©ãƒª
         ((<URL:http://jp.rubyist.net/magazine/?0019-cairo>))
 
-  : cairo ‚ðŽg‚Á‚½ƒNƒƒXƒvƒ‰ƒbƒgƒtƒH[ƒ€EƒOƒ‰ƒtƒBƒbƒNƒX
+  : cairo ã‚’ä½¿ã£ãŸã‚¯ãƒ­ã‚¹ãƒ—ãƒ©ãƒƒãƒˆãƒ•ã‚©ãƒ¼ãƒ ãƒ»ã‚°ãƒ©ãƒ•ã‚£ãƒƒã‚¯ã‚¹
         ((<URL:http://www.ibm.com/developerworks/jp/linux/library/l-cairo/index.html>))
 
-  : ‘æ3Í Šj‚Æ‚È‚é‹Zp
+  : ç¬¬3ç«  æ ¸ã¨ãªã‚‹æŠ€è¡“
         ((<URL:http://www.gnome.gr.jp/docs/g2-platform-overview/ch03.html#cairo>))
 
   : CLiki : cl-cairo2
@@ -193,12 +193,12 @@ cairo ‚ÍˆÈ‰º‚ÌƒpƒbƒP[ƒW‚ð—˜—p‚µ‚Ä‚¢‚Ü‚·B
 
 === xl-cairo (this library)
 
-xl-cairo ‚Í MIT/X ƒ‰ƒCƒZƒ“ƒX‚É‚µ‚½‚ª‚Á‚Ä—˜—p‰Â”\‚Å‚·B
+xl-cairo ã¯ MIT/X ãƒ©ã‚¤ã‚»ãƒ³ã‚¹ã«ã—ãŸãŒã£ã¦åˆ©ç”¨å¯èƒ½ã§ã™ã€‚
 
 See cairo/docs/MIT-LICENSE for full license.
 
-xl-cairo ‚ÍˆÈ‰º‚Ìƒ\ƒtƒgƒEƒFƒA‚ðŠÜ‚ñ‚Å‚¢‚Ü‚·B
-‚±‚ê‚ç‚Ìƒ\ƒtƒgƒEƒFƒA‚Ìƒ‰ƒCƒZƒ“ƒX‚É‚Â‚¢‚Ä‚Í cairo/docs ƒfƒBƒŒƒNƒgƒŠ‚ðŽQÆ‚µ‚Ä‚­‚¾‚³‚¢B
+xl-cairo ã¯ä»¥ä¸‹ã®ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã‚’å«ã‚“ã§ã„ã¾ã™ã€‚
+ã“ã‚Œã‚‰ã®ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã®ãƒ©ã‚¤ã‚»ãƒ³ã‚¹ã«ã¤ã„ã¦ã¯ cairo/docs ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã‚’å‚ç…§ã—ã¦ãã ã•ã„ã€‚
 
   * cairo 1.8.8 + patch
   * libpng 1.2.8
@@ -206,9 +206,9 @@ xl-cairo ‚ÍˆÈ‰º‚Ìƒ\ƒtƒgƒEƒFƒA‚ðŠÜ‚ñ‚Å‚¢‚Ü‚·B
 
 ==== cairo
 
-xl-cairo ‚Í xyzzy ‚ÌƒoƒO‚ð‰ñ”ð‚·‚é‚½‚ß‚ÉAcairo 1.8.8 ‚ðC³‚µ‚Ä—˜—p‚µ‚Ä‚¢‚Ü‚·B
+xl-cairo ã¯ xyzzy ã®ãƒã‚°ã‚’å›žé¿ã™ã‚‹ãŸã‚ã«ã€cairo 1.8.8 ã‚’ä¿®æ­£ã—ã¦åˆ©ç”¨ã—ã¦ã„ã¾ã™ã€‚
 
-C³“à—e‚É‚Â‚¢‚Ä‚Í cairo/src/patch/cairo-1.8.8-return-double.patch ‚ðŽQÆ‚µ‚Ä‚­‚¾‚³‚¢B
+ä¿®æ­£å†…å®¹ã«ã¤ã„ã¦ã¯ cairo/src/patch/cairo-1.8.8-return-double.patch ã‚’å‚ç…§ã—ã¦ãã ã•ã„ã€‚
 
 See cairo/docs/cairo/COPYING for full license.
 

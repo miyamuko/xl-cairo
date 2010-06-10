@@ -6,63 +6,63 @@
 
 2009-06-26  MIYAMUKO Katsuyuki
 
-	* 1.6 ‚Æ 1.8 ‚Å’Ç‰Á‚³‚ê‚½ error-status ‚É‘Î‰‚·‚é—áŠOƒNƒ‰ƒX‚ğ’è‹`
+	* 1.6 ã¨ 1.8 ã§è¿½åŠ ã•ã‚ŒãŸ error-status ã«å¯¾å¿œã™ã‚‹ä¾‹å¤–ã‚¯ãƒ©ã‚¹ã‚’å®šç¾©
 
 	* (cairo-surface-get-fallback-resolution): fixed typo.
 
-	* •Ï”–¼‚Ì utf8 ‚ğ str ‚É‚µ‚½
+	* å¤‰æ•°åã® utf8 ã‚’ str ã«ã—ãŸ
 
 2009-06-25  MIYAMUKO Katsuyuki
 
-	* cairo-demo‚Ìhering.c ‚Æ spiral.c ‚ğˆÚA
+	* cairo-demoã®hering.c ã¨ spiral.c ã‚’ç§»æ¤
 
-	* unpack-array-of-xxx ‚Í”z—ñ‚Ìƒ`ƒƒƒ“ƒN‚Ö‚Ìƒ`ƒƒƒ“ƒN‚Å‚Í‚È‚­A
-	  ”z—ñ‚Ìƒ`ƒƒƒ“ƒN‚ğˆø”‚Æ‚·‚é‚æ‚¤‚É‚µ‚½
+	* unpack-array-of-xxx ã¯é…åˆ—ã®ãƒãƒ£ãƒ³ã‚¯ã¸ã®ãƒãƒ£ãƒ³ã‚¯ã§ã¯ãªãã€
+	  é…åˆ—ã®ãƒãƒ£ãƒ³ã‚¯ã‚’å¼•æ•°ã¨ã™ã‚‹ã‚ˆã†ã«ã—ãŸ
 
-	* (chunkp): chunk ‚©‚Ç‚¤‚©”»’è
-	  (unpack-c-array): chunk ‚àƒTƒ|[ƒg
+	* (chunkp): chunk ã‹ã©ã†ã‹åˆ¤å®š
+	  (unpack-c-array): chunk ã‚‚ã‚µãƒãƒ¼ãƒˆ
 
-	* ˆÀ’è”Å‚Ì pixman 0.14.0 ‚É‚µ‚½B0.15.14 ‚ÍŠJ”­”ÅB
+	* å®‰å®šç‰ˆã® pixman 0.14.0 ã«ã—ãŸã€‚0.15.14 ã¯é–‹ç™ºç‰ˆã€‚
 
-	* pixman ‚ğ 0.15.14 ‚ÉXV
+	* pixman ã‚’ 0.15.14 ã«æ›´æ–°
 
 2009-06-24  MIYAMUKO Katsuyuki
 
-	* - cairo_scaled_font_text_to_glyphs, cairo_show_text_glyphs ‚ğ‚Æ‚è‚ ‚¦‚¸À‘•
-	  -- ƒeƒXƒg‚Í‚Ü‚¾‚¿‚á‚ñ‚Æ‚µ‚Ä‚¢‚È‚¢
-	  - cairo-glyph-allocate, cairo-glyph-free ‚È‚Ç‚Ííœ
-	  - scaled-font.l ‚Å status ‚ğƒ`ƒFƒbƒN‚·‚é‚æ‚¤‚É‚µ‚½
+	* - cairo_scaled_font_text_to_glyphs, cairo_show_text_glyphs ã‚’ã¨ã‚Šã‚ãˆãšå®Ÿè£…
+	  -- ãƒ†ã‚¹ãƒˆã¯ã¾ã ã¡ã‚ƒã‚“ã¨ã—ã¦ã„ãªã„
+	  - cairo-glyph-allocate, cairo-glyph-free ãªã©ã¯å‰Šé™¤
+	  - scaled-font.l ã§ status ã‚’ãƒã‚§ãƒƒã‚¯ã™ã‚‹ã‚ˆã†ã«ã—ãŸ
 
-	* - cairo::utf8-char* ‚Ì auto-boxing ‚Å•ÏŠ·‚·‚é UTF-8 ‚ğ BOM ‚È‚µ‚É‚µ‚½B
-	  - cairo 1.8.8 ‚Í BOM ‚ğ”F¯‚µ‚È‚¢‚Ì‚ÅƒSƒ~‚ª•t‚­ (1.6 ‚Í”F¯‚µ‚Ä‚¢‚½?)
+	* - cairo::utf8-char* ã® auto-boxing ã§å¤‰æ›ã™ã‚‹ UTF-8 ã‚’ BOM ãªã—ã«ã—ãŸã€‚
+	  - cairo 1.8.8 ã¯ BOM ã‚’èªè­˜ã—ãªã„ã®ã§ã‚´ãƒŸãŒä»˜ã (1.6 ã¯èªè­˜ã—ã¦ã„ãŸ?)
 
 	* (cairo-ps-get-levels):
-	  - “®‚©‚È‚­‚È‚Á‚Ä‚¢‚½‚Ì‚ğC³
-	  - ps-level-t* ‚Ì unpack ˆ—‚ğ enum.l ‚ÉˆÚ“®
-	  - èC³•”•ª‚ğã‘‚«‚µ‚È‚¢‚æ‚¤‚É forbidden ‚É‚µ‚½
+	  - å‹•ã‹ãªããªã£ã¦ã„ãŸã®ã‚’ä¿®æ­£
+	  - ps-level-t* ã® unpack å‡¦ç†ã‚’ enum.l ã«ç§»å‹•
+	  - æ‰‹ä¿®æ­£éƒ¨åˆ†ã‚’ä¸Šæ›¸ãã—ãªã„ã‚ˆã†ã« forbidden ã«ã—ãŸ
 
-	* (unpack-array-of-svg-version-t): package prefix ‚ğ‚Â‚¯‚½
+	* (unpack-array-of-svg-version-t): package prefix ã‚’ã¤ã‘ãŸ
 
-	* (unpack-array-of-svg-version-t): svg-version-t ‚Ì”z—ñ‚Ì unpack ˆ—‚ğ enum.l ‚ÉˆÚ“®
+	* (unpack-array-of-svg-version-t): svg-version-t ã®é…åˆ—ã® unpack å‡¦ç†ã‚’ enum.l ã«ç§»å‹•
 
-	* (cairo-svg-get-versions): •Ï”–¼‚ğƒ|ƒCƒ“ƒ^‚Ìƒ|ƒCƒ“ƒ^‚Æ•ª‚©‚é‚æ‚¤‚É•ÏX
+	* (cairo-svg-get-versions): å¤‰æ•°åã‚’ãƒã‚¤ãƒ³ã‚¿ã®ãƒã‚¤ãƒ³ã‚¿ã¨åˆ†ã‹ã‚‹ã‚ˆã†ã«å¤‰æ›´
 
-	* (unpack-array-of-double): double[] ‚Ì•ÏŠ·‚ğ types/base.l ‚Å’è‹`
+	* (unpack-array-of-double): double[] ã®å¤‰æ›ã‚’ types/base.l ã§å®šç¾©
 
-	* - (cairo-toy-font-face-create): cairo-font-face-status ‚Å–ß‚è’l‚ğƒ`ƒFƒbƒN
-	    family ‚ğ UTF-8 ‚ÉƒGƒ“ƒR[ƒh‚·‚é‚æ‚¤‚É‚µ‚½
-	  - (cairo-toy-font-face-get-family): –ß‚è’l‚ğ UTF-8 ‚©‚ç–ß‚·‚æ‚¤‚É‚µ‚½
+	* - (cairo-toy-font-face-create): cairo-font-face-status ã§æˆ»ã‚Šå€¤ã‚’ãƒã‚§ãƒƒã‚¯
+	    family ã‚’ UTF-8 ã«ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‰ã™ã‚‹ã‚ˆã†ã«ã—ãŸ
+	  - (cairo-toy-font-face-get-family): æˆ»ã‚Šå€¤ã‚’ UTF-8 ã‹ã‚‰æˆ»ã™ã‚ˆã†ã«ã—ãŸ
 
 2009-06-23  MIYAMUKO Katsuyuki
 
-	* api ‚Ì cairo 1.8.8 ‘Î‰
-	  - ‚Ü‚¾“r’†
-	  - text cluster ‚ÍŒã‰ñ‚µ
-	  - user font ‚Í“–•ª‚ÍƒTƒ|[ƒg‚µ‚È‚¢
+	* api ã® cairo 1.8.8 å¯¾å¿œ
+	  - ã¾ã é€”ä¸­
+	  - text cluster ã¯å¾Œå›ã—
+	  - user font ã¯å½“åˆ†ã¯ã‚µãƒãƒ¼ãƒˆã—ãªã„
 
-	* libpixman ‚ğ static link ‚µ‚½ cairo 1.8.8
+	* libpixman ã‚’ static link ã—ãŸ cairo 1.8.8
 
-	* ffi ü‚è‚ğ cairo 1.8.8 ‚ÉXV
+	* ffi å‘¨ã‚Šã‚’ cairo 1.8.8 ã«æ›´æ–°
 
 2008-04-14  MIYAMUKO Katsuyuki
 
@@ -75,79 +75,79 @@
 
 	* update copyright
 
-	* cairo 1.6.4 ‚É‘Î‰
+	* cairo 1.6.4 ã«å¯¾å¿œ
 
 2008-01-21  MIYAMUKO Katsuyuki
 
 	* xycairo 0.0.8 released!
 
-	* cairo 1.4.14 ‚ÉXVB
+	* cairo 1.4.14 ã«æ›´æ–°ã€‚
 
 2007-12-01  MIYAMUKO Katsuyuki
 
 	* xycairo 0.0.7 released!
 
-	* cairo 1.4.12 ‚ÉXVB
+	* cairo 1.4.12 ã«æ›´æ–°ã€‚
 
 2007-09-30  MIYAMUKO Katsuyuki
 
 	* xycairo 0.0.6 released!
 
-	* (examples/ext-polygon.l): cairo.ext:cairo-regular-polygon ‚ÌƒTƒ“ƒvƒ‹
+	* (examples/ext-polygon.l): cairo.ext:cairo-regular-polygon ã®ã‚µãƒ³ãƒ—ãƒ«
 
-	* (cairo.ext:cairo-regular-polygon): ³‘½ŠpŒ`‚ğ‘‚­ API
+	* (cairo.ext:cairo-regular-polygon): æ­£å¤šè§’å½¢ã‚’æ›¸ã API
 
-	* (cairo.ext:cairo-polygon): ‘½ŠpŒ`‚ğ‘‚­ API
+	* (cairo.ext:cairo-polygon): å¤šè§’å½¢ã‚’æ›¸ã API
 
-	* (cairo.ext:cairo-polyline): ‘½üŒ`‚ğ‘‚­ API
+	* (cairo.ext:cairo-polyline): å¤šç·šå½¢ã‚’æ›¸ã API
 
 2007-09-29  MIYAMUKO Katsuyuki
 
-	* (examples/hearts.l): cairo-heart ‚ğg‚Á‚ÄÄÀ‘•
+	* (examples/hearts.l): cairo-heart ã‚’ä½¿ã£ã¦å†å®Ÿè£…
 
-	* (examples/ext-heart.l): cairo.ext:cairo-heart ‚ÌƒTƒ“ƒvƒ‹
+	* (examples/ext-heart.l): cairo.ext:cairo-heart ã®ã‚µãƒ³ãƒ—ãƒ«
 
-	* (cairo.ext:cairo-heart): ƒn[ƒg‚ğ‘‚­ŠÖ”
+	* (cairo.ext:cairo-heart): ãƒãƒ¼ãƒˆã‚’æ›¸ãé–¢æ•°
 
-	* (cairo.ext:cairo-polygon): ‘½ŠpŒ`‚ğ‘‚­ API
+	* (cairo.ext:cairo-polygon): å¤šè§’å½¢ã‚’æ›¸ã API
 
-	* (examples/ext-triangle.l): cairo-triangle ‚Ì example
+	* (examples/ext-triangle.l): cairo-triangle ã® example
 
-	* (cairo.ext:cairo-triangle): OŠpŒ`‚ğ‘‚­ API
+	* (cairo.ext:cairo-triangle): ä¸‰è§’å½¢ã‚’æ›¸ã API
 
-	* (do-snippet): ”wŒiF‚ğ”’‚Éİ’è‚·‚é‚æ‚¤‚É‚µ‚½B
+	* (do-snippet): èƒŒæ™¯è‰²ã‚’ç™½ã«è¨­å®šã™ã‚‹ã‚ˆã†ã«ã—ãŸã€‚
 
 2007-09-17  MIYAMUKO Katsuyuki
 
-	* (define-autoboxing-for-char*-with-encoding): convert-encoding-from-internal ‚É nil ‚ğ
-	  w’è‚·‚é‚ÆƒL[ƒ{[ƒh‚©‚ç“Ç‚İ‚ñ‚Å‚µ‚Ü‚¤‚Ì‚ÅAnil ƒ`ƒFƒbƒN‚ğ•t‚¯‚½B
+	* (define-autoboxing-for-char*-with-encoding): convert-encoding-from-internal ã« nil ã‚’
+	  æŒ‡å®šã™ã‚‹ã¨ã‚­ãƒ¼ãƒœãƒ¼ãƒ‰ã‹ã‚‰èª­ã¿è¾¼ã‚“ã§ã—ã¾ã†ã®ã§ã€nil ãƒã‚§ãƒƒã‚¯ã‚’ä»˜ã‘ãŸã€‚
 
 2007-06-30  MIYAMUKO Katsuyuki
 
-	* cairo 1.4.10 ‚ÉXVB
+	* cairo 1.4.10 ã«æ›´æ–°ã€‚
 
 2007-06-23  MIYAMUKO Katsuyuki
 
-	* deg-to-rad ‚ğíœA degree->radian ‚ğg‚¤‚æ‚¤‚É‚µ‚½B
+	* deg-to-rad ã‚’å‰Šé™¤ã€ degree->radian ã‚’ä½¿ã†ã‚ˆã†ã«ã—ãŸã€‚
 
-	* (cairo-map-path-onto): ˆø”‚É path \‘¢‘Ì‚ğw’è‰Â”\‚É‚µ‚½B
+	* (cairo-map-path-onto): å¼•æ•°ã« path æ§‹é€ ä½“ã‚’æŒ‡å®šå¯èƒ½ã«ã—ãŸã€‚
 
-	* (coerce-to-cairo-path-list): ˆø”‚ğ path list ‚É•ÏŠ·‚·‚éŠÖ”B
+	* (coerce-to-cairo-path-list): å¼•æ•°ã‚’ path list ã«å¤‰æ›ã™ã‚‹é–¢æ•°ã€‚
 
-	* (examples/ext-star.l): •¶š‚Ì”z’uˆÊ’u‚ğ’²®
+	* (examples/ext-star.l): æ–‡å­—ã®é…ç½®ä½ç½®ã‚’èª¿æ•´
 
 	* (draw-star): out-radius => outer-radius.
 
-	* (do-snippets): ÀsŠÔ‚ğ‰æ‘œ‚Ì¶‰º‚É•\¦‚·‚é‚æ‚¤‚É‚µ‚½B
+	* (do-snippets): å®Ÿè¡Œæ™‚é–“ã‚’ç”»åƒã®å·¦ä¸‹ã«è¡¨ç¤ºã™ã‚‹ã‚ˆã†ã«ã—ãŸã€‚
 
 2007-06-20  MIYAMUKO Katsuyuki
 
-	* (cairo-map-path-onto): map-path-onto ‚©‚ç rename, export
-	  (transform-path): ‡”Ô‚ğ•ÏX
+	* (cairo-map-path-onto): map-path-onto ã‹ã‚‰ rename, export
+	  (transform-path): é †ç•ªã‚’å¤‰æ›´
 
-	* (examples/text-on-path.l): ƒpƒXã‚ÉƒeƒLƒXƒg‚ğ”z’u‚·‚éƒTƒ“ƒvƒ‹ (rcairo ‚Ì sample ‚ÌˆÚA)
+	* (examples/text-on-path.l): ãƒ‘ã‚¹ä¸Šã«ãƒ†ã‚­ã‚¹ãƒˆã‚’é…ç½®ã™ã‚‹ã‚µãƒ³ãƒ—ãƒ« (rcairo ã® sample ã®ç§»æ¤)
 
-	* (map-path-onto): path-t \‘¢‘Ì‚Ìì¬‚É‘Î‰‚µ‚½‚Ì‚Å‚¿‚á‚ñ‚ÆÀ‘•B
+	* (map-path-onto): path-t æ§‹é€ ä½“ã®ä½œæˆã«å¯¾å¿œã—ãŸã®ã§ã¡ã‚ƒã‚“ã¨å®Ÿè£…ã€‚
 	  (map-path-onto0): internal error => argument error.
 	  (parameterize-path0): ditto.
 
@@ -158,209 +158,209 @@
 	  (count-num-of-path-data): ditto.
 	  (path-data-num-of-points): raise argument error insteadf of internal error.
 
-	* (map-path-onto0): line-to, curve-to ‚Ì‚Æ‚«‚Ì“¯‚¶ŒvZˆ—‚ğ‹¤’Ê‰»‚µ‚½B
+	* (map-path-onto0): line-to, curve-to ã®ã¨ãã®åŒã˜è¨ˆç®—å‡¦ç†ã‚’å…±é€šåŒ–ã—ãŸã€‚
 
-	* (parameterize-path0): result ‚ğÁ‚µ‚½B
+	* (parameterize-path0): result ã‚’æ¶ˆã—ãŸã€‚
 
 2007-06-17  MIYAMUKO Katsuyuki
 
-	* map-path-onto ‚ÌƒeƒXƒg‚ğ’Ç‰ÁB
+	* map-path-onto ã®ãƒ†ã‚¹ãƒˆã‚’è¿½åŠ ã€‚
 
-	* (cairo-path-list-flat): copy-path-flat ‚µ‚ÄƒŠƒXƒg‚Å•Ô‚·ŠÖ”B
+	* (cairo-path-list-flat): copy-path-flat ã—ã¦ãƒªã‚¹ãƒˆã§è¿”ã™é–¢æ•°ã€‚
 
-	* (map-path-onto): rcairo ‚©‚çˆÚABpath \‘¢‘Ì‚Ìì¬ˆ—‚ª•K—vB
+	* (map-path-onto): rcairo ã‹ã‚‰ç§»æ¤ã€‚path æ§‹é€ ä½“ã®ä½œæˆå‡¦ç†ãŒå¿…è¦ã€‚
 
-	* (transform-path): rcairo ‚Ì transform_path ‚ğˆÚABƒeƒXƒgÏ‚İB
+	* (transform-path): rcairo ã® transform_path ã‚’ç§»æ¤ã€‚ãƒ†ã‚¹ãƒˆæ¸ˆã¿ã€‚
 
-	* (parameterize-path): ƒoƒO‚è‚Ü‚­‚Á‚Ä‚½‚Ì‚ğC³Brcairo ‚ÆŒ‹‰Ê‚ª“¯‚¶‚É‚È‚Á‚½B
+	* (parameterize-path): ãƒã‚°ã‚Šã¾ãã£ã¦ãŸã®ã‚’ä¿®æ­£ã€‚rcairo ã¨çµæœãŒåŒã˜ã«ãªã£ãŸã€‚
 
-	* (cairo-path-list0): ‚‘¬‰»‚Ì‚½‚ß lisp \‘¢‘Ì‚ğì‚ç‚È‚¢‚æ‚¤‚É‚µ‚½B
+	* (cairo-path-list0): é«˜é€ŸåŒ–ã®ãŸã‚ lisp æ§‹é€ ä½“ã‚’ä½œã‚‰ãªã„ã‚ˆã†ã«ã—ãŸã€‚
 
-	* (cairo-path-list0): ŒvZ‚µ‚â‚·‚¢‚æ‚¤‚É point ‚ğ cons ‚©‚ç list ‚É‚µ‚½: (x . y) => (x y)
+	* (cairo-path-list0): è¨ˆç®—ã—ã‚„ã™ã„ã‚ˆã†ã« point ã‚’ cons ã‹ã‚‰ list ã«ã—ãŸ: (x . y) => (x y)
 
-	* (examples/ext-rounded-rectangle.l): cairo-rounded-rectangle ‚ÌƒTƒ“ƒvƒ‹ (ÄÀ‘•)B
+	* (examples/ext-rounded-rectangle.l): cairo-rounded-rectangle ã®ã‚µãƒ³ãƒ—ãƒ« (å†å®Ÿè£…)ã€‚
 
 	* ext-rounded-rectangle.l => ext-rounded-rectangle-complex.l
 
-	* (cairo-rounded-rectangle-complex): cairo-rounded-rectangle ‚©‚ç rename.
-	  (cairo-rounded-rectangle): cairo-rounded-rectangle ‚Í rcairo ŒİŠ·‚É‚µ‚½B
+	* (cairo-rounded-rectangle-complex): cairo-rounded-rectangle ã‹ã‚‰ rename.
+	  (cairo-rounded-rectangle): cairo-rounded-rectangle ã¯ rcairo äº’æ›ã«ã—ãŸã€‚
 
 2007-06-16  MIYAMUKO Katsuyuki
 
-	* (dotp): (dotp '(1)) ‚Í nil ‚É‚µ‚½B
+	* (dotp): (dotp '(1)) ã¯ nil ã«ã—ãŸã€‚
 
-	* (parameterize-path): rcairo ‚©‚çˆÚA (–¢ƒeƒXƒg)
+	* (parameterize-path): rcairo ã‹ã‚‰ç§»æ¤ (æœªãƒ†ã‚¹ãƒˆ)
 
-	* (distance): 2 “_ŠÔ‚Ìƒ†[ƒNƒŠƒbƒh‹——£‚ğ‹‚ß‚éŠÖ”B
+	* (distance): 2 ç‚¹é–“ã®ãƒ¦ãƒ¼ã‚¯ãƒªãƒƒãƒ‰è·é›¢ã‚’æ±‚ã‚ã‚‹é–¢æ•°ã€‚
 
-	* (make-array-chunk-for): w’è‚³‚ê‚½Œ^‚Ì”z—ñ‚Ì chunk ‚ğì¬‚·‚éB
+	* (make-array-chunk-for): æŒ‡å®šã•ã‚ŒãŸå‹ã®é…åˆ—ã® chunk ã‚’ä½œæˆã™ã‚‹ã€‚
 
-	* - (cairo-set-dash): status ‚ğƒ`ƒFƒbƒN‚·‚é‚æ‚¤‚É‚µ‚½B
-	  - (cairo-get-dash): dashes ‚É‚Í double ‚Ì”z—ñ‚ğw’è‚·‚éB
-	    double ˆêŒÂ‚ğw’è‚µ‚Ä‚¢‚½‚Ì‚Åƒƒ‚ƒŠ”j‰ó‚ª‹N‚«‚Ä‚¢‚½B
+	* - (cairo-set-dash): status ã‚’ãƒã‚§ãƒƒã‚¯ã™ã‚‹ã‚ˆã†ã«ã—ãŸã€‚
+	  - (cairo-get-dash): dashes ã«ã¯ double ã®é…åˆ—ã‚’æŒ‡å®šã™ã‚‹ã€‚
+	    double ä¸€å€‹ã‚’æŒ‡å®šã—ã¦ã„ãŸã®ã§ãƒ¡ãƒ¢ãƒªç ´å£ŠãŒèµ·ãã¦ã„ãŸã€‚
 
-	* - (checking-status-using): ‘æ 2 ˆø”‚É•Ï”–¼‚ğæ‚é‚æ‚¤‚É‚µ‚½B
-	    ‘æ 2 ˆø”‚ª‚ ‚é: w’è‚³‚ê‚½–¼‘O‚Ì•Ï”‚Ì status ‚ğƒ`ƒFƒbƒN‚µ‚Ä body ‚Ì–ß‚è’l‚ğ•Ô‚·B
-	    ‘æ 2 ˆø”‚ª‚È‚¢: body ‚Ì–ß‚è’l‚ğ        status V
+	* - (checking-status-using): ç¬¬ 2 å¼•æ•°ã«å¤‰æ•°åã‚’å–ã‚‹ã‚ˆã†ã«ã—ãŸã€‚
+	    ç¬¬ 2 å¼•æ•°ãŒã‚ã‚‹: æŒ‡å®šã•ã‚ŒãŸåå‰ã®å¤‰æ•°ã® status ã‚’ãƒã‚§ãƒƒã‚¯ã—ã¦ body ã®æˆ»ã‚Šå€¤ã‚’è¿”ã™ã€‚
+	    ç¬¬ 2 å¼•æ•°ãŒãªã„: body ã®æˆ»ã‚Šå€¤ã‚’        status ã€ƒ
 
-	* (examples/ext-circle.l): cairo-circle ‚Ì—áB
+	* (examples/ext-circle.l): cairo-circle ã®ä¾‹ã€‚
 
-	* (cairo-circle): ^‰~‚ğ‘‚­ API
+	* (cairo-circle): çœŸå††ã‚’æ›¸ã API
 
-	* (cairo-star): 2pi ‚ğg‚¤‚æ‚¤‚É‚µ‚½B
+	* (cairo-star): 2pi ã‚’ä½¿ã†ã‚ˆã†ã«ã—ãŸã€‚
 
-	* (2pi): pi * 2 ‚Ì’è”Bexport ‚Í‚µ‚È‚¢B
+	* (2pi): pi * 2 ã®å®šæ•°ã€‚export ã¯ã—ãªã„ã€‚
 
-	* (examples/ext-star.l): cairo.ext:cairo-star ‚Ì—á
+	* (examples/ext-star.l): cairo.ext:cairo-star ã®ä¾‹
 
-	* (cairo-star): ¯‚ğ‘‚­ API
-	  - inner-radius ‚ğ optional ‚É‚µ‚½‚¢B
-	  - inner-radius È—ª‚Í³ŒÜŠpŒ`‚ğ‘‚«‚½‚¢B
+	* (cairo-star): æ˜Ÿã‚’æ›¸ã API
+	  - inner-radius ã‚’ optional ã«ã—ãŸã„ã€‚
+	  - inner-radius çœç•¥æ™‚ã¯æ­£äº”è§’å½¢ã‚’æ›¸ããŸã„ã€‚
 
 	* (cairo-rounded-rectangle): radian => degree->radian.
 
-	* degree->radian ‚Æ radian->degree ‚ª“ü‚ê‘Ö‚í‚Á‚Ä‚¢‚½B
+	* degree->radian ã¨ radian->degree ãŒå…¥ã‚Œæ›¿ã‚ã£ã¦ã„ãŸã€‚
 
 2007-06-12  MIYAMUKO Katsuyuki
 
-	* (examples/ext-rounded-rectangle): cairo.ext:cairo-rounded-rectangle ‚Ì example
+	* (examples/ext-rounded-rectangle): cairo.ext:cairo-rounded-rectangle ã® example
 
-	* (cairo-rounded-rectangle): ŠpŠÛ‚ÌlŠp‚ğ•`‚­
+	* (cairo-rounded-rectangle): è§’ä¸¸ã®å››è§’ã‚’æã
 
-	* (radian->degree, degree->radian): ŒÊ“x–@‚ÆŠp“x‚Ì•ÏŠ·ŠÖ”
+	* (radian->degree, degree->radian): å¼§åº¦æ³•ã¨è§’åº¦ã®å¤‰æ›é–¢æ•°
 
 2007-06-10  MIYAMUKO Katsuyuki
 
 	* xycairo 0.0.5 released!
 
-	* cairo 1.4.8 ‚ÉXVB
+	* cairo 1.4.8 ã«æ›´æ–°ã€‚
 
-	* (examples/text-postscript.l): text.l ‚Ì PostScript ”Å
+	* (examples/text-postscript.l): text.l ã® PostScript ç‰ˆ
 
-	* (examples/imagepattern-png-stream.l, text-japanese-pdf.l): PDF surface ‚Æ PNG stream ‚ÌƒTƒ“ƒvƒ‹B
+	* (examples/imagepattern-png-stream.l, text-japanese-pdf.l): PDF surface ã¨ PNG stream ã®ã‚µãƒ³ãƒ—ãƒ«ã€‚
 
-	* (clean-all-snippet-outputs): PDF ‚Æ‚©‚àíœ‚·‚é‚æ‚¤‚É‚µ‚½B
+	* (clean-all-snippet-outputs): PDF ã¨ã‹ã‚‚å‰Šé™¤ã™ã‚‹ã‚ˆã†ã«ã—ãŸã€‚
 
 2007-06-09  MIYAMUKO Katsuyuki
 
-	* (do-snippets): do-snippets0 ‚ğ•ª—£B
+	* (do-snippets): do-snippets0 ã‚’åˆ†é›¢ã€‚
 
-	* (do-snippets): ¶¬‚·‚éƒtƒ@ƒCƒ‹‚ÌŠg’£q‚ğw’è‰Â”\‚É‚µ‚½B
+	* (do-snippets): ç”Ÿæˆã™ã‚‹ãƒ•ã‚¡ã‚¤ãƒ«ã®æ‹¡å¼µå­ã‚’æŒ‡å®šå¯èƒ½ã«ã—ãŸã€‚
 
 2007-06-08  MIYAMUKO Katsuyuki
 
-	* (cairo-image-surface-create-from-png-stream): xyzzy ‚Ìê‡ editor::read-into ‚ğg‚¤‚æ‚¤‚É‚µ‚½B
+	* (cairo-image-surface-create-from-png-stream): xyzzy ã®å ´åˆ editor::read-into ã‚’ä½¿ã†ã‚ˆã†ã«ã—ãŸã€‚
 
-	* (define-callback-function): defun-c-callable ‚ğÀ‘•‚µ‚½B
-	  ÀÛ‚ÌÀ‘•‚Í xxx-impl ‚Ås‚¤B
+	* (define-callback-function): defun-c-callable ã‚’å®Ÿè£…ã—ãŸã€‚
+	  å®Ÿéš›ã®å®Ÿè£…ã¯ xxx-impl ã§è¡Œã†ã€‚
 
-	* (cairo-image-surface-create-from-png): stream ‚ğƒTƒ|[ƒg
+	* (cairo-image-surface-create-from-png): stream ã‚’ã‚µãƒãƒ¼ãƒˆ
 
-	* (store-c-string): w’è‚³‚ê‚½•¶š—ñ‚ğw’è‚³‚ê‚½ƒ|ƒCƒ“ƒ^‚É‘‚«‚Ş
+	* (store-c-string): æŒ‡å®šã•ã‚ŒãŸæ–‡å­—åˆ—ã‚’æŒ‡å®šã•ã‚ŒãŸãƒã‚¤ãƒ³ã‚¿ã«æ›¸ãè¾¼ã‚€
 
-	* (cairo-surface-write-to-png): stream ‚ğƒTƒ|[ƒgB
+	* (cairo-surface-write-to-png): stream ã‚’ã‚µãƒãƒ¼ãƒˆã€‚
 
-	* pdf-surfaces ‚Æ ps-surface ‚ğƒTƒ|[ƒgB
+	* pdf-surfaces ã¨ ps-surface ã‚’ã‚µãƒãƒ¼ãƒˆã€‚
 
-	* api/ ”z‰º‚Ìƒ\[ƒX‚Í api/macros ‚ğ require
+	* api/ é…ä¸‹ã®ã‚½ãƒ¼ã‚¹ã¯ api/macros ã‚’ require
 
-	* ƒwƒbƒ_ƒeƒ“ƒvƒŒ[ƒg‚ğ•ÏXB
+	* ãƒ˜ãƒƒãƒ€ãƒ†ãƒ³ãƒ—ãƒ¬ãƒ¼ãƒˆã‚’å¤‰æ›´ã€‚
 
-	* generator “à‚Ì•ÏX˜R‚ê cairo-ffi => cairo.ffi
+	* generator å†…ã®å¤‰æ›´æ¼ã‚Œ cairo-ffi => cairo.ffi
 
-	* cairo-*-destroy ‚Í‚â‚Á‚Ï‚è export ‚·‚é‚æ‚¤‚É‚µ‚½B
+	* cairo-*-destroy ã¯ã‚„ã£ã±ã‚Š export ã™ã‚‹ã‚ˆã†ã«ã—ãŸã€‚
 
-	* ƒwƒbƒ_‚Ì‘®‚ğ“ˆêB
+	* ãƒ˜ãƒƒãƒ€ã®æ›¸å¼ã‚’çµ±ä¸€ã€‚
 
 2007-06-07  MIYAMUKO Katsuyuki
 
-	* (with-cairo-group): À‘•‚ğ call-with-cairo-group ‚É•ª—£B
-	  ed:lisp-indent-hook ‚ğİ’è‚·‚é‚æ‚¤‚É‚µ‚½B
+	* (with-cairo-group): å®Ÿè£…ã‚’ call-with-cairo-group ã«åˆ†é›¢ã€‚
+	  ed:lisp-indent-hook ã‚’è¨­å®šã™ã‚‹ã‚ˆã†ã«ã—ãŸã€‚
 
-	* (define-destroy-macro, define-arround-macro1): call-xxx ‚ğæ‚É’è‹`‚·‚é‚æ‚¤‚É‚µ‚½B
+	* (define-destroy-macro, define-arround-macro1): call-xxx ã‚’å…ˆã«å®šç¾©ã™ã‚‹ã‚ˆã†ã«ã—ãŸã€‚
 
-	* (with-output-to-png): À‘•‚ğ call-with-output-to-png ‚É•ª—£B
+	* (with-output-to-png): å®Ÿè£…ã‚’ call-with-output-to-png ã«åˆ†é›¢ã€‚
 
-	* (define-arround-macro1): with-xxx ‚Åˆø”‚Ì var ‚ğ gensym ‚µ‚½B
+	* (define-arround-macro1): with-xxx ã§å¼•æ•°ã® var ã‚’ gensym ã—ãŸã€‚
 
-	* (define-destroy-macro, define-arround-macro1): with-xxx ‚ÌÀ‘•‚ğ call-with-xxx ŠÖ”“à‚ÅÀ‘•B
-	  call-with-xxx ‚à export
+	* (define-destroy-macro, define-arround-macro1): with-xxx ã®å®Ÿè£…ã‚’ call-with-xxx é–¢æ•°å†…ã§å®Ÿè£…ã€‚
+	  call-with-xxx ã‚‚ export
 	  http://random-state.net/log/3390120648.html
 
-	* (do-snippets): with-output-to-png ƒ}ƒNƒ‚ğg‚¤‚æ‚¤‚É‚µ‚½B
+	* (do-snippets): with-output-to-png ãƒã‚¯ãƒ­ã‚’ä½¿ã†ã‚ˆã†ã«ã—ãŸã€‚
 
-	* (with-output-to-png): cairo-surface-write-to-png ‚ğŒÄ‚Ño‚·ƒ}ƒNƒB
+	* (with-output-to-png): cairo-surface-write-to-png ã‚’å‘¼ã³å‡ºã™ãƒã‚¯ãƒ­ã€‚
 
-	* (examples/lissajous-curves.l): ƒŠƒT[ƒWƒ…‹Èü‚ğ•`‚­ƒTƒ“ƒvƒ‹
+	* (examples/lissajous-curves.l): ãƒªã‚µãƒ¼ã‚¸ãƒ¥æ›²ç·šã‚’æãã‚µãƒ³ãƒ—ãƒ«
 
 2007-06-05  MIYAMUKO Katsuyuki
 
-	* (examples/hearts.l): ƒn[ƒg‚ğƒ‰ƒ“ƒ_ƒ€‚É•`‚­ƒTƒ“ƒvƒ‹
+	* (examples/hearts.l): ãƒãƒ¼ãƒˆã‚’ãƒ©ãƒ³ãƒ€ãƒ ã«æãã‚µãƒ³ãƒ—ãƒ«
 
 2007-06-04  MIYAMUKO Katsuyuki
 
-	* xycairo 0.0.4 ƒŠƒŠ[ƒX!
+	* xycairo 0.0.4 ãƒªãƒªãƒ¼ã‚¹!
 
-	* ˆÈ‰º‚Ìƒ}ƒNƒ‚ğ eval-when ‚Åí‚É•]‰¿‚·‚é‚æ‚¤‚É‚µ‚½B
+	* ä»¥ä¸‹ã®ãƒã‚¯ãƒ­ã‚’ eval-when ã§å¸¸ã«è©•ä¾¡ã™ã‚‹ã‚ˆã†ã«ã—ãŸã€‚
 	  - define-autoboxing-for
 	  - define-destroy-macro
 	  - define-arround-macro1
 
-	* drive-info ‚ğg‚Á‚Ä‹ó‚«—e—Ê‚ğƒOƒ‰ƒt•\¦‚·‚éƒTƒ“ƒvƒ‹B
+	* drive-info ã‚’ä½¿ã£ã¦ç©ºãå®¹é‡ã‚’ã‚°ãƒ©ãƒ•è¡¨ç¤ºã™ã‚‹ã‚µãƒ³ãƒ—ãƒ«ã€‚
 
 2007-06-03  MIYAMUKO Katsuyuki
 
-	* with-cairo-group ‚ğ export.
+	* with-cairo-group ã‚’ export.
 
-	* (with-cairo-save): cairo-restore ‚ÍƒGƒ‰[‚ªo‚Ä‚àÀs‚·‚é‚æ‚¤‚É‚µ‚½B
+	* (with-cairo-save): cairo-restore ã¯ã‚¨ãƒ©ãƒ¼ãŒå‡ºã¦ã‚‚å®Ÿè¡Œã™ã‚‹ã‚ˆã†ã«ã—ãŸã€‚
 
-	* (define-arround-macro1): protect ˆø”‚ğ’Ç‰ÁBt ‚È‚ç after ‚Í•K‚¸Às‚·‚éB
+	* (define-arround-macro1): protect å¼•æ•°ã‚’è¿½åŠ ã€‚t ãªã‚‰ after ã¯å¿…ãšå®Ÿè¡Œã™ã‚‹ã€‚
 
-	* - (cairo-pattern-get-color-stop-count): export ‚·‚é‚Ì‚ğ‚â‚ß‚½B
-	    cairo-pattern-get-color-stop-rgba-list ‚ğg‚Á‚Ä‚­‚¾‚³‚¢B
+	* - (cairo-pattern-get-color-stop-count): export ã™ã‚‹ã®ã‚’ã‚„ã‚ãŸã€‚
+	    cairo-pattern-get-color-stop-rgba-list ã‚’ä½¿ã£ã¦ãã ã•ã„ã€‚
 	  - (cairo-pattern-get-color-stop-rgba): ditto.
 
-	* - (with-cairo-group): push/pop ‚ğs‚¤ƒ}ƒNƒB
-	  - (cairo-push-group): optional ‚È content ˆø”‚ğæ‚é‚æ‚¤‚É‚µ‚½B
-	    (cairo-push-group-with-content ‚Æ‚Ì“‡)
-	  - (cairo-pop-group): optional ‚È to-source ˆø”‚ğæ‚é‚æ‚¤‚É‚µ‚½B
-	    (cairo-pop-group-to-source ‚Æ‚Ì“‡)
-	  - (cairo-push-group-with-content): export ‚µ‚È‚¢‚æ‚¤‚É‚µ‚½B
+	* - (with-cairo-group): push/pop ã‚’è¡Œã†ãƒã‚¯ãƒ­ã€‚
+	  - (cairo-push-group): optional ãª content å¼•æ•°ã‚’å–ã‚‹ã‚ˆã†ã«ã—ãŸã€‚
+	    (cairo-push-group-with-content ã¨ã®çµ±åˆ)
+	  - (cairo-pop-group): optional ãª to-source å¼•æ•°ã‚’å–ã‚‹ã‚ˆã†ã«ã—ãŸã€‚
+	    (cairo-pop-group-to-source ã¨ã®çµ±åˆ)
+	  - (cairo-push-group-with-content): export ã—ãªã„ã‚ˆã†ã«ã—ãŸã€‚
 	  - (cairo-pop-group-to-source): ditto.
 
-	* ˆÈ‰º‚ÌŠÖ”‚ğ’Ç‰ÁB
-	  - (cairo-scaled-font-extents-list): extents ‚ğ list ‚Å•Ô‚·ŠÖ”B
+	* ä»¥ä¸‹ã®é–¢æ•°ã‚’è¿½åŠ ã€‚
+	  - (cairo-scaled-font-extents-list): extents ã‚’ list ã§è¿”ã™é–¢æ•°ã€‚
 	  - (cairo-scaled-font-text-extents-list): ditto
 	  - (cairo-scaled-font-glyph-extents-list): ditto
 
 	* define-with-macro => define-destroy-macro.
 
-	* (define-arround-macro1): ˆø”‚ğ‚Ğ‚Æ‚Âæ‚é with Œnƒ}ƒNƒ‚ğ’è‹`‚·‚éƒ}ƒNƒB
-	  (with-cairo-save): save/restore ‚ğ‚·‚éƒ}ƒNƒ
-	  (with-cairo-fill): ÅŒã‚É cairo-fill ‚·‚éƒ}ƒNƒ
+	* (define-arround-macro1): å¼•æ•°ã‚’ã²ã¨ã¤å–ã‚‹ with ç³»ãƒã‚¯ãƒ­ã‚’å®šç¾©ã™ã‚‹ãƒã‚¯ãƒ­ã€‚
+	  (with-cairo-save): save/restore ã‚’ã™ã‚‹ãƒã‚¯ãƒ­
+	  (with-cairo-fill): æœ€å¾Œã« cairo-fill ã™ã‚‹ãƒã‚¯ãƒ­
 	  (with-cairo-fill-preserve): ditto
 	  (with-cairo-stroke): ditto
 	  (with-cairo-stroke-preserve): ditto
 
-	* (with-gensyms): On Lisp ‚©‚ç”qØB
+	* (with-gensyms): On Lisp ã‹ã‚‰æ‹å€Ÿã€‚
 
-	* (with-cairo-save): save/restore ‚ğ‚·‚é‚½‚ß‚Ìƒ}ƒNƒB
+	* (with-cairo-save): save/restore ã‚’ã™ã‚‹ãŸã‚ã®ãƒã‚¯ãƒ­ã€‚
 
-	* ˆÈ‰º‚ÌŠÖ”‚ğ export ‚·‚é‚Ì‚ğ‚â‚ß‚½B
+	* ä»¥ä¸‹ã®é–¢æ•°ã‚’ export ã™ã‚‹ã®ã‚’ã‚„ã‚ãŸã€‚
 	  - cairo-*-destroy
 	  - cairo-*-reference
 	  - cairo-*-get-reference
 	  - cairo-*-status
 
-	* create/destory ‚Ì with Œnƒ}ƒNƒ‚ğ’è‹`B
+	* create/destory ã® with ç³»ãƒã‚¯ãƒ­ã‚’å®šç¾©ã€‚
 
-	* ext/macro/with.l ‚ğíœB
-	  with Œnƒ}ƒNƒ‚Í :cairo “à‚Å’è‹`‚·‚é‚æ‚¤‚É‚µ‚½B
+	* ext/macro/with.l ã‚’å‰Šé™¤ã€‚
+	  with ç³»ãƒã‚¯ãƒ­ã¯ :cairo å†…ã§å®šç¾©ã™ã‚‹ã‚ˆã†ã«ã—ãŸã€‚
 
-	* cairo-clip-rectangle-list ‚ª“®‚©‚È‚­‚È‚Á‚Ä‚½B
-	  cairo.ffi:rectangle-t* ‚Ì autoboxing İ’è‚ğƒRƒ“ƒpƒCƒ‹‚É‚às‚¤‚æ‚¤‚É‚µ‚½B
+	* cairo-clip-rectangle-list ãŒå‹•ã‹ãªããªã£ã¦ãŸã€‚
+	  cairo.ffi:rectangle-t* ã® autoboxing è¨­å®šã‚’ã‚³ãƒ³ãƒ‘ã‚¤ãƒ«æ™‚ã«ã‚‚è¡Œã†ã‚ˆã†ã«ã—ãŸã€‚
 
-	* ˆÈ‰º‚ÌŠÖ”‚ğ’Ç‰ÁB
+	* ä»¥ä¸‹ã®é–¢æ•°ã‚’è¿½åŠ ã€‚
 	  - cairo-clip-extents-list
 	  - cairo-fill-extents-list
 	  - cairo-stroke-extents-list
@@ -368,166 +368,166 @@
 	  - cairo-text-extents-list
 	  - cairo-glyph-extents-list
 
-	* (define-c-struct-wrapper): xxx-to-alist ‚ğ xxx-to-list ‚ğg‚Á‚ÄÀ‘•B
+	* (define-c-struct-wrapper): xxx-to-alist ã‚’ xxx-to-list ã‚’ä½¿ã£ã¦å®Ÿè£…ã€‚
 
-	* (define-c-struct-wrapper): xxx-to-list ‚ğ’è‹`B
+	* (define-c-struct-wrapper): xxx-to-list ã‚’å®šç¾©ã€‚
 
-	* - pie-chart.l ‚ğƒOƒ‰ƒf[ƒVƒ‡ƒ“‚·‚é‚æ‚¤‚É‚µ‚½B
-	  - ƒf[ƒ^‚Ì‚»‚ê‚¼‚ê‚ÌF‚ğw’è‚Å‚«‚é‚æ‚¤‚É‚µ‚½B
+	* - pie-chart.l ã‚’ã‚°ãƒ©ãƒ‡ãƒ¼ã‚·ãƒ§ãƒ³ã™ã‚‹ã‚ˆã†ã«ã—ãŸã€‚
+	  - ãƒ‡ãƒ¼ã‚¿ã®ãã‚Œãã‚Œã®è‰²ã‚’æŒ‡å®šã§ãã‚‹ã‚ˆã†ã«ã—ãŸã€‚
 
 2007-06-02  MIYAMUKO Katsuyuki
 
-	* ext/api/fonts/*.l —p‚Ìƒ[ƒhƒXƒNƒŠƒvƒg’Ç‰ÁB
+	* ext/api/fonts/*.l ç”¨ã®ãƒ­ãƒ¼ãƒ‰ã‚¹ã‚¯ãƒªãƒ—ãƒˆè¿½åŠ ã€‚
 
-	* loader ƒXƒNƒŠƒvƒg‚Å‚Í eval-when ‚ğ‚â‚ß‚½B
+	* loader ã‚¹ã‚¯ãƒªãƒ—ãƒˆã§ã¯ eval-when ã‚’ã‚„ã‚ãŸã€‚
 
-	* cairo ƒpƒbƒP[ƒW‚Ì nicknames ‚É cairo.api ‚ğİ’è
+	* cairo ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã® nicknames ã« cairo.api ã‚’è¨­å®š
 
 	* cairo/xxx/cairo.l => cairo/xxx.l
 
-	* - package.l ‚ğ•ªŠ„B
-	  - conditions.l, version.l ‚ğ api/ ‚ÉˆÚ“®B
+	* - package.l ã‚’åˆ†å‰²ã€‚
+	  - conditions.l, version.l ã‚’ api/ ã«ç§»å‹•ã€‚
 
 2007-05-27  MIYAMUKO Katsuyuki
 
-	* xycairo 0.0.3 ƒŠƒŠ[ƒX!
+	* xycairo 0.0.3 ãƒªãƒªãƒ¼ã‚¹!
 
-	* - (with-cairo, with-cairo-surface): Å’áŒÀ‚Ì with- Œnƒ}ƒNƒ
-	  - (cairo-win32-font-face-create): LOGFONTW ì¬ƒ†[ƒeƒBƒŠƒeƒB
+	* - (with-cairo, with-cairo-surface): æœ€ä½é™ã® with- ç³»ãƒã‚¯ãƒ­
+	  - (cairo-win32-font-face-create): LOGFONTW ä½œæˆãƒ¦ãƒ¼ãƒ†ã‚£ãƒªãƒ†ã‚£
 
 2007-05-26  MIYAMUKO Katsuyuki
 
-	* (with-destroy-c-ptr): destroy ‚µ‚½Œã‚É reference-count ‚ğŒ©‚é‚×‚«‚Å‚Í‚È‚¢B
-	  ˆê“x reference-count ‚Å—‚¿‚½B
+	* (with-destroy-c-ptr): destroy ã—ãŸå¾Œã« reference-count ã‚’è¦‹ã‚‹ã¹ãã§ã¯ãªã„ã€‚
+	  ä¸€åº¦ reference-count ã§è½ã¡ãŸã€‚
 
-	* ƒpƒbƒP[ƒW–¼‚Ì‹æØ‚è‚ğ - ‚©‚ç . ‚É‚µ‚½B
+	* ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸åã®åŒºåˆ‡ã‚Šã‚’ - ã‹ã‚‰ . ã«ã—ãŸã€‚
 	  cairo-ffi => cairo.ffi
 	  cairo-util => cairo.util
 	  cairo-ext => cairo.ext
 
 2007-05-20  MIYAMUKO Katsuyuki
 
-	* (cairo-text-extents): –³ŒÀÄ‹A‚µ‚Ä‚¢‚½BB
+	* (cairo-text-extents): ç„¡é™å†å¸°ã—ã¦ã„ãŸã€‚ã€‚
 	  (cairo-glyph-extents): ditto.
 
-	* (export-structure): \‘¢‘Ì‚Ì–¼‘O‚Í export ‚µ‚È‚¢‚æ‚¤‚É‚µ‚½B
+	* (export-structure): æ§‹é€ ä½“ã®åå‰ã¯ export ã—ãªã„ã‚ˆã†ã«ã—ãŸã€‚
 
-	* (create-logfontw, cairo-win32-font-face-create): cairo-ext ‚ÉˆÚ“®B
-	  cairo-win32-font-face-create@‚ª‚ ‚ê‚Î create-logfont ‚Í‚¢‚ç‚È‚¢‚Æv‚¤‚Ì‚Å export ‚·‚é‚Ì‚ğ‚â‚ß‚½B
+	* (create-logfontw, cairo-win32-font-face-create): cairo-ext ã«ç§»å‹•ã€‚
+	  cairo-win32-font-face-createã€€ãŒã‚ã‚Œã° create-logfont ã¯ã„ã‚‰ãªã„ã¨æ€ã†ã®ã§ export ã™ã‚‹ã®ã‚’ã‚„ã‚ãŸã€‚
 
-	* (examples/polygon.l): -90 “x‚·‚é‚æ‚¤‚É‚µ‚½B
+	* (examples/polygon.l): -90 åº¦ã™ã‚‹ã‚ˆã†ã«ã—ãŸã€‚
 
-	* - (cairo-scaled-font-extents-alist): extents ‚ğ alist ‚Å•Ô‚·ŠÖ”‚ğ’Ç‰Á
+	* - (cairo-scaled-font-extents-alist): extents ã‚’ alist ã§è¿”ã™é–¢æ•°ã‚’è¿½åŠ 
 	  - (cairo-scaled-font-text-extents-alist): ditto
 	  - (cairo-scaled-font-glyph-extents-alist): ditto
-	  - (cairo-scaled-font-extents): \‘¢‘Ì‚Å‚Í‚È‚­‘½’l‚Å•Ô‚·‚æ‚¤‚É‚µ‚½B
+	  - (cairo-scaled-font-extents): æ§‹é€ ä½“ã§ã¯ãªãå¤šå€¤ã§è¿”ã™ã‚ˆã†ã«ã—ãŸã€‚
 	  - (cairo-scaled-font-text-extents): ditto
 	  - (cairo-scaled-font-glyph-extents): ditto
 
-	* - (cairo-glyph-extents0): autoboxing ‚Å atom -> list •ÏŠ·‚·‚é‚æ‚¤‚É‚µ‚½B
-	  - (cairo-font-extents): xxx-values ‚ğ macro ‚Å’è‹`‚·‚é‚æ‚¤‚É‚µ‚½‚Ì‚Å‚»‚ê‚ğg‚¤B
+	* - (cairo-glyph-extents0): autoboxing ã§ atom -> list å¤‰æ›ã™ã‚‹ã‚ˆã†ã«ã—ãŸã€‚
+	  - (cairo-font-extents): xxx-values ã‚’ macro ã§å®šç¾©ã™ã‚‹ã‚ˆã†ã«ã—ãŸã®ã§ãã‚Œã‚’ä½¿ã†ã€‚
 	  - (cairo-text-extents): ditto
 	  - (cairo-glyph-extents): ditto
 
-	* (define-autoboxing-for (cairo::array-of-glyph-t)): ˆø”‚ª atom ‚È‚ç list ‚É‚·‚é‚æ‚¤‚É‚µ‚½B
+	* (define-autoboxing-for (cairo::array-of-glyph-t)): å¼•æ•°ãŒ atom ãªã‚‰ list ã«ã™ã‚‹ã‚ˆã†ã«ã—ãŸã€‚
 
-	* (define-c-struct-wrapper): xxx-values ‚ğ’Ç‰ÁB\‘¢‘Ì‚Ì’l‚ğ‘½’l‚Å•Ô‚·B
+	* (define-c-struct-wrapper): xxx-values ã‚’è¿½åŠ ã€‚æ§‹é€ ä½“ã®å€¤ã‚’å¤šå€¤ã§è¿”ã™ã€‚
 
-	* (_loader.l): ƒŠƒ[ƒhˆ—‚ğ‰ü‘PB
-	  delete-package ‚µ‚Ä‚µ‚Ü‚¦‚ÎƒVƒ“ƒ{ƒ‹‚ğˆê‚Âˆê‚ÂÁ‚³‚È‚­‚Ä‚à‚¢‚¢
+	* (_loader.l): ãƒªãƒ­ãƒ¼ãƒ‰å‡¦ç†ã‚’æ”¹å–„ã€‚
+	  delete-package ã—ã¦ã—ã¾ãˆã°ã‚·ãƒ³ãƒœãƒ«ã‚’ä¸€ã¤ä¸€ã¤æ¶ˆã•ãªãã¦ã‚‚ã„ã„
 
-	* (_loader.l): user “à‚Ì“¯‚¶–¼‘O‚ÌƒVƒ“ƒ{ƒ‹‚ğŸè‚É unintern ‚·‚é‚æ‚¤‚É‚µ‚½B
-	  ‚È‚ñ‚Å sym ‚ğ’¼Ú“n‚·‚Æ‘Ê–Ú‚È‚Ì‚©‚Í•s–¾B
+	* (_loader.l): user å†…ã®åŒã˜åå‰ã®ã‚·ãƒ³ãƒœãƒ«ã‚’å‹æ‰‹ã« unintern ã™ã‚‹ã‚ˆã†ã«ã—ãŸã€‚
+	  ãªã‚“ã§ sym ã‚’ç›´æ¥æ¸¡ã™ã¨é§„ç›®ãªã®ã‹ã¯ä¸æ˜ã€‚
 
 2007-05-19  MIYAMUKO Katsuyuki
 
-	* - (cairo-font-extents): \‘¢‘Ì‚Å‚Í‚È‚­‘½’l‚Å•Ô‚·‚æ‚¤‚É‚µ‚½B
+	* - (cairo-font-extents): æ§‹é€ ä½“ã§ã¯ãªãå¤šå€¤ã§è¿”ã™ã‚ˆã†ã«ã—ãŸã€‚
 	  - (cairo-text-extents): ditto
 	  - (cairo-glyph-extents): ditto
-	  - (cairo-font-extents-alist): ‘½’l‚Å‚Í‚È‚­ alist ‚Å•Ô‚·ŠÖ”B
+	  - (cairo-font-extents-alist): å¤šå€¤ã§ã¯ãªã alist ã§è¿”ã™é–¢æ•°ã€‚
 	  - (cairo-text-extents-alist): ditto
 	  - (cairo-glyph-extents-alist): ditto
 
-	* (cairo-glyph-extents): ˆø”‚ª atom ‚Å‚à ok ‚É‚µ‚½B
+	* (cairo-glyph-extents): å¼•æ•°ãŒ atom ã§ã‚‚ ok ã«ã—ãŸã€‚
 
-	* (cairo-clip-extents-alist): ‘½’l‚Å‚Í‚È‚­ alist ‚Å•Ô‚·ŠÖ”‚ğ’Ç‰ÁB
+	* (cairo-clip-extents-alist): å¤šå€¤ã§ã¯ãªã alist ã§è¿”ã™é–¢æ•°ã‚’è¿½åŠ ã€‚
 	  (cairo-fill-extents-alist): ditto.
 	  (cairo-stroke-extents-alist): ditto.
 
-	* cairo-ext ƒpƒbƒP[ƒW‚ğ’Ç‰ÁB
-	  ƒˆ‚È cairo API ‚ÌƒoƒCƒ“ƒfƒBƒ“ƒO‚Å‚Í‚È‚¢“Æ©Šg’£‚Í‚±‚ÌƒpƒbƒP[ƒW“à‚É“ü‚ê‚éB
+	* cairo-ext ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã‚’è¿½åŠ ã€‚
+	  ç´”ç²‹ãª cairo API ã®ãƒã‚¤ãƒ³ãƒ‡ã‚£ãƒ³ã‚°ã§ã¯ãªã„ç‹¬è‡ªæ‹¡å¼µã¯ã“ã®ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸å†…ã«å…¥ã‚Œã‚‹ã€‚
 
-	* examples/show-glyphs-select-font.l ‚ğ 800x800 ‚É‚µ‚½B
+	* examples/show-glyphs-select-font.l ã‚’ 800x800 ã«ã—ãŸã€‚
 
 2007-05-18  MIYAMUKO Katsuyuki
 
-	* (cairo-path-list): Šù‘¶‚Ì cairo-path-list ‚Í cairo-path-list0 ‚É‚µ‚Ä
-	  ‚±‚ê‚Í cairo::context ‚ğˆø”‚Éæ‚é‚æ‚¤‚É‚µ‚½B
+	* (cairo-path-list): æ—¢å­˜ã® cairo-path-list ã¯ cairo-path-list0 ã«ã—ã¦
+	  ã“ã‚Œã¯ cairo::context ã‚’å¼•æ•°ã«å–ã‚‹ã‚ˆã†ã«ã—ãŸã€‚
 
-	* (extents/lisp-2.0.l): DoCoMo 2.0 •—‰æ‘œ¶¬ƒTƒ“ƒvƒ‹‚Ì’Ç‰ÁB
+	* (extents/lisp-2.0.l): DoCoMo 2.0 é¢¨ç”»åƒç”Ÿæˆã‚µãƒ³ãƒ—ãƒ«ã®è¿½åŠ ã€‚
 
-	* (do-snippets): normalize ˆø”‚ğ’Ç‰ÁB
+	* (do-snippets): normalize å¼•æ•°ã‚’è¿½åŠ ã€‚
 
-	* (do-snippets): ˆø”‚Å width, height ‚ğw’è‚Å‚«‚é‚æ‚¤‚É‚µ‚½B
+	* (do-snippets): å¼•æ•°ã§ width, height ã‚’æŒ‡å®šã§ãã‚‹ã‚ˆã†ã«ã—ãŸã€‚
 
-	* (examples/polygon.l): ‘½ŠpŒ`‚Ì•`‰æƒTƒ“ƒvƒ‹B
+	* (examples/polygon.l): å¤šè§’å½¢ã®æç”»ã‚µãƒ³ãƒ—ãƒ«ã€‚
 
 	* M-PI => pi
 
 2007-05-16  MIYAMUKO Katsuyuki
 
-	* (examples/pie-chart.l): ‰~ƒOƒ‰ƒt‚ÌƒTƒ“ƒvƒ‹’Ç‰ÁB
+	* (examples/pie-chart.l): å††ã‚°ãƒ©ãƒ•ã®ã‚µãƒ³ãƒ—ãƒ«è¿½åŠ ã€‚
 
 2007-05-15  MIYAMUKO Katsuyuki
 
-	* README XV
+	* README æ›´æ–°
 
 2007-05-13  MIYAMUKO Katsuyuki
 
-	* cairo 0.0.2 ƒŠƒŠ[ƒX!
+	* cairo 0.0.2 ãƒªãƒªãƒ¼ã‚¹!
 
-	* - dll ’u‚«ê‚ğ site-lisp/cairo/lib ‚É‚µ‚½
+	* - dll ç½®ãå ´ã‚’ site-lisp/cairo/lib ã«ã—ãŸ
 
-	* - commdlg ‚ª‘¶İ‚µ‚È‚¢‚Æ‚«‚ÌƒƒbƒZ[ƒWC³B
+	* - commdlg ãŒå­˜åœ¨ã—ãªã„ã¨ãã®ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ä¿®æ­£ã€‚
 
-	* - (run-all-snippets): ƒGƒ‰[‚ªo‚Ä‚à–³‹‚·‚é‚æ‚¤‚É‚µ‚½B
+	* - (run-all-snippets): ã‚¨ãƒ©ãƒ¼ãŒå‡ºã¦ã‚‚ç„¡è¦–ã™ã‚‹ã‚ˆã†ã«ã—ãŸã€‚
 
 	* - (create-logfontw):
-	    - (length str) ‚¾‚Æ•¶š”‚É‚È‚Á‚Ä‚µ‚Ü‚¤‚Ì‚Å
-	      c string ‚ÌƒoƒCƒg”‚ğæ‚é‚É‚Í si:chunk-size ‚ğg‚¤‚×‚«B
-	    - ƒR[ƒhƒy[ƒW‚ğ 932 ‚É‚µ‚Ä‚İ‚½B
-	    - ƒGƒ‰[ˆ—‚ğ‚µ‚Á‚©‚è‚µ‚½B
+	    - (length str) ã ã¨æ–‡å­—æ•°ã«ãªã£ã¦ã—ã¾ã†ã®ã§
+	      c string ã®ãƒã‚¤ãƒˆæ•°ã‚’å–ã‚‹ã«ã¯ si:chunk-size ã‚’ä½¿ã†ã¹ãã€‚
+	    - ã‚³ãƒ¼ãƒ‰ãƒšãƒ¼ã‚¸ã‚’ 932 ã«ã—ã¦ã¿ãŸã€‚
+	    - ã‚¨ãƒ©ãƒ¼å‡¦ç†ã‚’ã—ã£ã‹ã‚Šã—ãŸã€‚
 
-	* - GetLastError ’Ç‰ÁB
+	* - GetLastError è¿½åŠ ã€‚
 
-	* - MultiByteToWideChar ‚Åg‚¤ƒGƒ‰[ƒR[ƒh‚ğ’è‹`B
+	* - MultiByteToWideChar ã§ä½¿ã†ã‚¨ãƒ©ãƒ¼ã‚³ãƒ¼ãƒ‰ã‚’å®šç¾©ã€‚
 
-	* - create-logfontw ‚Ì example
+	* - create-logfontw ã® example
 
-	* - ƒtƒHƒ“ƒg‚ğ‘I‘ğ‚µ‚Ä show-glyphs ‚·‚éƒTƒ“ƒvƒ‹ƒR[ƒh‚ğ’Ç‰ÁB
+	* - ãƒ•ã‚©ãƒ³ãƒˆã‚’é¸æŠã—ã¦ show-glyphs ã™ã‚‹ã‚µãƒ³ãƒ—ãƒ«ã‚³ãƒ¼ãƒ‰ã‚’è¿½åŠ ã€‚
 
 2007-05-12  MIYAMUKO Katsuyuki
 
 	* - (create-logfontw): new function.
 
-	* - LOGFONTW ŠÖ˜A‚Ì’è”’Ç‰ÁB
-	  - MultibyteToWidechar ’Ç‰ÁB
+	* - LOGFONTW é–¢é€£ã®å®šæ•°è¿½åŠ ã€‚
+	  - MultibyteToWidechar è¿½åŠ ã€‚
 
-	* - (define-library): ƒoƒCƒgƒRƒ“ƒpƒCƒ‹‚·‚é‚ÆƒGƒ‰[‚É‚È‚é‚Ì‚Å func-converter ‚ª nil ‚Ìê‡A
-	    func-converter ‚ğg‚í‚È‚¢‚æ‚¤‚Éƒ}ƒNƒ“WŠJ‚·‚é‚±‚Æ‚É‚µ‚½B
+	* - (define-library): ãƒã‚¤ãƒˆã‚³ãƒ³ãƒ‘ã‚¤ãƒ«ã™ã‚‹ã¨ã‚¨ãƒ©ãƒ¼ã«ãªã‚‹ã®ã§ func-converter ãŒ nil ã®å ´åˆã€
+	    func-converter ã‚’ä½¿ã‚ãªã„ã‚ˆã†ã«ãƒã‚¯ãƒ­å±•é–‹ã™ã‚‹ã“ã¨ã«ã—ãŸã€‚
 
-	* - –ß‚è’l‚ª double or float ‚Ì‚Í out ˆø”‚Å–ß‚è’l‚ğó‚¯æ‚éŠÖ”‚à’Ç‰Á‚·‚é‚æ‚¤‚É‚µ‚½B
+	* - æˆ»ã‚Šå€¤ãŒ double or float ã®æ™‚ã¯ out å¼•æ•°ã§æˆ»ã‚Šå€¤ã‚’å—ã‘å–ã‚‹é–¢æ•°ã‚‚è¿½åŠ ã™ã‚‹ã‚ˆã†ã«ã—ãŸã€‚
 
-	* - ¶¬‚·‚éƒ\[ƒX‚ğw’è‚Å‚«‚é‚æ‚¤‚É‚µ‚½ (--ffi, --api ƒIƒvƒVƒ‡ƒ“‚ğ’Ç‰Á)B
+	* - ç”Ÿæˆã™ã‚‹ã‚½ãƒ¼ã‚¹ã‚’æŒ‡å®šã§ãã‚‹ã‚ˆã†ã«ã—ãŸ (--ffi, --api ã‚ªãƒ—ã‚·ãƒ§ãƒ³ã‚’è¿½åŠ )ã€‚
 
-	* - cairo-show-glyphs ‚É workaround ‚ğ’Ç‰Á‚µ‚½B
+	* - cairo-show-glyphs ã« workaround ã‚’è¿½åŠ ã—ãŸã€‚
 
-	* - (cairo-show-glyphs): cairo_show_glyphs ‚É•¡”‚Ì glyph-t ‚ğ“n‚·‚Æ‚¤‚Ü‚­•`‰æ‚³‚ê‚È‚¢
-	    ‚±‚Æ‚ª‚ ‚é‚Ì‚ÅA1 ‚Â‚Ã‚Â“n‚·‚±‚Æ‚É‚µ‚½B
+	* - (cairo-show-glyphs): cairo_show_glyphs ã«è¤‡æ•°ã® glyph-t ã‚’æ¸¡ã™ã¨ã†ã¾ãæç”»ã•ã‚Œãªã„
+	    ã“ã¨ãŒã‚ã‚‹ã®ã§ã€1 ã¤ã¥ã¤æ¸¡ã™ã“ã¨ã«ã—ãŸã€‚
 
-	* - dll ‚ğ cairo/lib ‚ÉˆÚ“®‚µ‚½B
+	* - dll ã‚’ cairo/lib ã«ç§»å‹•ã—ãŸã€‚
 
-	* - (with-destroy-c-ptr): reference count ‚ª 0 ˆÈŠO‚Ìê‡‚Ì‚İÀÛ‚É destroy ‚ğŒÄ‚Ô‚æ‚¤‚É‚µ‚½B
+	* - (with-destroy-c-ptr): reference count ãŒ 0 ä»¥å¤–ã®å ´åˆã®ã¿å®Ÿéš›ã« destroy ã‚’å‘¼ã¶ã‚ˆã†ã«ã—ãŸã€‚
 
 2007-05-11  MIYAMUKO Katsuyuki
 
@@ -535,24 +535,24 @@
 	  - (cairo-reload-dll): use abobe constant.
 	  - (cairo-unload-dll): should remove module name from *modules*.
 
-	* - (snippet-filename): examples/ ‚ÌƒXƒNƒŠƒvƒg‚ğ eval-buffer ‚ÅÀs‚µ‚½ê‡‚É
-	    startup.lc ‚ğ png ƒtƒ@ƒCƒ‹‚Åã‘‚«‚µ‚Ä‚¢‚½ƒoƒO‚ğC³B
+	* - (snippet-filename): examples/ ã®ã‚¹ã‚¯ãƒªãƒ—ãƒˆã‚’ eval-buffer ã§å®Ÿè¡Œã—ãŸå ´åˆã«
+	    startup.lc ã‚’ png ãƒ•ã‚¡ã‚¤ãƒ«ã§ä¸Šæ›¸ãã—ã¦ã„ãŸãƒã‚°ã‚’ä¿®æ­£ã€‚
 	  - (snippet-directory (snippet-filename)) => snippet-directory
 
 2007-05-07  MIYAMUKO Katsuyuki
 
-	* cairo 0.0.1 ƒŠƒŠ[ƒX!
+	* cairo 0.0.1 ãƒªãƒªãƒ¼ã‚¹!
 
-	* - ƒoƒCƒgƒRƒ“ƒpƒCƒ‹‚Ì‡‚ğ‰º‚©‚ç‚â‚é‚æ‚¤‚É‚µ‚½BˆÓ–¡‚È‚µH
-	  - ˆê•”‚Ìƒtƒ@ƒCƒ‹‚ªŠÜ‚Ü‚ê‚Ä‚¢‚È‚©‚Á‚½‚Ì‚ğC³B
+	* - ãƒã‚¤ãƒˆã‚³ãƒ³ãƒ‘ã‚¤ãƒ«ã®é †ã‚’ä¸‹ã‹ã‚‰ã‚„ã‚‹ã‚ˆã†ã«ã—ãŸã€‚æ„å‘³ãªã—ï¼Ÿ
+	  - ä¸€éƒ¨ã®ãƒ•ã‚¡ã‚¤ãƒ«ãŒå«ã¾ã‚Œã¦ã„ãªã‹ã£ãŸã®ã‚’ä¿®æ­£ã€‚
 
-	* - (define-c-private-struct-wrapper): defstruct ‚Æ define-autoboxing-for ‚ğ eval-when ‚ÅˆÍ‚Á‚½B
+	* - (define-c-private-struct-wrapper): defstruct ã¨ define-autoboxing-for ã‚’ eval-when ã§å›²ã£ãŸã€‚
 	  - (define-c-struct-wrapper): ditto.
-	  - (define-c-struct-wrapper): defstruct ‚É‚æ‚Á‚Ä’è‹`‚³‚ê‚é make-xxx ‚ª‚Ü‚¾Œ©‚¦‚È‚¢‚İ‚½‚¢‚È‚Ì‚ÅA
-	    xxx-new-chunk-with-check “à‚Å make-xxx ‚ğQÆ‚·‚é‚Ì‚ğ‚â‚ß‚ÄA
-	    defstruct ‚Ìƒƒ“ƒo‚Ì‰Šú’l‚É make-xxx ‚ğw’è‚·‚é‚æ‚¤‚É‚µ‚½B
+	  - (define-c-struct-wrapper): defstruct ã«ã‚ˆã£ã¦å®šç¾©ã•ã‚Œã‚‹ make-xxx ãŒã¾ã è¦‹ãˆãªã„ã¿ãŸã„ãªã®ã§ã€
+	    xxx-new-chunk-with-check å†…ã§ make-xxx ã‚’å‚ç…§ã™ã‚‹ã®ã‚’ã‚„ã‚ã¦ã€
+	    defstruct ã®ãƒ¡ãƒ³ãƒã®åˆæœŸå€¤ã« make-xxx ã‚’æŒ‡å®šã™ã‚‹ã‚ˆã†ã«ã—ãŸã€‚
 
-	* - write-func-t ‚Í svg ‚Å‚àg‚¤‚Ì‚Å support/types.l ‚ÉˆÚ“®B
+	* - write-func-t ã¯ svg ã§ã‚‚ä½¿ã†ã®ã§ support/types.l ã«ç§»å‹•ã€‚
 
 	* add MANIFEST.yml
 
@@ -560,161 +560,161 @@
 
 	* update document.
 
-	* - cairo ‚Ì COPYING, COPYING-LGPL-2.1‚ğ’Ç‰ÁB
+	* - cairo ã® COPYING, COPYING-LGPL-2.1ã‚’è¿½åŠ ã€‚
 
-	* - defsetf ‚ÌƒeƒXƒg’Ç‰ÁB
+	* - defsetf ã®ãƒ†ã‚¹ãƒˆè¿½åŠ ã€‚
 
 	* add readme for examples.
 
 	* - add examples
 
-	* - defsetf ‚ğ’Ç‰ÁB
+	* - defsetf ã‚’è¿½åŠ ã€‚
 
-	* - ƒ}ƒNƒ“WŠJŒã‚ÌŒ‹‰Ê‚ÉƒNƒ[ƒWƒƒ‚ª‚ ‚é‚ÆAƒRƒ“ƒpƒCƒ‹‚µ‚½ƒtƒ@ƒCƒ‹‚ğƒ[ƒh‚Å‚«‚È‚¢B
+	* - ãƒã‚¯ãƒ­å±•é–‹å¾Œã®çµæœã«ã‚¯ãƒ­ãƒ¼ã‚¸ãƒ£ãŒã‚ã‚‹ã¨ã€ã‚³ãƒ³ãƒ‘ã‚¤ãƒ«ã—ãŸãƒ•ã‚¡ã‚¤ãƒ«ã‚’ãƒ­ãƒ¼ãƒ‰ã§ããªã„ã€‚
 
 	* add tests.
 
-	* - xyzzy ‚Í–ß‚è’l‚ª float ‚â double ‚¾‚ÆƒNƒ‰ƒbƒVƒ…‚·‚é‚Ì‚ÅAƒAƒEƒgˆø”‚ğ‚Æ‚éŠÖ”‚ğ’Ç‰Á‚µ‚Ä‰ñ”ğB
+	* - xyzzy ã¯æˆ»ã‚Šå€¤ãŒ float ã‚„ double ã ã¨ã‚¯ãƒ©ãƒƒã‚·ãƒ¥ã™ã‚‹ã®ã§ã€ã‚¢ã‚¦ãƒˆå¼•æ•°ã‚’ã¨ã‚‹é–¢æ•°ã‚’è¿½åŠ ã—ã¦å›é¿ã€‚
 
-	* - (cairo-status-to-string): ˆø”‚ª”’l‚Ìê‡‚Í‚»‚Ì‚Ü‚Ü %cairo-status-to-string ‚Éw’è‚·‚éB
-	    ƒo[ƒWƒ‡ƒ“‚ª‚ ‚ª‚Á‚Ä’m‚ç‚È‚¢ƒGƒ‰[‚ª•š‚¹‚½ê‡‘ÎôB
-	  - (raise-error-if-cairo-status-is-not-success): ƒGƒ‰[ƒR[ƒh‚É‘Î‰‚·‚é—áŠO‚ğ“Š‚°‚é‚æ‚¤‚É‚µ‚½B
+	* - (cairo-status-to-string): å¼•æ•°ãŒæ•°å€¤ã®å ´åˆã¯ãã®ã¾ã¾ %cairo-status-to-string ã«æŒ‡å®šã™ã‚‹ã€‚
+	    ãƒãƒ¼ã‚¸ãƒ§ãƒ³ãŒã‚ãŒã£ã¦çŸ¥ã‚‰ãªã„ã‚¨ãƒ©ãƒ¼ãŒä¼ã›ãŸå ´åˆå¯¾ç­–ã€‚
+	  - (raise-error-if-cairo-status-is-not-success): ã‚¨ãƒ©ãƒ¼ã‚³ãƒ¼ãƒ‰ã«å¯¾å¿œã™ã‚‹ä¾‹å¤–ã‚’æŠ•ã’ã‚‹ã‚ˆã†ã«ã—ãŸã€‚
 
-	* - error status –ˆ‚É—áŠO‚ğ’è‹`B
+	* - error status æ¯ã«ä¾‹å¤–ã‚’å®šç¾©ã€‚
 
-	* - out ˆø”‚È‚Ç‚ğÀ‘•B
-	  - (cairo-rectangle-list-destroy, cairo-copy-clip-rectangle-list): “à•”‚Åg‚¤‚¾‚¯‚È‚Ì‚Å export ‚µ‚È‚¢B
-	  - (cairo-clip-rectangle-list): ã‹L 2 ‚Â‚ğ‚ ‚í‚¹‚½ŠÖ”B
+	* - out å¼•æ•°ãªã©ã‚’å®Ÿè£…ã€‚
+	  - (cairo-rectangle-list-destroy, cairo-copy-clip-rectangle-list): å†…éƒ¨ã§ä½¿ã†ã ã‘ãªã®ã§ export ã—ãªã„ã€‚
+	  - (cairo-clip-rectangle-list): ä¸Šè¨˜ 2 ã¤ã‚’ã‚ã‚ã›ãŸé–¢æ•°ã€‚
 
-	* \‘¢‘Ì‚Ì’†‚Ì status-t ‚Ü‚Å•ÏŠ·‚³‚ê‚é‚Æ¢‚é‚Ì‚Å returning ‚Ì‚Æ‚«‚¾‚¯—áŠO‚ğ“Š‚°‚é‚æ‚¤‚É‚µ‚½B
-	  - (returning): returning-hook ƒvƒƒpƒeƒB‚ª‚ ‚ê‚Î‚»‚ê‚ğg‚¤B
-	  - raise-error-if-cairo-status-is-not-success ‚Í returning-hook ‚ÅB
+	* æ§‹é€ ä½“ã®ä¸­ã® status-t ã¾ã§å¤‰æ›ã•ã‚Œã‚‹ã¨å›°ã‚‹ã®ã§ returning ã®ã¨ãã ã‘ä¾‹å¤–ã‚’æŠ•ã’ã‚‹ã‚ˆã†ã«ã—ãŸã€‚
+	  - (returning): returning-hook ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ãŒã‚ã‚Œã°ãã‚Œã‚’ä½¿ã†ã€‚
+	  - raise-error-if-cairo-status-is-not-success ã¯ returning-hook ã§ã€‚
 
-	* - rectangle, rectangle-list ‚ğ’è‹`B
+	* - rectangle, rectangle-list ã‚’å®šç¾©ã€‚
 
-	* - (symbol-join-to): package ‚ğw’è‰Â”\‚È symbol-join.
+	* - (symbol-join-to): package ã‚’æŒ‡å®šå¯èƒ½ãª symbol-join.
 
-	* - cairo::array-of-double “ÁêŒ^‚Ìƒnƒ“ƒhƒ‰‚ğ’Ç‰ÁB
+	* - cairo::array-of-double ç‰¹æ®Šå‹ã®ãƒãƒ³ãƒ‰ãƒ©ã‚’è¿½åŠ ã€‚
 
-	* - (define-c-struct-wrapper): pointer Œ^‚Ì c->lisp ƒvƒƒpƒeƒB‚ğİ’èB
+	* - (define-c-struct-wrapper): pointer å‹ã® c->lisp ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ã‚’è¨­å®šã€‚
 
-	* - out ˆø”‚É‘Î‰B
-	  - cairo-win32-scaled-font-get-metrics-factor ‚ÍƒNƒ‰ƒbƒVƒ…‚·‚é‚Ì‚Å‚Æ‚è‚ ‚¦‚¸ƒRƒƒ“ƒgƒAƒEƒgB
+	* - out å¼•æ•°ã«å¯¾å¿œã€‚
+	  - cairo-win32-scaled-font-get-metrics-factor ã¯ã‚¯ãƒ©ãƒƒã‚·ãƒ¥ã™ã‚‹ã®ã§ã¨ã‚Šã‚ãˆãšã‚³ãƒ¡ãƒ³ãƒˆã‚¢ã‚¦ãƒˆã€‚
 
-	* - ‚Æ‚è‚ ‚¦‚¸ HFONT ‚Í–³•ÏŠ·‚Å’Ê‚·B
+	* - ã¨ã‚Šã‚ãˆãš HFONT ã¯ç„¡å¤‰æ›ã§é€šã™ã€‚
 
-	* - scaled-font.l ‚ğÀ‘•‚µ‚½B
+	* - scaled-font.l ã‚’å®Ÿè£…ã—ãŸã€‚
 
-	* - (cairo-path-list): cairo_path_data_t ‚ğƒgƒ‰ƒo[ƒX‚µ‚Ä list ‚Å•Ô‚·B
+	* - (cairo-path-list): cairo_path_data_t ã‚’ãƒˆãƒ©ãƒãƒ¼ã‚¹ã—ã¦ list ã§è¿”ã™ã€‚
 
-	* - out ˆø”‚ğÀ‘•B
+	* - out å¼•æ•°ã‚’å®Ÿè£…ã€‚
 
-	* - path-t ‚Ì wrapper ’è‹`B
+	* - path-t ã® wrapper å®šç¾©ã€‚
 
-	* - (define-c-struct-wrapper): make-xxx-from-ptr ‚ğ’Ç‰ÁB
-	    ƒ|ƒCƒ“ƒ^‚©‚çƒ`ƒƒƒ“ƒN‚ğŠm•Û‚µ‚Äƒ‰ƒbƒp[‚ğì¬‚·‚éB
+	* - (define-c-struct-wrapper): make-xxx-from-ptr ã‚’è¿½åŠ ã€‚
+	    ãƒã‚¤ãƒ³ã‚¿ã‹ã‚‰ãƒãƒ£ãƒ³ã‚¯ã‚’ç¢ºä¿ã—ã¦ãƒ©ãƒƒãƒ‘ãƒ¼ã‚’ä½œæˆã™ã‚‹ã€‚
 
-	* - ƒƒ“ƒo‚Íw’è‚µ‚È‚­‚Ä‚à‚æ‚¢‚Ì‚ÅíœB
+	* - ãƒ¡ãƒ³ãƒã¯æŒ‡å®šã—ãªãã¦ã‚‚ã‚ˆã„ã®ã§å‰Šé™¤ã€‚
 
-	* - (define-c-struct-wrapper): rst ˆø”‚Í•s—v‚È‚Ì‚ÅíœB
+	* - (define-c-struct-wrapper): rst å¼•æ•°ã¯ä¸è¦ãªã®ã§å‰Šé™¤ã€‚
 
-	* - (cairo-show-glyphs): array-of-glyph-t “ÁêŒ^‚ğg‚Á‚ÄÄÀ‘•B
+	* - (cairo-show-glyphs): array-of-glyph-t ç‰¹æ®Šå‹ã‚’ä½¿ã£ã¦å†å®Ÿè£…ã€‚
 	  - (cairo-glyph-extents): ditto.
 
-	* - (number-of): ”z—ñƒ`ƒƒƒ“ƒN‚Ì—v‘f”‚ğ•Ô‚·B
+	* - (number-of): é…åˆ—ãƒãƒ£ãƒ³ã‚¯ã®è¦ç´ æ•°ã‚’è¿”ã™ã€‚
 
-	* - cairo::array-of-glyph-t ‚Æ‚¢‚¤“Áê‚ÈŒ^‚ğ’Ç‰ÁB
+	* - cairo::array-of-glyph-t ã¨ã„ã†ç‰¹æ®Šãªå‹ã‚’è¿½åŠ ã€‚
 
-	* - (xxx-sync-xxx): “¯Šú‚·‚é‚Æ‚«‚É c->lisp, lisp->c •ÏŠ·‚ğ‚·‚é‚æ‚¤‚É‚µ‚½B
+	* - (xxx-sync-xxx): åŒæœŸã™ã‚‹ã¨ãã« c->lisp, lisp->c å¤‰æ›ã‚’ã™ã‚‹ã‚ˆã†ã«ã—ãŸã€‚
 
-	* - (define-c-struct-with-ptr): \‘¢‘Ì‚Ìƒƒ“ƒo–¼‚É‘Î‚µ‚Ä c-struct-type ‚Æ‚¢‚¤ƒvƒƒpƒeƒB‚ğİ’èB
-	    c::expand-type ‚¾‚Æ“WŠJÏ‚İ‚ÌŒ^‚µ‚©æ‚ê‚È‚¢‚Ì‚ÅƒIƒŠƒWƒiƒ‹‚ÌŒ^‚ğ•Û‘¶‚µ‚Ä‚¨‚­B
+	* - (define-c-struct-with-ptr): æ§‹é€ ä½“ã®ãƒ¡ãƒ³ãƒåã«å¯¾ã—ã¦ c-struct-type ã¨ã„ã†ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ã‚’è¨­å®šã€‚
+	    c::expand-type ã ã¨å±•é–‹æ¸ˆã¿ã®å‹ã—ã‹å–ã‚Œãªã„ã®ã§ã‚ªãƒªã‚¸ãƒŠãƒ«ã®å‹ã‚’ä¿å­˜ã—ã¦ãŠãã€‚
 
-	* - (c-struct-slot-descriptions): type ‚Æ‚µ‚Ä\‘¢‘Ì‚ğ•Ô‚µ‚Ä‚¢‚½‚Ì‚ğ type –¼‚É‚µ‚½B
+	* - (c-struct-slot-descriptions): type ã¨ã—ã¦æ§‹é€ ä½“ã‚’è¿”ã—ã¦ã„ãŸã®ã‚’ type åã«ã—ãŸã€‚
 
-	* - (define-autoboxing-for): :no-need-to-autoboxing ‚ğƒL[ƒ[ƒh‚©‚çŠÖ”‚É‚µ‚½B
-	    ‚¤‚Á‚©‚è apply ‚µ‚Ä‚à‘åä•v‚È‚æ‚¤‚É‚·‚é‚½‚ßB
+	* - (define-autoboxing-for): :no-need-to-autoboxing ã‚’ã‚­ãƒ¼ãƒ¯ãƒ¼ãƒ‰ã‹ã‚‰é–¢æ•°ã«ã—ãŸã€‚
+	    ã†ã£ã‹ã‚Š apply ã—ã¦ã‚‚å¤§ä¸ˆå¤«ãªã‚ˆã†ã«ã™ã‚‹ãŸã‚ã€‚
 
-	* - (with-c-out-values): unpack ‚µ‚½–ß‚è’l‚ğ c->lisp •ÏŠ·‚·‚é‚æ‚¤‚É‚µ‚½B
-	  - (define-c-struct-wrapper): xxx-t ‚ğ chunk ‚É xxx-t* ‚ğƒ|ƒCƒ“ƒ^‚É•ÏŠ·‚·‚éB
+	* - (with-c-out-values): unpack ã—ãŸæˆ»ã‚Šå€¤ã‚’ c->lisp å¤‰æ›ã™ã‚‹ã‚ˆã†ã«ã—ãŸã€‚
+	  - (define-c-struct-wrapper): xxx-t ã‚’ chunk ã« xxx-t* ã‚’ãƒã‚¤ãƒ³ã‚¿ã«å¤‰æ›ã™ã‚‹ã€‚
 
-	* - c:double ‚ğ lisp ‚É•ÏŠ·‚·‚é‚Æ‚«‚É double-float ‚Í‚¤‚´‚¢‚Ì‚Å single-float ‚É‚·‚é
+	* - c:double ã‚’ lisp ã«å¤‰æ›ã™ã‚‹ã¨ãã« double-float ã¯ã†ã–ã„ã®ã§ single-float ã«ã™ã‚‹
 
 	* - (cairo-path-destroy): call with-destroy-c-ptr.
 
 2007-05-06  MIYAMUKO Katsuyuki
 
-	* - ˆê’Ê‚èÀ‘•B
-	  - cairo-pattern-get-color-stop-rgba-list ‚ğ’Ç‰ÁB
+	* - ä¸€é€šã‚Šå®Ÿè£…ã€‚
+	  - cairo-pattern-get-color-stop-rgba-list ã‚’è¿½åŠ ã€‚
 
-	* - (cairo-pattern-get-radial-circles): out ˆø”‚É‘Î‰B
+	* - (cairo-pattern-get-radial-circles): out å¼•æ•°ã«å¯¾å¿œã€‚
 	  - (cairo-pattern-get-linear-points): ditto.
 
 	* - (cairo-pattern-destroy): call with-destroy-c-ptr.
 
-	* - (ensure-c-ptr-is-not-destroyed): null ‚Ìƒ`ƒFƒbƒN‚Í destroyed ‚Ìƒ`ƒFƒbƒN‚ÌŒã‚ÅB
+	* - (ensure-c-ptr-is-not-destroyed): null ã®ãƒã‚§ãƒƒã‚¯ã¯ destroyed ã®ãƒã‚§ãƒƒã‚¯ã®å¾Œã§ã€‚
 
-	* - (cairo-pattern-create-rga): –ß‚è’l‚ğ cairo-pattern-status ‚Åƒ`ƒFƒbƒNB
+	* - (cairo-pattern-create-rga): æˆ»ã‚Šå€¤ã‚’ cairo-pattern-status ã§ãƒã‚§ãƒƒã‚¯ã€‚
 	  - (cairo-pattern-create-rgba): ditto.
 	  - (cairo-pattern-create-for-surface): ditto.
 	  - (cairo-pattern-create-linea)r: ditto.
 	  - (cairo-pattern-create-radial): ditto.
 
-	* - defsetf ‚ğ’Ç‰ÁB
+	* - defsetf ã‚’è¿½åŠ ã€‚
 
-	* - out •Ï”‚È‚Ç‚¢‚ë‚¢‚ëÀ‘•B
+	* - out å¤‰æ•°ãªã©ã„ã‚ã„ã‚å®Ÿè£…ã€‚
 
-	* - (cairo-get-matrix): matrix-sync-c->lisp ‚Å“¯ŠúB
+	* - (cairo-get-matrix): matrix-sync-c->lisp ã§åŒæœŸã€‚
 
-	* - (define-c-struct-wrapper): lisp ‚Ì\‘¢‘Ì‚É‚à C \‘¢‘Ì‚Ìƒƒ“ƒo‚ğì¬B
-	    xxx-sync-lisp->c, xxx-sync-c->lisp ‚Å“¯Šú‚·‚éB
+	* - (define-c-struct-wrapper): lisp ã®æ§‹é€ ä½“ã«ã‚‚ C æ§‹é€ ä½“ã®ãƒ¡ãƒ³ãƒã‚’ä½œæˆã€‚
+	    xxx-sync-lisp->c, xxx-sync-c->lisp ã§åŒæœŸã™ã‚‹ã€‚
 
-	* - (define-autoboxing-for-char*-with-encoding): ˆê‰ define-c-type ‚µ‚½B
+	* - (define-autoboxing-for-char*-with-encoding): ä¸€å¿œ define-c-type ã—ãŸã€‚
 
-	* - (pack-c-array): ƒ`ƒƒƒ“ƒN‚ÌƒŠƒXƒg‚©‚ç”z—ñ‚É•ÏŠ·B
+	* - (pack-c-array): ãƒãƒ£ãƒ³ã‚¯ã®ãƒªã‚¹ãƒˆã‹ã‚‰é…åˆ—ã«å¤‰æ›ã€‚
 
-	* - (define-c-struct-wrapper): xxx-foo ‚É setf ‚Å‚«‚é‚æ‚¤‚É‚µ‚½B
+	* - (define-c-struct-wrapper): xxx-foo ã« setf ã§ãã‚‹ã‚ˆã†ã«ã—ãŸã€‚
 
-	* - (cairo-svg-get-versions): unpack-c-array ‚Ì•ÏX‚É’Ç]B
+	* - (cairo-svg-get-versions): unpack-c-array ã®å¤‰æ›´ã«è¿½å¾“ã€‚
 
-	* - (unpack-c-array): ƒL[ƒ[ƒhˆø”‚ğ‚â‚ß‚½B
+	* - (unpack-c-array): ã‚­ãƒ¼ãƒ¯ãƒ¼ãƒ‰å¼•æ•°ã‚’ã‚„ã‚ãŸã€‚
 
 	* - (define-autoboxing-for-char*-with-encoding): autoboxing for encoded char*.
 
-	* - (cairo-get-matrix): “à•”‚Å matrix ‚ğ allocate.
-	  - (cairo-user-to-device): out •Ï”‚É‘Î‰B
+	* - (cairo-get-matrix): å†…éƒ¨ã§ matrix ã‚’ allocate.
+	  - (cairo-user-to-device): out å¤‰æ•°ã«å¯¾å¿œã€‚
 	  - (cairo-user-to-device-distance): ditto.
 	  - (cairo-device-to-user): ditto.
 	  - (cairo-device-to-user-distance): ditto.
 
-	* - (cairo-surface-get-device-offset): with-c-out-values ‚ğg‚¤‚æ‚¤‚É‚µ‚½B
+	* - (cairo-surface-get-device-offset): with-c-out-values ã‚’ä½¿ã†ã‚ˆã†ã«ã—ãŸã€‚
 
-	* - (cairo-svg-get-versions): make-int-chunk ‚ğg‚¤‚æ‚¤‚É‚µ‚½B
+	* - (cairo-svg-get-versions): make-int-chunk ã‚’ä½¿ã†ã‚ˆã†ã«ã—ãŸã€‚
 
-	* - (cairo-matrix-transform-distance): with-c-out-values ƒ}ƒNƒ‚ğg‚¤‚æ‚¤‚É‚µ‚½B
+	* - (cairo-matrix-transform-distance): with-c-out-values ãƒã‚¯ãƒ­ã‚’ä½¿ã†ã‚ˆã†ã«ã—ãŸã€‚
 	  - (cairo-matrix-transform-point): ditto.
 
-	* - (with-c-out-values): c ‚Ì out •Ï”‚ğˆµ‚¤ƒ}ƒNƒB
+	* - (with-c-out-values): c ã® out å¤‰æ•°ã‚’æ‰±ã†ãƒã‚¯ãƒ­ã€‚
 
-	* - LOGFONTW* ‚Ì boxing ’è‹`‚ğ’Ç‰Á
-	  - ƒRƒƒ“ƒg‚ğíœB
+	* - LOGFONTW* ã® boxing å®šç¾©ã‚’è¿½åŠ 
+	  - ã‚³ãƒ¡ãƒ³ãƒˆã‚’å‰Šé™¤ã€‚
 
 	* - define chunk maker for c:int and c:double.
 
-	* - (define-chunk-maker-for): define-pack/unpack-for ‚©‚ç rename.
-	    ¶¬‚·‚éŠÖ”‚ğ pack-xxx ‚©‚ç make-xxx-chunk ‚É‚µ‚½B
+	* - (define-chunk-maker-for): define-pack/unpack-for ã‹ã‚‰ rename.
+	    ç”Ÿæˆã™ã‚‹é–¢æ•°ã‚’ pack-xxx ã‹ã‚‰ make-xxx-chunk ã«ã—ãŸã€‚
 
-	* - (define-chunk-maker): api/macros.l ‚Å’è‹`‚µ‚Ä‚¢‚é‚Ì‚ÅíœB
-	  - (check-chunk-type): chunk ‚ÌŒ^ƒ`ƒFƒbƒNƒ}ƒNƒB
-	  - (define-pack/unpack-for): w’è‚µ‚½Œ^‚Ì packer/unpacker ‚ğì¬B
+	* - (define-chunk-maker): api/macros.l ã§å®šç¾©ã—ã¦ã„ã‚‹ã®ã§å‰Šé™¤ã€‚
+	  - (check-chunk-type): chunk ã®å‹ãƒã‚§ãƒƒã‚¯ãƒã‚¯ãƒ­ã€‚
+	  - (define-pack/unpack-for): æŒ‡å®šã—ãŸå‹ã® packer/unpacker ã‚’ä½œæˆã€‚
 
-	* - (define-chunk-maker): struct ‚Ì define-chunk-maker ‚ğíœBapi/macros ‚Ì’†‚Å’è‹`‚µ‚Ä‚¢‚éB
+	* - (define-chunk-maker): struct ã® define-chunk-maker ã‚’å‰Šé™¤ã€‚api/macros ã®ä¸­ã§å®šç¾©ã—ã¦ã„ã‚‹ã€‚
 
-	* - LOGFONTW ‚Ì’è‹`‚ğ types/base.l ‚©‚ç types/win32.l ‚ÉˆÚ“®B
+	* - LOGFONTW ã®å®šç¾©ã‚’ types/base.l ã‹ã‚‰ types/win32.l ã«ç§»å‹•ã€‚
 
-	* - (cairo-reload-dll): require ‚¾‚Æˆê“x“Ç‚Ş‚Æ“Ç‚Ü‚ê‚È‚¢‚Ì‚Å load-library ‚ÅB
+	* - (cairo-reload-dll): require ã ã¨ä¸€åº¦èª­ã‚€ã¨èª­ã¾ã‚Œãªã„ã®ã§ load-library ã§ã€‚
 
-	* - (cairo-font-face-destroy): with-destroy-c-ptr ‚ÅˆÍ‚ŞB
+	* - (cairo-font-face-destroy): with-destroy-c-ptr ã§å›²ã‚€ã€‚
 
 	* - (cairo-image-surface-create-for-data): should check return value with cairo-surface-status.
 
@@ -722,179 +722,179 @@
 
 2007-05-05  MIYAMUKO Katsuyuki
 
-	* - (nullable, null-or-returning): null ‚ğ•Ô‚µ‚Ä‚à‚¢‚¢ƒRƒ“ƒeƒLƒXƒg‚ğì¬B
-	  - (make-xxx-from-ptr): null ‚ğ•Ô‚µ‚Ä‚à‚¢‚¢‚È‚ç nil ‚ğ•Ô‚·B‚»‚êˆÈŠO‚È‚çƒGƒ‰[B
+	* - (nullable, null-or-returning): null ã‚’è¿”ã—ã¦ã‚‚ã„ã„ã‚³ãƒ³ãƒ†ã‚­ã‚¹ãƒˆã‚’ä½œæˆã€‚
+	  - (make-xxx-from-ptr): null ã‚’è¿”ã—ã¦ã‚‚ã„ã„ãªã‚‰ nil ã‚’è¿”ã™ã€‚ãã‚Œä»¥å¤–ãªã‚‰ã‚¨ãƒ©ãƒ¼ã€‚
 
-	* - (cairo-win32-surface-create): cairo-surface-status ‚Å–ß‚è’l‚ğƒ`ƒFƒbƒNB
-	  - (cairo-win32-surface-create-with-dib): null ‚ğ•Ô‚µ‚½ê‡ nil ‚ğ•Ô‚·B
-	  - (cairo-win32-surface-create-with-ddb): null ‚ğ•Ô‚µ‚½ê‡ nil ‚ğ•Ô‚·B
-	  - (cairo-win32-surface-get-dc): null ‚ğ•Ô‚µ‚½ê‡ nil ‚ğ•Ô‚·B
-	  - (cairo-win32-surface-get-image): null ‚ğ•Ô‚µ‚½ê‡ nil ‚ğ•Ô‚·B
+	* - (cairo-win32-surface-create): cairo-surface-status ã§æˆ»ã‚Šå€¤ã‚’ãƒã‚§ãƒƒã‚¯ã€‚
+	  - (cairo-win32-surface-create-with-dib): null ã‚’è¿”ã—ãŸå ´åˆ nil ã‚’è¿”ã™ã€‚
+	  - (cairo-win32-surface-create-with-ddb): null ã‚’è¿”ã—ãŸå ´åˆ nil ã‚’è¿”ã™ã€‚
+	  - (cairo-win32-surface-get-dc): null ã‚’è¿”ã—ãŸå ´åˆ nil ã‚’è¿”ã™ã€‚
+	  - (cairo-win32-surface-get-image): null ã‚’è¿”ã—ãŸå ´åˆ nil ã‚’è¿”ã™ã€‚
 
-	* - (cairo-surface-get-font-options): font option ‚ğ“à•”‚Å allocate ‚·‚é‚æ‚¤‚É‚µ‚½B
-	  - (cairo-surface-get-device-offset): –ß‚è’l‚ğ‘½’l‚Å•Ô‚·‚æ‚¤‚É‚µ‚½B
+	* - (cairo-surface-get-font-options): font option ã‚’å†…éƒ¨ã§ allocate ã™ã‚‹ã‚ˆã†ã«ã—ãŸã€‚
+	  - (cairo-surface-get-device-offset): æˆ»ã‚Šå€¤ã‚’å¤šå€¤ã§è¿”ã™ã‚ˆã†ã«ã—ãŸã€‚
 
-	* - (setf (cairo-font-options-get-hint-metrics opt) :on) ‚Æ‚¢‚¤ŒÄ‚Ño‚µ‚ğ‚Å‚«‚é‚æ‚¤‚É‚µ‚½B
+	* - (setf (cairo-font-options-get-hint-metrics opt) :on) ã¨ã„ã†å‘¼ã³å‡ºã—ã‚’ã§ãã‚‹ã‚ˆã†ã«ã—ãŸã€‚
 
-	* - (cairo-font-options-create): cairo-font-options-status ‚Åƒ`ƒFƒbƒNB
-	  - (cairo-font-options-destroy): call with-destroy-c-ptrBˆÓ–¡‚Í‚È‚¢‚¯‚ÇBB
+	* - (cairo-font-options-create): cairo-font-options-status ã§ãƒã‚§ãƒƒã‚¯ã€‚
+	  - (cairo-font-options-destroy): call with-destroy-c-ptrã€‚æ„å‘³ã¯ãªã„ã‘ã©ã€‚ã€‚
 
-	* - (cairo-surface-destroy): with-destroy-c-ptr ‚ğŒÄ‚Ô‚æ‚¤‚É‚µ‚½B
+	* - (cairo-surface-destroy): with-destroy-c-ptr ã‚’å‘¼ã¶ã‚ˆã†ã«ã—ãŸã€‚
 
-	* - (cairo-surface-create-similar): cairo-surface-status ‚Å–ß‚è’l‚ğƒ`ƒFƒbƒNB
+	* - (cairo-surface-create-similar): cairo-surface-status ã§æˆ»ã‚Šå€¤ã‚’ãƒã‚§ãƒƒã‚¯ã€‚
 
-	* - (define-c-enum-with-ptr): c enum ‚Ì’è”‚ÍƒL[ƒ[ƒh‚¶‚á‚È‚­‚Ä‘¦’l‚É‚µ‚½B
-	    cairo_content_t ‚Æ‚©‚Å (logior CAIRO_CONTENT_COLOR CAIRO_CONTENT_ALPHA) ‚Æ‚Å‚«‚é‚æ‚¤‚ÉB
+	* - (define-c-enum-with-ptr): c enum ã®å®šæ•°ã¯ã‚­ãƒ¼ãƒ¯ãƒ¼ãƒ‰ã˜ã‚ƒãªãã¦å³å€¤ã«ã—ãŸã€‚
+	    cairo_content_t ã¨ã‹ã§ (logior CAIRO_CONTENT_COLOR CAIRO_CONTENT_ALPHA) ã¨ã§ãã‚‹ã‚ˆã†ã«ã€‚
 
-	* - (cairo-ffi:u_char*): :no-need-to-autoboxing ‚ğƒZƒbƒgB
+	* - (cairo-ffi:u_char*): :no-need-to-autoboxing ã‚’ã‚»ãƒƒãƒˆã€‚
 
-	* - (cairo-image-surface-create): cairo-surface-status ‚Å–ß‚è’l‚ğƒ`ƒFƒbƒNB
+	* - (cairo-image-surface-create): cairo-surface-status ã§æˆ»ã‚Šå€¤ã‚’ãƒã‚§ãƒƒã‚¯ã€‚
 	  - (cairo-image-surface-create-from-png): ditto.
 	  - (cairo-svg-surface-create): ditto.
 
-	* - (checking-status-using): –ß‚è’l‚ğw’è‚³‚ê‚½ŠÖ”‚Åƒ`ƒFƒbƒN‚·‚éƒ}ƒNƒB
+	* - (checking-status-using): æˆ»ã‚Šå€¤ã‚’æŒ‡å®šã•ã‚ŒãŸé–¢æ•°ã§ãƒã‚§ãƒƒã‚¯ã™ã‚‹ãƒã‚¯ãƒ­ã€‚
 
-	* - (cairo-matrix-transform-distance, cairo-matrix-transform-point): out ˆø”‚É‘Î‰B
-	    ‰‰ZŒ‹‰Ê‚Í‘½’l‚Å•Ô‚·B
+	* - (cairo-matrix-transform-distance, cairo-matrix-transform-point): out å¼•æ•°ã«å¯¾å¿œã€‚
+	    æ¼”ç®—çµæœã¯å¤šå€¤ã§è¿”ã™ã€‚
 
-	* - (make-chunk-for): ‰Šú’l‚ğw’è‚Å‚«‚é‚æ‚¤‚É‚µ‚½B
+	* - (make-chunk-for): åˆæœŸå€¤ã‚’æŒ‡å®šã§ãã‚‹ã‚ˆã†ã«ã—ãŸã€‚
 
-	* - (cairo-matrix-multiply): result ‚ğ“à•”‚Å allocate ‚·‚é‚æ‚¤‚É‚µ‚½B
+	* - (cairo-matrix-multiply): result ã‚’å†…éƒ¨ã§ allocate ã™ã‚‹ã‚ˆã†ã«ã—ãŸã€‚
 
-	* - (cairo-matrix-init-xxx): ŠÖ”‚Ì“à•”‚Å allocate ‚·‚é‚æ‚¤‚É‚µ‚½B
+	* - (cairo-matrix-init-xxx): é–¢æ•°ã®å†…éƒ¨ã§ allocate ã™ã‚‹ã‚ˆã†ã«ã—ãŸã€‚
 
-	* - (define-c-struct-wrapper): make-xxx ‚Ì export ‚ğ‚â‚ß‚½B
-	    - matrix ‚Æ‚©‚Í init_xxx ‚É“n‚·•K—v‚ª‚ ‚é‚Ì‚Å make-xxx ‚µ‚Ä‚àˆÓ–¡‚ª‚È‚¢B
-	    - ¡‚Ì make-xxx ‚É‚Íƒƒ“ƒo‚Ì‰Šú’l‚ğİ’è‚Å‚«‚È‚¢B
+	* - (define-c-struct-wrapper): make-xxx ã® export ã‚’ã‚„ã‚ãŸã€‚
+	    - matrix ã¨ã‹ã¯ init_xxx ã«æ¸¡ã™å¿…è¦ãŒã‚ã‚‹ã®ã§ make-xxx ã—ã¦ã‚‚æ„å‘³ãŒãªã„ã€‚
+	    - ä»Šã® make-xxx ã«ã¯ãƒ¡ãƒ³ãƒã®åˆæœŸå€¤ã‚’è¨­å®šã§ããªã„ã€‚
 
 	* - (define-c-struct-wrapper):
-	    - c-struct ‚ÉˆÏ÷‚·‚éƒAƒNƒZƒbƒT‚Ì’è‹`B
-	    - xxx-to-alist ƒƒ\ƒbƒh‚Ì’Ç‰ÁB
-	    - make-xxx ‚ğ export.
+	    - c-struct ã«å§”è­²ã™ã‚‹ã‚¢ã‚¯ã‚»ãƒƒã‚µã®å®šç¾©ã€‚
+	    - xxx-to-alist ãƒ¡ã‚½ãƒƒãƒ‰ã®è¿½åŠ ã€‚
+	    - make-xxx ã‚’ export.
 
-	* - c:define-c-struct ‚ğã‘‚«H‚µ‚Ä‚½‚Ì‚Å–¼‘O‚É with-ptr ‚ğ•t‚¯‚½B
+	* - c:define-c-struct ã‚’ä¸Šæ›¸ãï¼Ÿã—ã¦ãŸã®ã§åå‰ã« with-ptr ã‚’ä»˜ã‘ãŸã€‚
 
 	* - (define-c-private-struct-wrapper, define-c-struct-wrapper):
-	  lisp->c ‚·‚é‚Æ‚«‚ÉŒ^ƒ`ƒFƒbƒN‚·‚é‚æ‚¤‚É‚µ‚½B
+	  lisp->c ã™ã‚‹ã¨ãã«å‹ãƒã‚§ãƒƒã‚¯ã™ã‚‹ã‚ˆã†ã«ã—ãŸã€‚
 
-	* - cairo-ffi ‚©‚ç import ‚µ‚½ c enum ‚Ì’è”‚ğ cairo ƒpƒbƒP[ƒW‚©‚ç‚à export ‚·‚éB
+	* - cairo-ffi ã‹ã‚‰ import ã—ãŸ c enum ã®å®šæ•°ã‚’ cairo ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã‹ã‚‰ã‚‚ export ã™ã‚‹ã€‚
 
-	* - CAIRO_XXX ‚Æ‚¢‚¤ c enum ‚Ì’è”’l‚ğ’è‹`B
+	* - CAIRO_XXX ã¨ã„ã† c enum ã®å®šæ•°å€¤ã‚’å®šç¾©ã€‚
 
-	* - (lisp_enum_const): ’è”’l -> ƒL[ƒ[ƒh‚Ö‚Ì•ÏŠ·‚Í cairodoc2lisp.rb ‚Å‚â‚é‚æ‚¤‚É‚µ‚½B
+	* - (lisp_enum_const): å®šæ•°å€¤ -> ã‚­ãƒ¼ãƒ¯ãƒ¼ãƒ‰ã¸ã®å¤‰æ›ã¯ cairodoc2lisp.rb ã§ã‚„ã‚‹ã‚ˆã†ã«ã—ãŸã€‚
 
 2007-05-04  MIYAMUKO Katsuyuki
 
-	* - (with-destroy-c-ptr): reference count ‚ª 0 ‚Ì‚Æ‚«‚Ì‚İ ptr ‚ğ 0 ‚É‚·‚é‚æ‚¤‚É‚µ‚½B
-	  - (c-private-struct-reference-count): ƒvƒƒpƒeƒB‚ÉƒZƒbƒg‚³‚ê‚½ŠÖ”‚ğŒÄ‚ÔB
-	  - (define-c-private-struct-wrapper): reference coutn ŠÖ”‚ğƒvƒƒpƒeƒB‚ÉƒZƒbƒg‚·‚é‚æ‚¤‚É‚µ‚½B
+	* - (with-destroy-c-ptr): reference count ãŒ 0 ã®ã¨ãã®ã¿ ptr ã‚’ 0 ã«ã™ã‚‹ã‚ˆã†ã«ã—ãŸã€‚
+	  - (c-private-struct-reference-count): ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ã«ã‚»ãƒƒãƒˆã•ã‚ŒãŸé–¢æ•°ã‚’å‘¼ã¶ã€‚
+	  - (define-c-private-struct-wrapper): reference coutn é–¢æ•°ã‚’ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ã«ã‚»ãƒƒãƒˆã™ã‚‹ã‚ˆã†ã«ã—ãŸã€‚
 
 	* - (make-structure, structure-name, structure-constructor, structure-constructors, structure-slot-descriptions):
 	    new utility function.
 
-	* - (cairo-svg-get-versions): ©“®¶¬‚Å‚Í‘Î‰‚Å‚«‚È‚¢‚Ì‚Åè‚ÅÀ‘•B
+	* - (cairo-svg-get-versions): è‡ªå‹•ç”Ÿæˆã§ã¯å¯¾å¿œã§ããªã„ã®ã§æ‰‹ã§å®Ÿè£…ã€‚
 
-	* - (c-union-size): ffi/util.l ‚Ì sizeof ‚ğg‚¤‚æ‚¤‚É‚µ‚½B
+	* - (c-union-size): ffi/util.l ã® sizeof ã‚’ä½¿ã†ã‚ˆã†ã«ã—ãŸã€‚
 
 	* - (nullp): export
 	  - (sizeof, make-chunk-for, unpack-chunk-for, unpack-pointer, unpack-c-array):
-	    sqlite3 ‚©‚çƒRƒs[‚µ‚Ä‚«‚½ƒ†[ƒeƒBƒŠƒeƒBB
-	    ‚È‚ñ‚Æ‚È‚­ macro ‚¶‚á‚È‚­‚Ä function ‚É‚µ‚½B
+	    sqlite3 ã‹ã‚‰ã‚³ãƒ”ãƒ¼ã—ã¦ããŸãƒ¦ãƒ¼ãƒ†ã‚£ãƒªãƒ†ã‚£ã€‚
+	    ãªã‚“ã¨ãªã macro ã˜ã‚ƒãªãã¦ function ã«ã—ãŸã€‚
 
-	* - (with-destroy-c-ptr): new macro. w’è‚³‚ê‚½ c-private-struct-wrapper ˆø”‚Ì
-	    ptr ‚Æ destroyed ‚ğXV‚·‚éB
+	* - (with-destroy-c-ptr): new macro. æŒ‡å®šã•ã‚ŒãŸ c-private-struct-wrapper å¼•æ•°ã®
+	    ptr ã¨ destroyed ã‚’æ›´æ–°ã™ã‚‹ã€‚
 
-	* - require ‚ğ®—
-	  - c-private-struct-wrapper ‚É destroyed ƒƒ“ƒo‚ğ’Ç‰ÁB
-	    lisp->c ‚Å‚·‚Å‚É destroyed ‚È‚çƒGƒ‰[‚É‚·‚é‚æ‚¤‚É‚µ‚½B
+	* - require ã‚’æ•´ç†
+	  - c-private-struct-wrapper ã« destroyed ãƒ¡ãƒ³ãƒã‚’è¿½åŠ ã€‚
+	    lisp->c ã§ã™ã§ã« destroyed ãªã‚‰ã‚¨ãƒ©ãƒ¼ã«ã™ã‚‹ã‚ˆã†ã«ã—ãŸã€‚
 
 	* - require ffi/util for unpack-c-string, no need to require util/symbol.
 
-	* - @auto-generate ƒ^ƒO‚ğ•t‚¯‚Äã‘‚«‚·‚é‚©‚Ç‚¤‚©§Œä‚·‚éB
-	    @auto-generate ‚ª  full or merge ‚Ì‚Æ‚«‚Íã‘‚«‚·‚éB
-	    ‚»‚êˆÈŠO‚Ì‚Æ‚«‚Í .new suffix ‚ğ•t‚¯‚Ä¶¬‚·‚éB
+	* - @auto-generate ã‚¿ã‚°ã‚’ä»˜ã‘ã¦ä¸Šæ›¸ãã™ã‚‹ã‹ã©ã†ã‹åˆ¶å¾¡ã™ã‚‹ã€‚
+	    @auto-generate ãŒ  full or merge ã®ã¨ãã¯ä¸Šæ›¸ãã™ã‚‹ã€‚
+	    ãã‚Œä»¥å¤–ã®ã¨ãã¯ .new suffix ã‚’ä»˜ã‘ã¦ç”Ÿæˆã™ã‚‹ã€‚
 
-	* - (raise-xxx): raise ‚É“n‚³‚ê‚½ˆø”‚Í format ‚·‚é‚æ‚¤‚É‚µ‚½B
+	* - (raise-xxx): raise ã«æ¸¡ã•ã‚ŒãŸå¼•æ•°ã¯ format ã™ã‚‹ã‚ˆã†ã«ã—ãŸã€‚
 	    => (raise-xxx "foo ~A" 1)
-	    ‚½‚¾‚µA(raise-xxx "foo" :member value) ‚ª‚Å‚«‚È‚­‚È‚é‚Ì‚Å—vC³B
+	    ãŸã ã—ã€(raise-xxx "foo" :member value) ãŒã§ããªããªã‚‹ã®ã§è¦ä¿®æ­£ã€‚
 
-	* - api/types/typedef, enum, struct, union ‚ğ require
+	* - api/types/typedef, enum, struct, union ã‚’ require
 
-	* wrapper Œ^‚ğ‚¾‚¢‚½‚¢’è‹`Bunion ‚Æ‚© xxx-list-t ‚Í‚Ü‚¾B
+	* wrapper å‹ã‚’ã ã„ãŸã„å®šç¾©ã€‚union ã¨ã‹ xxx-list-t ã¯ã¾ã ã€‚
 
-	* cairo.l ‚ğíœB
+	* cairo.l ã‚’å‰Šé™¤ã€‚
 
-	* - (define-c-enum): symbol-join ‚ğg‚¤‚æ‚¤‚É‚µ‚½B
+	* - (define-c-enum): symbol-join ã‚’ä½¿ã†ã‚ˆã†ã«ã—ãŸã€‚
 
-	* - enum content-t ‚Ì 16 i”‚ğƒTƒ|[ƒg‚·‚é‚Ì‚ğ–Y‚ê‚Ä‚½‚Ì‚Å‘Î‰B
+	* - enum content-t ã® 16 é€²æ•°ã‚’ã‚µãƒãƒ¼ãƒˆã™ã‚‹ã®ã‚’å¿˜ã‚Œã¦ãŸã®ã§å¯¾å¿œã€‚
 
-	* - enum content-t ‚Ì 16 i”‚ğƒTƒ|[ƒg‚·‚é‚Ì‚ğ–Y‚ê‚Ä‚½‚Ì‚Å‘Î‰B
+	* - enum content-t ã® 16 é€²æ•°ã‚’ã‚µãƒãƒ¼ãƒˆã™ã‚‹ã®ã‚’å¿˜ã‚Œã¦ãŸã®ã§å¯¾å¿œã€‚
 
-	* - user_data ‚Æ stream Œn API ‚ğ‚Æ‚è‚ ‚¦‚¸íœB
+	* - user_data ã¨ stream ç³» API ã‚’ã¨ã‚Šã‚ãˆãšå‰Šé™¤ã€‚
 
-	* - LOGFONTW ‚Ì’è‹`‚ğ fonts/win32.l@67 ‚©‚çƒRƒs[B
+	* - LOGFONTW ã®å®šç¾©ã‚’ fonts/win32.l@67 ã‹ã‚‰ã‚³ãƒ”ãƒ¼ã€‚
 
-	* - user_data ‚Æ stream ŠÖ˜A‚Ì API ‚ğíœB‚Ü‚¾ƒTƒ|[ƒg‚µ‚È‚¢B
+	* - user_data ã¨ stream é–¢é€£ã® API ã‚’å‰Šé™¤ã€‚ã¾ã ã‚µãƒãƒ¼ãƒˆã—ãªã„ã€‚
 
-	* ©“®¶¬‚µ‚½ƒtƒ@ƒCƒ‹‚ğ“o˜^B
+	* è‡ªå‹•ç”Ÿæˆã—ãŸãƒ•ã‚¡ã‚¤ãƒ«ã‚’ç™»éŒ²ã€‚
 
 	* - Transformmer::Xyzzy::Foreign => Transformmer::Xyzzy::NameUtil
 
 2007-05-03  MIYAMUKO Katsuyuki
 
-	* - ffi/support/types ‚ğ require ‚·‚é‚æ‚¤‚É‚µ‚½B
-	  - winapi prefix ‚ğ•t‚¯‚½B
+	* - ffi/support/types ã‚’ require ã™ã‚‹ã‚ˆã†ã«ã—ãŸã€‚
+	  - winapi prefix ã‚’ä»˜ã‘ãŸã€‚
 
-	* - (generate_typedef): export ‚·‚é‚æ‚¤‚É c:*define-c-type ‚ğg‚¤‚æ‚¤‚É‚µ‚½B
+	* - (generate_typedef): export ã™ã‚‹ã‚ˆã†ã« c:*define-c-type ã‚’ä½¿ã†ã‚ˆã†ã«ã—ãŸã€‚
 
-	* - bool-t ‚ğíœBtypes/typedef ‚Å’è‹`‚µ‚Ä‚¢‚éB
+	* - bool-t ã‚’å‰Šé™¤ã€‚types/typedef ã§å®šç¾©ã—ã¦ã„ã‚‹ã€‚
 
-	* - ˆø”–¼‚ÌƒnƒCƒtƒ“‚ğ - ‚É•ÏŠ·B
+	* - å¼•æ•°åã®ãƒã‚¤ãƒ•ãƒ³ã‚’ - ã«å¤‰æ›ã€‚
 
-	* - version.l ‚Å api/support/version-information ‚ğg‚¤‚æ‚¤‚É‚µ‚½B
+	* - version.l ã§ api/support/version-information ã‚’ä½¿ã†ã‚ˆã†ã«ã—ãŸã€‚
 
-	* - api/ ”z‰º‚Ìƒ\[ƒX‚Å export ‚ğ¶¬‚·‚é‚æ‚¤‚É‚µ‚½B
+	* - api/ é…ä¸‹ã®ã‚½ãƒ¼ã‚¹ã§ export ã‚’ç”Ÿæˆã™ã‚‹ã‚ˆã†ã«ã—ãŸã€‚
 
-	* - ;;;; handmade section ‚©‚ç (provide ‚Ü‚Å‚ğ•Û‘¶‚·‚é‚æ‚¤‚É‚µ‚½B
+	* - ;;;; handmade section ã‹ã‚‰ (provide ã¾ã§ã‚’ä¿å­˜ã™ã‚‹ã‚ˆã†ã«ã—ãŸã€‚
 
-	* - (define-autoboxing-for): c->lisp, lisp->c ‚ªÈ—ª‚³‚ê‚½ê‡A
-	    ƒR[ƒh‚ğ¶¬‚µ‚È‚¢‚æ‚¤‚É‚µ‚½B
+	* - (define-autoboxing-for): c->lisp, lisp->c ãŒçœç•¥ã•ã‚ŒãŸå ´åˆã€
+	    ã‚³ãƒ¼ãƒ‰ã‚’ç”Ÿæˆã—ãªã„ã‚ˆã†ã«ã—ãŸã€‚
 
-	* - ‘Î‰‚·‚é ffi ‚Ìƒ\[ƒX‚ğ require.
-	  - api/types ‚ğ require.
+	* - å¯¾å¿œã™ã‚‹ ffi ã®ã‚½ãƒ¼ã‚¹ã‚’ require.
+	  - api/types ã‚’ require.
 
 	* - types => api/types.
 
-	* - remoe error.l, ©“®¶¬+èC³‚·‚é‚±‚Æ‚É‚µ‚½B
+	* - remoe error.l, è‡ªå‹•ç”Ÿæˆ+æ‰‹ä¿®æ­£ã™ã‚‹ã“ã¨ã«ã—ãŸã€‚
 
-	* - types ‚ğ api ”z‰º‚ÉˆÚ“®B
+	* - types ã‚’ api é…ä¸‹ã«ç§»å‹•ã€‚
 
 	* (define-autoboxing-for): new macro.
 	  (c->lisp-converter): rename from c->lisp.
 	  (lisp->c-converter): rename from lisp->c.
 
-	* - foreign-type ‚ª c-pointer ‚Ì‚à‚Ì‚É‚Í c-pointer-type ƒvƒƒpƒeƒB‚àƒZƒbƒg‚·‚é‚æ‚¤‚É‚µ‚½B
+	* - foreign-type ãŒ c-pointer ã®ã‚‚ã®ã«ã¯ c-pointer-type ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ã‚‚ã‚»ãƒƒãƒˆã™ã‚‹ã‚ˆã†ã«ã—ãŸã€‚
 
 	* - define-c-struct-with-pointer => define-c-struct.
 
 	* - (define-c-struct-with-pointer): rename to define-c-struct.
 	  - (define-c-struct, define-c-enum, define-c-pointer-type, define-c-union):
-	    cairo-ffi::foreign-type ƒvƒƒpƒeƒB‚ğƒZƒbƒg‚·‚é‚æ‚¤‚É‚µ‚½B
+	    cairo-ffi::foreign-type ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ã‚’ã‚»ãƒƒãƒˆã™ã‚‹ã‚ˆã†ã«ã—ãŸã€‚
 
 	* - (define-c-union): BYTE => c:char
 
-	* - (name, type): ban method ‚ğg‚Á‚½‚½‚ß API ‚Ì¶¬‚Å•Ï‚È‚±‚Æ‚É‚È‚Á‚Ä‚¢‚½‚Ì‚ğC³B
+	* - (name, type): ban method ã‚’ä½¿ã£ãŸãŸã‚ API ã®ç”Ÿæˆã§å¤‰ãªã“ã¨ã«ãªã£ã¦ã„ãŸã®ã‚’ä¿®æ­£ã€‚
 
-	* - (with-c-arguments): remove-if-not ‚Ìˆø”‚Ì‡‚ªŠÔˆá‚Á‚Ä‚½B
+	* - (with-c-arguments): remove-if-not ã®å¼•æ•°ã®é †ãŒé–“é•ã£ã¦ãŸã€‚
 
 	* - (returning, with-c-arguments): new macro.
 
-	* - ’è‹`‚·‚éŒ^‚ğ‚·‚×‚Ä export ‚·‚é‚æ‚¤‚É‚µ‚½B
+	* - å®šç¾©ã™ã‚‹å‹ã‚’ã™ã¹ã¦ export ã™ã‚‹ã‚ˆã†ã«ã—ãŸã€‚
 	    (c:define => (c:*define.
 
-	* - ERB ‚Ìˆ—Œ‹‰Ê‚©‚ç•¶š—ñ‚È‚çƒtƒ@ƒCƒ‹‚ğ¶¬‚µ‚È‚¢‚æ‚¤‚É‚µ‚½B
-	  - api/ ”z‰º‚Ì¶¬‚Åˆø”‚ª‚È‚¢ê‡‚É‘Î‰B
-	  - api/ ”z‰º‚Ì¶¬‚Å cairo-ffi: prefix ‚ğ•t‚¯‚½B
+	* - ERB ã®å‡¦ç†çµæœã‹ã‚‰æ–‡å­—åˆ—ãªã‚‰ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ç”Ÿæˆã—ãªã„ã‚ˆã†ã«ã—ãŸã€‚
+	  - api/ é…ä¸‹ã®ç”Ÿæˆã§å¼•æ•°ãŒãªã„å ´åˆã«å¯¾å¿œã€‚
+	  - api/ é…ä¸‹ã®ç”Ÿæˆã§ cairo-ffi: prefix ã‚’ä»˜ã‘ãŸã€‚
 
 	* (Function#callback_entry?): new function.
 
@@ -902,71 +902,71 @@
 
 	* (cairo-version-encode): new function.
 
-	* ffi ‚Ì¶¬‚ªƒoƒO‚Á‚½‚Ì‚ÅC³B
+	* ffi ã®ç”ŸæˆãŒãƒã‚°ã£ãŸã®ã§ä¿®æ­£ã€‚
 
-	* api/* ‚Ì¶¬‚Éb’è“I‚É‘Î‰(‚Ü‚¾“®‚©‚È‚¢)B
+	* api/* ã®ç”Ÿæˆã«æš«å®šçš„ã«å¯¾å¿œ(ã¾ã å‹•ã‹ãªã„)ã€‚
 
-	* (Book#refe): ŠÖ”–¼‚©‚ç’è‹`‚ğˆø‚­ƒƒ\ƒbƒhB
-	  (Book#build_reference_index): ƒCƒ“ƒfƒbƒNƒX‚ğì¬B
+	* (Book#refe): é–¢æ•°åã‹ã‚‰å®šç¾©ã‚’å¼•ããƒ¡ã‚½ãƒƒãƒ‰ã€‚
+	  (Book#build_reference_index): ã‚¤ãƒ³ãƒ‡ãƒƒã‚¯ã‚¹ã‚’ä½œæˆã€‚
 
-	* types/ ”z‰º‚Ì loader “o˜^B
+	* types/ é…ä¸‹ã® loader ç™»éŒ²ã€‚
 
 	* - api/types.l => types/base.l
-	  - symbol-join ‚ğg‚¤‚æ‚¤‚É‚µ‚½B
+	  - symbol-join ã‚’ä½¿ã†ã‚ˆã†ã«ã—ãŸã€‚
 
 	* mv api/types => types/base.l
 
-	* (define-chunk-maker): define-c-struct ‚ª make-xxx ‚ğì¬‚·‚é‚Ì‚Å‚»‚ê‚ğ—˜—pB
+	* (define-chunk-maker): define-c-struct ãŒ make-xxx ã‚’ä½œæˆã™ã‚‹ã®ã§ãã‚Œã‚’åˆ©ç”¨ã€‚
 
-	* error ŠÖ˜A‚Ì API
+	* error é–¢é€£ã® API
 
-	* - (cairo-base-error): new macro, export ‚â raise-xxx ‚Í’è‹`‚µ‚È‚¢ƒ}ƒNƒB
+	* - (cairo-base-error): new macro, export ã‚„ raise-xxx ã¯å®šç¾©ã—ãªã„ãƒã‚¯ãƒ­ã€‚
 	  - (cairo-invalid-argument-error, cairo-type-error, cairo-file-error):
 	     new base condition.
-	  - (cairo-base-error): :format-string, :format-arguments ‚Í simple-error
-	    ‚ğŒp³‚µ‚½‚Æ‚«‚Ì‚İg‚¦‚éBŠî’ê‚ğ error ‚É‚µ‚½‚Ì‚ÅíœB
+	  - (cairo-base-error): :format-string, :format-arguments ã¯ simple-error
+	    ã‚’ç¶™æ‰¿ã—ãŸã¨ãã®ã¿ä½¿ãˆã‚‹ã€‚åŸºåº•ã‚’ error ã«ã—ãŸã®ã§å‰Šé™¤ã€‚
 
-	* libcairo-2.dll ‚ğ cairo 1.4.6 ‚ÉXVB
+	* libcairo-2.dll ã‚’ cairo 1.4.6 ã«æ›´æ–°ã€‚
 
 2007-05-01  MIYAMUKO Katsuyuki
 
-	* conditions.l ‚ğ’Ç‰ÁB
-	  —áŠOŠK‘w‚Í‚Ü‚¾‚È‚É‚àŒˆ‚Ü‚Á‚Ä‚È‚¢B
+	* conditions.l ã‚’è¿½åŠ ã€‚
+	  ä¾‹å¤–éšå±¤ã¯ã¾ã ãªã«ã‚‚æ±ºã¾ã£ã¦ãªã„ã€‚
 
-	* cairo ‚Ì version æ“¾B
+	* cairo ã® version å–å¾—ã€‚
 
-	* c pointer ‚Ì wrapper ƒ}ƒNƒ‚ğ’Ç‰ÁB
+	* c pointer ã® wrapper ãƒã‚¯ãƒ­ã‚’è¿½åŠ ã€‚
 
-	* util.l ‚ğ’Ç‰ÁB
+	* util.l ã‚’è¿½åŠ ã€‚
 
-	* define-c-union ‚ğ’Ç‰ÁB
-	  union ‚Ìƒƒ“ƒo–¼‚ÌŠÖ”‚Å‘Î‰‚·‚é\‘¢‘Ì‚ğ•Ô‚·ƒAƒNƒZƒbƒT‚ğ’è‹`‚·‚é•K—v
-	  ‚ª‚ ‚é‚¯‚Ç‚µ‚Ä‚¢‚È‚¢B
+	* define-c-union ã‚’è¿½åŠ ã€‚
+	  union ã®ãƒ¡ãƒ³ãƒåã®é–¢æ•°ã§å¯¾å¿œã™ã‚‹æ§‹é€ ä½“ã‚’è¿”ã™ã‚¢ã‚¯ã‚»ãƒƒã‚µã‚’å®šç¾©ã™ã‚‹å¿…è¦
+	  ãŒã‚ã‚‹ã‘ã©ã—ã¦ã„ãªã„ã€‚
 
-	* cairo_create ‚ÅƒNƒ‰ƒbƒVƒ…‚·‚é‚Ì‚Í cairo 1.4.4 ‚ÌƒoƒOB
-	  1.4.6 ‚ª‚»‚ë‚»‚ëƒŠƒŠ[ƒX‚³‚ê‚é—\’èB
+	* cairo_create ã§ã‚¯ãƒ©ãƒƒã‚·ãƒ¥ã™ã‚‹ã®ã¯ cairo 1.4.4 ã®ãƒã‚°ã€‚
+	  1.4.6 ãŒãã‚ãã‚ãƒªãƒªãƒ¼ã‚¹ã•ã‚Œã‚‹äºˆå®šã€‚
 
 2007-04-30  MIYAMUKO Katsuyuki
 
-	* enum ‚Ì’è”–¼‚ğ enum –¼‚©‚ç‘O•ûˆê’v‚ÅÁ‚·‚æ‚¤‚É‚µ‚½B
+	* enum ã®å®šæ•°åã‚’ enum åã‹ã‚‰å‰æ–¹ä¸€è‡´ã§æ¶ˆã™ã‚ˆã†ã«ã—ãŸã€‚
 
-	* (define-c-pointer-type2): 2 ’iŠK‚Ìƒ|ƒCƒ“ƒ^‚ğ’è‹`‚·‚éƒ}ƒNƒB
-	  (define-c-enum): enum ‚Ìƒ|ƒCƒ“ƒ^Œ^‚ğ’è‹`B
+	* (define-c-pointer-type2): 2 æ®µéšã®ãƒã‚¤ãƒ³ã‚¿ã‚’å®šç¾©ã™ã‚‹ãƒã‚¯ãƒ­ã€‚
+	  (define-c-enum): enum ã®ãƒã‚¤ãƒ³ã‚¿å‹ã‚’å®šç¾©ã€‚
 
-	* ©“®¶¬‚µ‚½ƒtƒ@ƒCƒ‹‚ğ“o˜^B
+	* è‡ªå‹•ç”Ÿæˆã—ãŸãƒ•ã‚¡ã‚¤ãƒ«ã‚’ç™»éŒ²ã€‚
 
-	* union.l ‚ğ“o˜^B‚±‚ê‚Í‚Ü‚¾©“®¶¬‚Å‚«‚Ä‚¢‚È‚¢‚µA‚±‚ê‚Å‚¢‚¢‚Ì‚©‚à•ª‚©‚ç‚È‚¢B
+	* union.l ã‚’ç™»éŒ²ã€‚ã“ã‚Œã¯ã¾ã è‡ªå‹•ç”Ÿæˆã§ãã¦ã„ãªã„ã—ã€ã“ã‚Œã§ã„ã„ã®ã‹ã‚‚åˆ†ã‹ã‚‰ãªã„ã€‚
 
 	* - (define-callback-function, define-c-private-struct): new macro.
-	  - (define-library): lisp => c name ‚Ö‚Æ•ÏŠ·‚·‚é‚æ‚¤‚É‚µ‚½B
+	  - (define-library): lisp => c name ã¸ã¨å¤‰æ›ã™ã‚‹ã‚ˆã†ã«ã—ãŸã€‚
 	  - (cairo-lisp-to-c-function): new function.
-	  - Šî–{Œ^‚Ì’è‹`B
+	  - åŸºæœ¬å‹ã®å®šç¾©ã€‚
 
-	* ©“®¶¬‚·‚é‚±‚Æ‚É‚µ‚½‚Ì‚ÅAŒÃ‚¢ƒtƒ@ƒCƒ‹‚ğíœB
+	* è‡ªå‹•ç”Ÿæˆã™ã‚‹ã“ã¨ã«ã—ãŸã®ã§ã€å¤ã„ãƒ•ã‚¡ã‚¤ãƒ«ã‚’å‰Šé™¤ã€‚
 
-	* struct, enum, typedef, callback ‚Ì©“®¶¬‚É‘Î‰B
+	* struct, enum, typedef, callback ã®è‡ªå‹•ç”Ÿæˆã«å¯¾å¿œã€‚
 
-	* foreign ŠÖ”‚É foreign-type ƒvƒƒpƒeƒB‚ğƒZƒbƒgB
+	* foreign é–¢æ•°ã« foreign-type ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ã‚’ã‚»ãƒƒãƒˆã€‚
 
 	* (define-c-pointer-type, define-c-pointer-types): add new macros.
 
@@ -974,13 +974,13 @@
 
 2007-04-29  MIYAMUKO Katsuyuki
 
-	* (require "...") Œ`®‚ÅƒƒbƒZ[ƒW‚ğ•\¦‚·‚é‚æ‚¤‚É‚µ‚½B
+	* (require "...") å½¢å¼ã§ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’è¡¨ç¤ºã™ã‚‹ã‚ˆã†ã«ã—ãŸã€‚
 
-	* support/types ‚Í•s—vB
+	* support/types ã¯ä¸è¦ã€‚
 
-	* cairodoc.rb ‚ğƒRƒ}ƒ“ƒh‚Æ‚µ‚Ä—˜—p‚Å‚«‚é‚æ‚¤‚É‚µ‚½B
+	* cairodoc.rb ã‚’ã‚³ãƒãƒ³ãƒ‰ã¨ã—ã¦åˆ©ç”¨ã§ãã‚‹ã‚ˆã†ã«ã—ãŸã€‚
 
-	* outdir, macroname ‚ÌƒfƒtƒHƒ‹ƒg’l•ÏXB
+	* outdir, macroname ã®ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆå€¤å¤‰æ›´ã€‚
 	  ruby cairodoc2lisp.rb -b \home\miyamuko\workspace\lab\cairo\src\cairo-1.4.4\doc\public
 
 	* add generator (cairo-doc to xyzzy lisp).
@@ -990,18 +990,18 @@
 	* - defpackage.l => package.l
 	  - ccairo => cairo-ffi.
 
-	* ffi ‚Ì’è‹`‚ğ ffi/ ”z‰º‚ÉˆÚ“®B
+	* ffi ã®å®šç¾©ã‚’ ffi/ é…ä¸‹ã«ç§»å‹•ã€‚
 
-	* cairo, libpng, zlib ‚Ìƒ‰ƒCƒZƒ“ƒX‚ğ“o˜^B
+	* cairo, libpng, zlib ã®ãƒ©ã‚¤ã‚»ãƒ³ã‚¹ã‚’ç™»éŒ²ã€‚
 
-	* ƒhƒLƒ…ƒƒ“ƒgƒeƒ“ƒvƒŒ[ƒg‚Ædll‚ğ’Ç‰ÁB
+	* ãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆãƒ†ãƒ³ãƒ—ãƒ¬ãƒ¼ãƒˆã¨dllã‚’è¿½åŠ ã€‚
 
-	* ŠJ”­ÄŠJB
+	* é–‹ç™ºå†é–‹ã€‚
 
 2006-01-25  MIYAMUKO Katsuyuki
 
-	* (unpack-c-string): make-chunk ‚Ì OFFSET ‚Éƒ|ƒCƒ“ƒ^‚ğw’è‚Å‚«‚é‚Ì‚Å
-	  strcpy ‚ğg‚¤•K—v‚Í‚È‚¢ (qdbm.l ‚æ‚è)B
+	* (unpack-c-string): make-chunk ã® OFFSET ã«ãƒã‚¤ãƒ³ã‚¿ã‚’æŒ‡å®šã§ãã‚‹ã®ã§
+	  strcpy ã‚’ä½¿ã†å¿…è¦ã¯ãªã„ (qdbm.l ã‚ˆã‚Š)ã€‚
 
 2006-01-20  MIYAMUKO Katsuyuki
 
@@ -1011,6 +1011,6 @@
 
 2006-01-18  MIYAMUKO Katsuyuki
 
-	* Å’áŒÀ“®ì‚·‚éƒŒƒxƒ‹B
+	* æœ€ä½é™å‹•ä½œã™ã‚‹ãƒ¬ãƒ™ãƒ«ã€‚
 
 	* start xyzzy-cairo binding project.

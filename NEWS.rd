@@ -2,12 +2,12 @@
 
 === 2009-07-02 / 1.8.0
 
-xl-cairo 1.8.0 ƒŠƒŠ[ƒX!
+xl-cairo 1.8.0 ãƒªãƒªãƒ¼ã‚¹!
 
-: V‹K‹@”\
+: æ–°è¦æ©Ÿèƒ½
 
-    * “Y•t‚µ‚Ä‚¢‚é cairo ‚ğ ((<"1.8.8"|URL:http://cairographics.org/news/cairo-1.8.8/>)) ‚ÉXVB
-    * cairo 1.8 ‚Å’Ç‰Á‚³‚ê‚½ŠÖ”‚ğ’è‹`
+    * æ·»ä»˜ã—ã¦ã„ã‚‹ cairo ã‚’ ((<"1.8.8"|URL:http://cairographics.org/news/cairo-1.8.8/>)) ã«æ›´æ–°ã€‚
+    * cairo 1.8 ã§è¿½åŠ ã•ã‚ŒãŸé–¢æ•°ã‚’å®šç¾©
       * cairo-scaled-font-get-scale-matrix
       * cairo-scaled-font-text-to-glyphs
       * cairo-show-text-glyphs
@@ -17,32 +17,32 @@ xl-cairo 1.8.0 ƒŠƒŠ[ƒX!
       * cairo-toy-font-face-get-family
       * cairo-toy-font-face-get-slant
       * cairo-toy-font-face-get-weight
-      * ¦ƒ†[ƒUƒtƒHƒ“ƒg‚ÍƒTƒ|[ƒg‚µ‚Ä‚¢‚Ü‚¹‚ñ
-    * cairo 1.8 ‚Å’Ç‰Á‚³‚ê‚½ error-status ‚É‘Î‰‚·‚é—áŠOƒNƒ‰ƒX‚ğ’è‹`
+      * â€»ãƒ¦ãƒ¼ã‚¶ãƒ•ã‚©ãƒ³ãƒˆã¯ã‚µãƒãƒ¼ãƒˆã—ã¦ã„ã¾ã›ã‚“
+    * cairo 1.8 ã§è¿½åŠ ã•ã‚ŒãŸ error-status ã«å¯¾å¿œã™ã‚‹ä¾‹å¤–ã‚¯ãƒ©ã‚¹ã‚’å®šç¾©
 
-: ”ñŒİŠ·‚ğŠÜ‚Ş•ÏX“_
+: éäº’æ›ã‚’å«ã‚€å¤‰æ›´ç‚¹
 
-    * ‚È‚µ
+    * ãªã—
 
-: ƒoƒOC³
+: ãƒã‚°ä¿®æ­£
 
-    * –¼‘O‚ğ xycairo ‚©‚ç xl-cairo ‚É‚µ‚½B
+    * åå‰ã‚’ xycairo ã‹ã‚‰ xl-cairo ã«ã—ãŸã€‚
 
-    * cairo 1.6 ‚Å’Ç‰Á‚³‚ê‚½ error-status ‚É‘Î‰‚·‚é—áŠOƒNƒ‰ƒX‚ğ–Y‚ê‚Ä‚¢‚½‚Ì‚ğC³
+    * cairo 1.6 ã§è¿½åŠ ã•ã‚ŒãŸ error-status ã«å¯¾å¿œã™ã‚‹ä¾‹å¤–ã‚¯ãƒ©ã‚¹ã‚’å¿˜ã‚Œã¦ã„ãŸã®ã‚’ä¿®æ­£
 
-: ‚»‚Ì‘¼
+: ãã®ä»–
 
-    * ‚È‚µ
+    * ãªã—
 
 
 === 2008-04-14 / 1.6.0
 
-xycairo 1.6.0 ƒŠƒŠ[ƒX!
+xycairo 1.6.0 ãƒªãƒªãƒ¼ã‚¹!
 
-: V‹K‹@”\
+: æ–°è¦æ©Ÿèƒ½
 
-    * “Y•t‚µ‚Ä‚¢‚é cairo ‚ğ ((<"1.6.4"|URL:http://cairographics.org/news/cairo-1.6.4/>)) ‚ÉXVB
-    * cairo 1.6 ‚Å’Ç‰Á‚³‚ê‚½ŠÖ”‚ğ’è‹`
+    * æ·»ä»˜ã—ã¦ã„ã‚‹ cairo ã‚’ ((<"1.6.4"|URL:http://cairographics.org/news/cairo-1.6.4/>)) ã«æ›´æ–°ã€‚
+    * cairo 1.6 ã§è¿½åŠ ã•ã‚ŒãŸé–¢æ•°ã‚’å®šç¾©
       * cairo-win32-font-face-create-for-logfontw-hfont
       * cairo-has-current-point
       * cairo-path-extents
@@ -60,79 +60,79 @@ xycairo 1.6.0 ƒŠƒŠ[ƒX!
 
 === 2008-01-21 / 0.0.8
 
-xycairo 0.0.8 ƒŠƒŠ[ƒX!
+xycairo 0.0.8 ãƒªãƒªãƒ¼ã‚¹!
 
-: V‹K‹@”\
+: æ–°è¦æ©Ÿèƒ½
 
-    * “Y•t‚µ‚Ä‚¢‚é cairo ‚ğ ((<"1.4.14"|URL:http://cairographics.org/news/cairo-1.4.14/>)) ‚ÉXVB
+    * æ·»ä»˜ã—ã¦ã„ã‚‹ cairo ã‚’ ((<"1.4.14"|URL:http://cairographics.org/news/cairo-1.4.14/>)) ã«æ›´æ–°ã€‚
 
 
 === 2007-12-01 / 0.0.7
 
-xycairo 0.0.7 ƒŠƒŠ[ƒX!
+xycairo 0.0.7 ãƒªãƒªãƒ¼ã‚¹!
 
-: V‹K‹@”\
+: æ–°è¦æ©Ÿèƒ½
 
-    * “Y•t‚µ‚Ä‚¢‚é cairo ‚ğ ((<"1.4.12"|URL:http://cairographics.org/news/cairo-1.4.12/>)) ‚ÉXVB
+    * æ·»ä»˜ã—ã¦ã„ã‚‹ cairo ã‚’ ((<"1.4.12"|URL:http://cairographics.org/news/cairo-1.4.12/>)) ã«æ›´æ–°ã€‚
 
 
 === 2007-09-30 / 0.0.6
 
-xycairo 0.0.6 ƒŠƒŠ[ƒX!
+xycairo 0.0.6 ãƒªãƒªãƒ¼ã‚¹!
 
-: V‹K‹@”\
+: æ–°è¦æ©Ÿèƒ½
 
-    * “Y•t‚µ‚Ä‚¢‚é cairo ‚ğ ((<"1.4.10"|URL:http://cairographics.org/news/cairo-1.4.10/>)) ‚ÉXVB
+    * æ·»ä»˜ã—ã¦ã„ã‚‹ cairo ã‚’ ((<"1.4.10"|URL:http://cairographics.org/news/cairo-1.4.10/>)) ã«æ›´æ–°ã€‚
 
-    * cairo.ext ƒpƒbƒP[ƒW‚ÉˆÈ‰º‚Ì API ‚ğ’Ç‰Á
-      * (cairo-circle): ^‰~‚ğ•`‚­ API
-      * (cairo-polyline): ‘½üŒ`‚ğ•`‚­ API
-      * (cairo-polygon): ‘½ŠpŒ`‚ğ•`‚­ API
-      * (cairo-regular-polygon): ³‘½ŠpŒ`‚ğ•`‚­ API
-      * (cairo-triangle): OŠpŒ`‚ğ•`‚­ API
-      * (cairo-heart): ƒn[ƒg‚ğ•`‚­ŠÖ”
-      * (cairo-star): ¯‚ğ•`‚­ŠÖ”
-      * (cairo-rounded-rectangle): ŠpŠÛ‚ÌlŠp‚ğ•`‚­ API (rcairo ŒİŠ·)
-      * (cairo-rounded-rectangle-complex): ŠpŠÛ‚ÌlŠp‚ğ•`‚­ API ‚»‚Ì‚Q
-      * (cairo-map-path-onto): Œ»İ‚ÌƒpƒX‚ğw’è‚µ‚½ƒpƒXã‚É”z’u‚·‚é
-      * (radian->degree, degree->radian): ŒÊ“x–@‚ÆŠp“x‚Ì•ÏŠ·ŠÖ”
+    * cairo.ext ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã«ä»¥ä¸‹ã® API ã‚’è¿½åŠ 
+      * (cairo-circle): çœŸå††ã‚’æã API
+      * (cairo-polyline): å¤šç·šå½¢ã‚’æã API
+      * (cairo-polygon): å¤šè§’å½¢ã‚’æã API
+      * (cairo-regular-polygon): æ­£å¤šè§’å½¢ã‚’æã API
+      * (cairo-triangle): ä¸‰è§’å½¢ã‚’æã API
+      * (cairo-heart): ãƒãƒ¼ãƒˆã‚’æãé–¢æ•°
+      * (cairo-star): æ˜Ÿã‚’æãé–¢æ•°
+      * (cairo-rounded-rectangle): è§’ä¸¸ã®å››è§’ã‚’æã API (rcairo äº’æ›)
+      * (cairo-rounded-rectangle-complex): è§’ä¸¸ã®å››è§’ã‚’æã API ãã®ï¼’
+      * (cairo-map-path-onto): ç¾åœ¨ã®ãƒ‘ã‚¹ã‚’æŒ‡å®šã—ãŸãƒ‘ã‚¹ä¸Šã«é…ç½®ã™ã‚‹
+      * (radian->degree, degree->radian): å¼§åº¦æ³•ã¨è§’åº¦ã®å¤‰æ›é–¢æ•°
 
-: ”ñŒİŠ·‚ğŠÜ‚Ş•ÏX“_
+: éäº’æ›ã‚’å«ã‚€å¤‰æ›´ç‚¹
 
-    * ‚È‚µ
+    * ãªã—
 
-: ƒoƒOC³
+: ãƒã‚°ä¿®æ­£
 
-    * cairo-show-text ‚É nil ‚ğw’è‚·‚é‚ÆƒL[ƒ{[ƒh‚©‚ç•¶š—ñ‚ğ“Ç‚İ‚à‚¤‚Æ‚µ‚Ä‚µ‚Ü‚¤
-      –â‘è‚ğC³Bnil ‚Í‹ó•¶š—ñ‚Æ“¯‚¶ˆµ‚¢‚É‚µ‚½B
+    * cairo-show-text ã« nil ã‚’æŒ‡å®šã™ã‚‹ã¨ã‚­ãƒ¼ãƒœãƒ¼ãƒ‰ã‹ã‚‰æ–‡å­—åˆ—ã‚’èª­ã¿è¾¼ã‚‚ã†ã¨ã—ã¦ã—ã¾ã†
+      å•é¡Œã‚’ä¿®æ­£ã€‚nil ã¯ç©ºæ–‡å­—åˆ—ã¨åŒã˜æ‰±ã„ã«ã—ãŸã€‚
 
-    * (cairo-get-dash): ƒƒ‚ƒŠ”j‰ó‚ª‹N‚«‚Ä‚¢‚½–â‘è‚ğC³B
+    * (cairo-get-dash): ãƒ¡ãƒ¢ãƒªç ´å£ŠãŒèµ·ãã¦ã„ãŸå•é¡Œã‚’ä¿®æ­£ã€‚
 
-: ‚»‚Ì‘¼
+: ãã®ä»–
 
-    * ˆÈ‰º‚ÌƒTƒ“ƒvƒ‹‚ğ’Ç‰ÁB
-      * (examples/ext-circle.l): ^‰~‚ğ•`‚­ƒTƒ“ƒvƒ‹ (cairo.ext:cairo-circle)
-      * (examples/ext-triangle.l): OŠpŒ`‚ğ•`‚­ƒTƒ“ƒvƒ‹ (cairo.ext:cairo-trianble)
-      * (examples/ext-polygon.l): ³‘½ŠpŒ`‚ğ•`‚­ƒTƒ“ƒvƒ‹ (cairo.ext:cairo-regular-polygon)
-      * (examples/ext-heart.l): ƒn[ƒg‚ğ•`‚­ƒTƒ“ƒvƒ‹ (cairo.ext:cairo-heart)
-      * (examples/ext-star.l): ¯‚ğ•`‚­ƒTƒ“ƒvƒ‹ (cairo.ext:cairo-star)
-      * (examples/ext-rounded-rectangle.l): ŠpŠÛ‚ÌlŠp‚ğ•`‚­ƒTƒ“ƒvƒ‹ (cairo.ext:cairo-rounded-rectangle)
-      * (examples/ext-rounded-rectangle-complex.l): ŠpŠÛ‚ÌlŠp‚ğ•`‚­ƒTƒ“ƒvƒ‹ (cairo.ext:cairo-rounded-rectangle-complex)
-      * (examples/text-on-path.l): ƒpƒXã‚ÉƒeƒLƒXƒg‚ğ”z’u‚·‚éƒTƒ“ƒvƒ‹ (cairo.ext:cairo-map-path-onto, rcairo ‚Ì sample ‚ÌˆÚA)
-    * (examples/hearts.l): cairo.ext:cairo-heart ‚ğg‚Á‚ÄÄÀ‘•B
-    * (do-snippets): ÀsŠÔ‚ğ‰æ‘œ‚Ì¶‰º‚É•\¦‚·‚é‚æ‚¤‚É‚µ‚½B
+    * ä»¥ä¸‹ã®ã‚µãƒ³ãƒ—ãƒ«ã‚’è¿½åŠ ã€‚
+      * (examples/ext-circle.l): çœŸå††ã‚’æãã‚µãƒ³ãƒ—ãƒ« (cairo.ext:cairo-circle)
+      * (examples/ext-triangle.l): ä¸‰è§’å½¢ã‚’æãã‚µãƒ³ãƒ—ãƒ« (cairo.ext:cairo-trianble)
+      * (examples/ext-polygon.l): æ­£å¤šè§’å½¢ã‚’æãã‚µãƒ³ãƒ—ãƒ« (cairo.ext:cairo-regular-polygon)
+      * (examples/ext-heart.l): ãƒãƒ¼ãƒˆã‚’æãã‚µãƒ³ãƒ—ãƒ« (cairo.ext:cairo-heart)
+      * (examples/ext-star.l): æ˜Ÿã‚’æãã‚µãƒ³ãƒ—ãƒ« (cairo.ext:cairo-star)
+      * (examples/ext-rounded-rectangle.l): è§’ä¸¸ã®å››è§’ã‚’æãã‚µãƒ³ãƒ—ãƒ« (cairo.ext:cairo-rounded-rectangle)
+      * (examples/ext-rounded-rectangle-complex.l): è§’ä¸¸ã®å››è§’ã‚’æãã‚µãƒ³ãƒ—ãƒ« (cairo.ext:cairo-rounded-rectangle-complex)
+      * (examples/text-on-path.l): ãƒ‘ã‚¹ä¸Šã«ãƒ†ã‚­ã‚¹ãƒˆã‚’é…ç½®ã™ã‚‹ã‚µãƒ³ãƒ—ãƒ« (cairo.ext:cairo-map-path-onto, rcairo ã® sample ã®ç§»æ¤)
+    * (examples/hearts.l): cairo.ext:cairo-heart ã‚’ä½¿ã£ã¦å†å®Ÿè£…ã€‚
+    * (do-snippets): å®Ÿè¡Œæ™‚é–“ã‚’ç”»åƒã®å·¦ä¸‹ã«è¡¨ç¤ºã™ã‚‹ã‚ˆã†ã«ã—ãŸã€‚
 
 
 === 2007-06-10 / 0.0.5
 
-xycairo 0.0.5 ƒŠƒŠ[ƒX!
+xycairo 0.0.5 ãƒªãƒªãƒ¼ã‚¹!
 
-: V‹K‹@”\
+: æ–°è¦æ©Ÿèƒ½
 
-    * “Y•t‚µ‚Ä‚¢‚é cairo ‚ğ ((<"1.4.8"|URL:http://cairographics.org/news/cairo-1.4.8/>)) ‚ÉXVB
+    * æ·»ä»˜ã—ã¦ã„ã‚‹ cairo ã‚’ ((<"1.4.8"|URL:http://cairographics.org/news/cairo-1.4.8/>)) ã«æ›´æ–°ã€‚
 
-    * PDF surfaces ‚Æ PostScript surface ‚ğƒTƒ|[ƒgB
-      PDF/PostScript ‚ğì¬‚Å‚«‚Ü‚·B
+    * PDF surfaces ã¨ PostScript surface ã‚’ã‚µãƒãƒ¼ãƒˆã€‚
+      PDF/PostScript ã‚’ä½œæˆã§ãã¾ã™ã€‚
 
         (with-cairo-surface (surface (cairo-pdf-surface-create "output.pdf" 200 200))
           (with-cairo (cr (cairo-create surface))
@@ -142,12 +142,12 @@ xycairo 0.0.5 ƒŠƒŠ[ƒX!
           (with-cairo (cr (cairo-create surface))
             ...))
 
-    * stream API ‚ğƒTƒ|[ƒgB
+    * stream API ã‚’ã‚µãƒãƒ¼ãƒˆã€‚
 
-      cairo-image-surface-create-from-png ‚Æ cairo-surface-write-to-png ‚ª
-      ƒXƒgƒŠ[ƒ€‚ğˆø”‚Éæ‚é‚±‚Æ‚ª‚Å‚«‚é‚æ‚¤‚É‚È‚è‚Ü‚µ‚½B
+      cairo-image-surface-create-from-png ã¨ cairo-surface-write-to-png ãŒ
+      ã‚¹ãƒˆãƒªãƒ¼ãƒ ã‚’å¼•æ•°ã«å–ã‚‹ã“ã¨ãŒã§ãã‚‹ã‚ˆã†ã«ãªã‚Šã¾ã—ãŸã€‚
 
-      ]—ˆ‚Ç‚¨‚èƒtƒ@ƒCƒ‹–¼‚ğˆø”‚Éw’è‚·‚é‚±‚Æ‚à‰Â”\‚Å‚·
+      å¾“æ¥ã©ãŠã‚Šãƒ•ã‚¡ã‚¤ãƒ«åã‚’å¼•æ•°ã«æŒ‡å®šã™ã‚‹ã“ã¨ã‚‚å¯èƒ½ã§ã™
 
         (with-open-file (in "input.png" :direction :input)
           (with-open-file (out "output.png"
@@ -160,45 +160,45 @@ xycairo 0.0.5 ƒŠƒŠ[ƒX!
                   (with-output-to-png (surface out)
                     ...))))))
 
-    * with-output-to-png ƒ}ƒNƒ‚ğ’Ç‰ÁB
+    * with-output-to-png ãƒã‚¯ãƒ­ã‚’è¿½åŠ ã€‚
 
         (with-cairo-surface (surface (cairo-image-surface-create :argb32 100 100))
           (with-cairo (cr (cairo-create surface))
             (with-output-to-png (surface "output.png")
               ...)))
 
-: ”ñŒİŠ·‚ğŠÜ‚Ş•ÏX“_
+: éäº’æ›ã‚’å«ã‚€å¤‰æ›´ç‚¹
 
-    * cairo-*-destroy ‚Í‚â‚Á‚Ï‚è export ‚·‚é‚æ‚¤‚É‚µ‚½B
+    * cairo-*-destroy ã¯ã‚„ã£ã±ã‚Š export ã™ã‚‹ã‚ˆã†ã«ã—ãŸã€‚
 
-: ƒoƒOC³
+: ãƒã‚°ä¿®æ­£
 
-    * ‚È‚µ
+    * ãªã—
 
-: ‚»‚Ì‘¼
+: ãã®ä»–
 
-    * ƒAƒvƒŠ‚Æƒ‰ƒCƒuƒ‰ƒŠ‚ÌˆË‘¶“x‚ğ‰º‚°‚é‚½‚ß‚ÉAwith-xxx ƒ}ƒNƒ‚Ì–{‘Ì‚ğ
-      call-with-xxx ŠÖ”“à‚ÅÀ‘•‚·‚é‚æ‚¤‚É‚µ‚Ü‚µ‚½B
+    * ã‚¢ãƒ—ãƒªã¨ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã®ä¾å­˜åº¦ã‚’ä¸‹ã’ã‚‹ãŸã‚ã«ã€with-xxx ãƒã‚¯ãƒ­ã®æœ¬ä½“ã‚’
+      call-with-xxx é–¢æ•°å†…ã§å®Ÿè£…ã™ã‚‹ã‚ˆã†ã«ã—ã¾ã—ãŸã€‚
 
       ((<"Why I Like CALL-WITH-* Style In Macros"|URL:http://random-state.net/log/3390120648.html>))
-      ‚ğQl‚É‚µ‚Ü‚µ‚½B
+      ã‚’å‚è€ƒã«ã—ã¾ã—ãŸã€‚
 
-    * ˆÈ‰º‚ÌƒTƒ“ƒvƒ‹‚ğ’Ç‰ÁB
+    * ä»¥ä¸‹ã®ã‚µãƒ³ãƒ—ãƒ«ã‚’è¿½åŠ ã€‚
 
-      * (examples/text-postscript.l): text.l ‚Ì PostScript ”Å
-      * (examples/text-japanese-pdf.l): text-japanese.l ‚Ì PDF ”Å
-      * (examples/imagepattern-png-stream.l): PNG ‚Ì stream API ‚ÌƒTƒ“ƒvƒ‹
-      * (examples/lissajous-curves.l): ƒŠƒT[ƒWƒ…‹Èü‚ğ•`‚­ƒTƒ“ƒvƒ‹ (stolen from cl-cairo2)
-      * (examples/hearts.l): ƒn[ƒg‚ğƒ‰ƒ“ƒ_ƒ€‚É•`‚­ƒTƒ“ƒvƒ‹ (stolen from cl-cairo2)
+      * (examples/text-postscript.l): text.l ã® PostScript ç‰ˆ
+      * (examples/text-japanese-pdf.l): text-japanese.l ã® PDF ç‰ˆ
+      * (examples/imagepattern-png-stream.l): PNG ã® stream API ã®ã‚µãƒ³ãƒ—ãƒ«
+      * (examples/lissajous-curves.l): ãƒªã‚µãƒ¼ã‚¸ãƒ¥æ›²ç·šã‚’æãã‚µãƒ³ãƒ—ãƒ« (stolen from cl-cairo2)
+      * (examples/hearts.l): ãƒãƒ¼ãƒˆã‚’ãƒ©ãƒ³ãƒ€ãƒ ã«æãã‚µãƒ³ãƒ—ãƒ« (stolen from cl-cairo2)
 
 
 === 2007-06-04 / 0.0.4
 
-xycairo 0.0.4 ƒŠƒŠ[ƒX!
+xycairo 0.0.4 ãƒªãƒªãƒ¼ã‚¹!
 
-: V‹K‹@”\
+: æ–°è¦æ©Ÿèƒ½
 
-    * with- Œnƒ}ƒNƒ‚ğ’Ç‰Á (cairo package)
+    * with- ç³»ãƒã‚¯ãƒ­ã‚’è¿½åŠ  (cairo package)
 
       * with-cairo
       * with-cairo-path
@@ -215,13 +215,13 @@ xycairo 0.0.4 ƒŠƒŠ[ƒX!
       * with-cairo-stroke-preserve
       * with-cairo-group
 
-    * cairo-push-group ‚ª optional ‚È content ˆø”‚ğæ‚é‚æ‚¤‚É‚µ‚Ü‚µ‚½B
-      (cairo-push-group-with-content ‚Æ‚Ì“‡)
+    * cairo-push-group ãŒ optional ãª content å¼•æ•°ã‚’å–ã‚‹ã‚ˆã†ã«ã—ã¾ã—ãŸã€‚
+      (cairo-push-group-with-content ã¨ã®çµ±åˆ)
 
-    * cairo-pop-group ‚ª optional ‚È to-source ˆø”‚ğæ‚é‚æ‚¤‚É‚µ‚Ü‚µ‚½B
-      (cairo-pop-group-to-source ‚Æ‚Ì“‡)
+    * cairo-pop-group ãŒ optional ãª to-source å¼•æ•°ã‚’å–ã‚‹ã‚ˆã†ã«ã—ã¾ã—ãŸã€‚
+      (cairo-pop-group-to-source ã¨ã®çµ±åˆ)
 
-    * xxx-extents ‚ğ list ‚Å•Ô‚·ŠÖ”‚ğ’Ç‰ÁB
+    * xxx-extents ã‚’ list ã§è¿”ã™é–¢æ•°ã‚’è¿½åŠ ã€‚
 
       * cairo-clip-extents-list
       * cairo-fill-extents-list
@@ -233,11 +233,11 @@ xycairo 0.0.4 ƒŠƒŠ[ƒX!
       * cairo-scaled-font-text-extents-list
       * cairo-scaled-font-glyph-extents-list
 
-    * cairo ƒpƒbƒP[ƒW‚Ì nicknames ‚É cairo.api ‚ğİ’è
+    * cairo ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã® nicknames ã« cairo.api ã‚’è¨­å®š
 
-: ”ñŒİŠ·‚ğŠÜ‚Ş•ÏX“_
+: éäº’æ›ã‚’å«ã‚€å¤‰æ›´ç‚¹
 
-    * ˆÈ‰º‚ÌŠÖ”‚ğ export ‚µ‚È‚¢‚æ‚¤‚É‚µ‚Ü‚µ‚½B
+    * ä»¥ä¸‹ã®é–¢æ•°ã‚’ export ã—ãªã„ã‚ˆã†ã«ã—ã¾ã—ãŸã€‚
 
       * cairo-push-group-with-content
       * cairo-pop-group-to-source
@@ -249,52 +249,52 @@ xycairo 0.0.4 ƒŠƒŠ[ƒX!
       * cairo-*-get-reference
       * cairo-*-status
 
-: ƒoƒOC³
+: ãƒã‚°ä¿®æ­£
 
-      * cairo-clip-rectangle-list ‚ª“®‚©‚È‚­‚È‚Á‚Ä‚¢‚½‚Ì‚ğC³B
+      * cairo-clip-rectangle-list ãŒå‹•ã‹ãªããªã£ã¦ã„ãŸã®ã‚’ä¿®æ­£ã€‚
 
-: ‚»‚Ì‘¼
+: ãã®ä»–
 
-    * ˆÈ‰º‚ÌƒTƒ“ƒvƒ‹‚ğ’Ç‰ÁB
+    * ä»¥ä¸‹ã®ã‚µãƒ³ãƒ—ãƒ«ã‚’è¿½åŠ ã€‚
 
-      * (examples/drive-info.l): drive-info ‚ğg‚Á‚Ä‹ó‚«—e—Ê‚ğƒOƒ‰ƒt•\¦‚·‚éƒTƒ“ƒvƒ‹B
+      * (examples/drive-info.l): drive-info ã‚’ä½¿ã£ã¦ç©ºãå®¹é‡ã‚’ã‚°ãƒ©ãƒ•è¡¨ç¤ºã™ã‚‹ã‚µãƒ³ãƒ—ãƒ«ã€‚
 
 
 === 2007-05-27 / 0.0.3
 
-xycairo 0.0.3 ƒŠƒŠ[ƒX!
+xycairo 0.0.3 ãƒªãƒªãƒ¼ã‚¹!
 
-: V‹K‹@”\
+: æ–°è¦æ©Ÿèƒ½
 
-    * cairo.ext ƒpƒbƒP[ƒW‚ğ’Ç‰ÁB
+    * cairo.ext ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã‚’è¿½åŠ ã€‚
 
-      ƒˆ‚È cairo API ‚ÌƒoƒCƒ“ƒfƒBƒ“ƒO‚Å‚Í‚È‚¢“Æ©Šg’£‚Í
-      cairo.ext ƒpƒbƒP[ƒW“à‚É’è‹`‚µ‚Ü‚·B
+      ç´”ç²‹ãª cairo API ã®ãƒã‚¤ãƒ³ãƒ‡ã‚£ãƒ³ã‚°ã§ã¯ãªã„ç‹¬è‡ªæ‹¡å¼µã¯
+      cairo.ext ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸å†…ã«å®šç¾©ã—ã¾ã™ã€‚
 
-    * Å’áŒÀ‚Ì with- Œnƒ}ƒNƒ‚ğ’Ç‰Á (cairo.ext)
+    * æœ€ä½é™ã® with- ç³»ãƒã‚¯ãƒ­ã‚’è¿½åŠ  (cairo.ext)
 
       * with-cairo
       * with-cairo-surface
 
-      —á:
+      ä¾‹:
 
         (require "cairo")
         (use-package :cairo)
-        (use-package :cairo.ext)  ;; ‚±‚ê‚ª•K—v
+        (use-package :cairo.ext)  ;; ã“ã‚ŒãŒå¿…è¦
 
         (with-cairo-surface (surface (cairo-image-surface-create :argb32 100 100))
           (with-cairo (cr (cairo-create surface))
             ;; do something
             ))
 
-    * win32 ƒtƒHƒ“ƒg (LOGFONTW) ì¬ƒ†[ƒeƒBƒŠƒeƒB‚ğ’Ç‰Á (cairo.ext)B
+    * win32 ãƒ•ã‚©ãƒ³ãƒˆ (LOGFONTW) ä½œæˆãƒ¦ãƒ¼ãƒ†ã‚£ãƒªãƒ†ã‚£ã‚’è¿½åŠ  (cairo.ext)ã€‚
 
-      0.0.2 ‚Å’Ç‰Á‚µ‚½ create-logfontw ‚Í—˜—p‚¹‚¸
-      cairo-win32-font-face-create ‚ğg—p‚µ‚Ä‚­‚¾‚³‚¢B
+      0.0.2 ã§è¿½åŠ ã—ãŸ create-logfontw ã¯åˆ©ç”¨ã›ãš
+      cairo-win32-font-face-create ã‚’ä½¿ç”¨ã—ã¦ãã ã•ã„ã€‚
 
-        (cairo-set-font-face cr (cairo-win32-font-face-create "‚l‚r ƒSƒVƒbƒN" :bold t))
+        (cairo-set-font-face cr (cairo-win32-font-face-create "ï¼­ï¼³ ã‚´ã‚·ãƒƒã‚¯" :bold t))
 
-    * xxx-extents ‚ğ alist ‚Å•Ô‚·ŠÖ”‚ğ’Ç‰ÁB
+    * xxx-extents ã‚’ alist ã§è¿”ã™é–¢æ•°ã‚’è¿½åŠ ã€‚
 
       * cairo-scaled-font-extents-alist
       * cairo-scaled-font-text-extents-alist
@@ -308,26 +308,26 @@ xycairo 0.0.3 ƒŠƒŠ[ƒX!
       * cairo-fill-extents-alist
       * cairo-stroke-extents-alist
 
-: ”ñŒİŠ·‚ğŠÜ‚Ş•ÏX“_
+: éäº’æ›ã‚’å«ã‚€å¤‰æ›´ç‚¹
 
-    * cairo-path-list ‚Í cairo::context \‘¢‘Ì‚ğˆø”‚Éæ‚é‚æ‚¤‚É‚È‚è‚Ü‚µ‚½B
+    * cairo-path-list ã¯ cairo::context æ§‹é€ ä½“ã‚’å¼•æ•°ã«å–ã‚‹ã‚ˆã†ã«ãªã‚Šã¾ã—ãŸã€‚
 
         (cairo-path-list cr)
 
-    * ŠK‘w‰»‚³‚ê‚½ƒpƒbƒP[ƒW–¼‚Ì‹æØ‚è‚ğ - ‚©‚ç . ‚É‚µ‚Ü‚µ‚½B
+    * éšå±¤åŒ–ã•ã‚ŒãŸãƒ‘ãƒƒã‚±ãƒ¼ã‚¸åã®åŒºåˆ‡ã‚Šã‚’ - ã‹ã‚‰ . ã«ã—ã¾ã—ãŸã€‚
 
-      * cairo-ffi ¨ cairo.ffi
-      * cairo-util ¨ cairo.util
-      * cairo-ext ¨ cairo.ext
+      * cairo-ffi â†’ cairo.ffi
+      * cairo-util â†’ cairo.util
+      * cairo-ext â†’ cairo.ext
 
-    * \‘¢‘Ì–¼‚ğ export ‚µ‚È‚¢‚æ‚¤‚É‚µ‚Ü‚µ‚½B
+    * æ§‹é€ ä½“åã‚’ export ã—ãªã„ã‚ˆã†ã«ã—ã¾ã—ãŸã€‚
 
-    * create-logfontw ‚ğ cairo.ext ƒpƒbƒP[ƒW‚ÉˆÚ“®‚µ‚Ü‚µ‚½B
+    * create-logfontw ã‚’ cairo.ext ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã«ç§»å‹•ã—ã¾ã—ãŸã€‚
 
-      cairo-win32-font-face-create ‚ª‚ ‚ê‚Î create-logfont ‚Í•s—v‚¾‚Æv‚¤‚Ì‚Å
-      export ‚·‚é‚Ì‚ğ‚â‚ß‚½B
+      cairo-win32-font-face-create ãŒã‚ã‚Œã° create-logfont ã¯ä¸è¦ã ã¨æ€ã†ã®ã§
+      export ã™ã‚‹ã®ã‚’ã‚„ã‚ãŸã€‚
 
-    * ˆÈ‰º‚ÌŠÖ”‚Í\‘¢‘Ì‚Å‚Í‚È‚­‘½’l‚ğ•Ô‚·‚æ‚¤‚É‚È‚è‚Ü‚µ‚½B
+    * ä»¥ä¸‹ã®é–¢æ•°ã¯æ§‹é€ ä½“ã§ã¯ãªãå¤šå€¤ã‚’è¿”ã™ã‚ˆã†ã«ãªã‚Šã¾ã—ãŸã€‚
 
       * cairo-scaled-font-extents
       * cairo-scaled-font-text-extents
@@ -337,74 +337,74 @@ xycairo 0.0.3 ƒŠƒŠ[ƒX!
       * cairo-text-extents
       * cairo-glyph-extents
 
-: ƒoƒOC³
+: ãƒã‚°ä¿®æ­£
 
-    * destroy ‚µ‚½ƒIƒuƒWƒFƒNƒg‚É‘Î‚µ‚Ä xxx-get-reference-count ‚ğŒÄ‚ñ‚Å‚¢‚½‚½‚ß
-      ƒNƒ‰ƒbƒVƒ…‚·‚éê‡‚ª‚ ‚Á‚½‚Ì‚ğC³‚µ‚Ü‚µ‚½B
+    * destroy ã—ãŸã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«å¯¾ã—ã¦ xxx-get-reference-count ã‚’å‘¼ã‚“ã§ã„ãŸãŸã‚
+      ã‚¯ãƒ©ãƒƒã‚·ãƒ¥ã™ã‚‹å ´åˆãŒã‚ã£ãŸã®ã‚’ä¿®æ­£ã—ã¾ã—ãŸã€‚
 
-: ‚»‚Ì‘¼
+: ãã®ä»–
 
-    * ˆÈ‰º‚ÌƒTƒ“ƒvƒ‹‚ğ’Ç‰ÁB
+    * ä»¥ä¸‹ã®ã‚µãƒ³ãƒ—ãƒ«ã‚’è¿½åŠ ã€‚
 
-      * (examples/polygon.l): ‘½ŠpŒ`‚ğ•`‰æ‚·‚éƒTƒ“ƒvƒ‹
-      * (examples/pie-chart.l): ‰~ƒOƒ‰ƒt‚ğ•`‰æ‚·‚éƒTƒ“ƒvƒ‹
-      * (examples/lisp-2.0.l): –^ CM •—‚Ìƒoƒi[‚ğì¬‚·‚éƒTƒ“ƒvƒ‹
+      * (examples/polygon.l): å¤šè§’å½¢ã‚’æç”»ã™ã‚‹ã‚µãƒ³ãƒ—ãƒ«
+      * (examples/pie-chart.l): å††ã‚°ãƒ©ãƒ•ã‚’æç”»ã™ã‚‹ã‚µãƒ³ãƒ—ãƒ«
+      * (examples/lisp-2.0.l): æŸ CM é¢¨ã®ãƒãƒŠãƒ¼ã‚’ä½œæˆã™ã‚‹ã‚µãƒ³ãƒ—ãƒ«
 
 
 === 2007-05-13 / 0.0.2
 
-xycairo 0.0.2 ƒŠƒŠ[ƒX!
+xycairo 0.0.2 ãƒªãƒªãƒ¼ã‚¹!
 
-: V‹K‹@”\
+: æ–°è¦æ©Ÿèƒ½
 
-    * LOGFONTW ‚ğì¬‚·‚é‚½‚ß‚Ì create-logfontw ŠÖ”‚ğ’Ç‰ÁB
+    * LOGFONTW ã‚’ä½œæˆã™ã‚‹ãŸã‚ã® create-logfontw é–¢æ•°ã‚’è¿½åŠ ã€‚
 
           (cairo-set-font-face cr (cairo-win32-font-face-create-for-logfontw
-                                   (create-logfontw "‚l‚r ƒSƒVƒbƒN")))
+                                   (create-logfontw "ï¼­ï¼³ ã‚´ã‚·ãƒƒã‚¯")))
 
-      examples/show-glyphs-select-font.l, text-japanese.l ‚ğQl‚É‚µ‚Ä‚­‚¾‚³‚¢B
+      examples/show-glyphs-select-font.l, text-japanese.l ã‚’å‚è€ƒã«ã—ã¦ãã ã•ã„ã€‚
 
-: ”ñŒİŠ·‚ğŠÜ‚Ş•ÏX“_
+: éäº’æ›ã‚’å«ã‚€å¤‰æ›´ç‚¹
 
-    * ‚È‚µ
+    * ãªã—
 
-: ƒoƒOC³
+: ãƒã‚°ä¿®æ­£
 
-    * cairo-show-glyphs ‚É•¡”‚Ì glyph ‚ğ“n‚µ‚½ê‡‚É‚¤‚Ü‚­•`‰æ‚³‚ê‚È‚¢–â‘è‚ğ‰ñ”ğB
+    * cairo-show-glyphs ã«è¤‡æ•°ã® glyph ã‚’æ¸¡ã—ãŸå ´åˆã«ã†ã¾ãæç”»ã•ã‚Œãªã„å•é¡Œã‚’å›é¿ã€‚
 
-    * cairo-reload-dll ‚ª‚½‚¾‚µ‚­Äƒ[ƒh‚Å‚«‚Ä‚¢‚È‚©‚Á‚½–â‘è‚ğC³B
+    * cairo-reload-dll ãŒãŸã ã—ãå†ãƒ­ãƒ¼ãƒ‰ã§ãã¦ã„ãªã‹ã£ãŸå•é¡Œã‚’ä¿®æ­£ã€‚
 
-    * examples/ ”z‰º‚ÌƒXƒNƒŠƒvƒg‚ğ eval-buffer ‚ÅÀs‚·‚é‚Æ $XYZZYHOME/lisp/startup.lc
-      ‚ª png ƒtƒ@ƒCƒ‹‚Åã‘‚«‚³‚ê‚Ä‚µ‚Ü‚Á‚Ä‚¢‚½–â‘è‚ğC³B
+    * examples/ é…ä¸‹ã®ã‚¹ã‚¯ãƒªãƒ—ãƒˆã‚’ eval-buffer ã§å®Ÿè¡Œã™ã‚‹ã¨ $XYZZYHOME/lisp/startup.lc
+      ãŒ png ãƒ•ã‚¡ã‚¤ãƒ«ã§ä¸Šæ›¸ãã•ã‚Œã¦ã—ã¾ã£ã¦ã„ãŸå•é¡Œã‚’ä¿®æ­£ã€‚
 
-      ˆÈ‰º‚ÌŠY“–‚·‚é•û‚Í‚¨è”‚Å‚·‚ª startup.lc ‚Ì•œ‹Œ‚ğ‚¨Šè‚¢‚µ‚Ü‚·B
+      ä»¥ä¸‹ã®è©²å½“ã™ã‚‹æ–¹ã¯ãŠæ‰‹æ•°ã§ã™ãŒ startup.lc ã®å¾©æ—§ã‚’ãŠé¡˜ã„ã—ã¾ã™ã€‚
 
-      * ŠY“–Ò:
+      * è©²å½“è€…:
 
-        examples/ ”z‰º‚ÌƒXƒNƒŠƒvƒg‚ğ eval-buffer ‚ÅÀs‚µ‚½l‚Í
-        $XYZZYHOME/lisp/startup.lc ‚Ì“ú•t‚â“à—e‚ğŠm”F‚µ‚Ä‚­‚¾‚³‚¢B
+        examples/ é…ä¸‹ã®ã‚¹ã‚¯ãƒªãƒ—ãƒˆã‚’ eval-buffer ã§å®Ÿè¡Œã—ãŸäººã¯
+        $XYZZYHOME/lisp/startup.lc ã®æ—¥ä»˜ã‚„å†…å®¹ã‚’ç¢ºèªã—ã¦ãã ã•ã„ã€‚
 
-        XV‚µ‚½Šo‚¦‚ª‚È‚¢‚Ì‚É startup.lc ‚Ì“ú•t‚ªV‚µ‚¢ê‡‚âA
-        Šg’£q‚ğ png ‚É•Ï‚¦‚Ä‰æ‘œƒrƒ…[ƒA‚Å•\¦‚Å‚«‚él‚ªŠY“–‚µ‚Ü‚·B
+        æ›´æ–°ã—ãŸè¦šãˆãŒãªã„ã®ã« startup.lc ã®æ—¥ä»˜ãŒæ–°ã—ã„å ´åˆã‚„ã€
+        æ‹¡å¼µå­ã‚’ png ã«å¤‰ãˆã¦ç”»åƒãƒ“ãƒ¥ãƒ¼ã‚¢ã§è¡¨ç¤ºã§ãã‚‹äººãŒè©²å½“ã—ã¾ã™ã€‚
 
-      * Çó:
+      * ç—‡çŠ¶:
 
-        ƒ_ƒ“ƒvƒtƒ@ƒCƒ‹‚ğÁ‚µ‚Ä xyzzy ‚ğ‹N“®‚·‚é‚Æ‹N“®‚É¸”s‚µ‚Ü‚·B
+        ãƒ€ãƒ³ãƒ—ãƒ•ã‚¡ã‚¤ãƒ«ã‚’æ¶ˆã—ã¦ xyzzy ã‚’èµ·å‹•ã™ã‚‹ã¨èµ·å‹•ã«å¤±æ•—ã—ã¾ã™ã€‚
 
-      * C³•û–@:
+      * ä¿®æ­£æ–¹æ³•:
 
-        (1) startup.lc ‚ğíœ‚µ‚Ä xyzzy ‚ğ‹N“®‚µ‚Ä‚­‚¾‚³‚¢B
-        (2) ‹N“®ŒãAM-x byte-compile-file ‚ğÀs‚µ $XYZZYHOME/lisp/startup.l
-            ‚ğƒoƒCƒgƒRƒ“ƒpƒCƒ‹‚µ‚Ä‚­‚¾‚³‚¢B
+        (1) startup.lc ã‚’å‰Šé™¤ã—ã¦ xyzzy ã‚’èµ·å‹•ã—ã¦ãã ã•ã„ã€‚
+        (2) èµ·å‹•å¾Œã€M-x byte-compile-file ã‚’å®Ÿè¡Œã— $XYZZYHOME/lisp/startup.l
+            ã‚’ãƒã‚¤ãƒˆã‚³ãƒ³ãƒ‘ã‚¤ãƒ«ã—ã¦ãã ã•ã„ã€‚
 
-: ‚»‚Ì‘¼
+: ãã®ä»–
 
-    * xyzzy/cairo ‚Í’·‚¢‚Ì‚Å xycairo ‚É•ÏXB
+    * xyzzy/cairo ã¯é•·ã„ã®ã§ xycairo ã«å¤‰æ›´ã€‚
 
 
 === 2007-05-07 / 0.0.1
 
-xycairo 0.0.1 ƒŠƒŠ[ƒX!
+xycairo 0.0.1 ãƒªãƒªãƒ¼ã‚¹!
 
 
 =end
