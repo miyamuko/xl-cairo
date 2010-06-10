@@ -25,5 +25,4 @@ files:
     - site-lisp/cairo/docs/**/*
     - site-lisp/cairo/src/**/*.*
   exclude:
-    - site-lisp/cairo-scratch.l
     - site-lisp/cairo/**/tests/*.*
